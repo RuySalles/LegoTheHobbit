@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c100d">
+<title>LEGO The Hobbit — Conquistas 100%</title>
+<meta name="description" content="As 39 conquistas da Steam de LEGO The Hobbit, com dica de como conseguir cada uma, raridade global e checklist com progresso local.">
+<link rel="canonical" href="https://ruysalles.github.io/LegoTheHobbit/conquistas.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Middle-earth Field Guide">
+<meta property="og:title" content="LEGO The Hobbit — Conquistas 100%">
+<meta property="og:description" content="As 39 conquistas da Steam com dica, raridade e checklist.">
+<meta property="og:url" content="https://ruysalles.github.io/LegoTheHobbit/conquistas.html">
+<meta property="og:image" content="https://ruysalles.github.io/LegoTheHobbit/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<script>
+(function(){
+ var t=null;
+ try{t=localStorage.getItem('hobbit-theme')}catch(e){}
+ if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+ document.documentElement.setAttribute('data-theme',t);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Tokens compartilhados com a página da rota (index.html) */
+:root,[data-theme="dark"]{
+  --bg:#0c100d;--bg-glow-a:#22331f;--bg-glow-b:#3a2a15;
+  --panel:#141a15;--panel2:#1a221b;--line:#2f3b30;--line-soft:#ffffff10;
+  --text:#f0ecdd;--muted:#a9b2a0;--soft:#cdd3c4;
+  --gold:#e3b955;--gold2:#f3d892;--gold-ink:#1b1709;
+  --green:#8abf77;--green-ink:#10200d;--brick:#d2442f;--mithril:#9fc7d9;--ember:#f0a04b;--violet:#c39bf0;
+  --shadow:0 18px 50px #0008;--topbar:#0c100de6;--rune:#e3b95810;
+  color-scheme:dark;
+}
+[data-theme="light"]{
+  --bg:#efe6d0;--bg-glow-a:#dfe6c9;--bg-glow-b:#ead2a6;
+  --panel:#fbf6e8;--panel2:#f5edd8;--line:#d5c6a3;--line-soft:#2b241712;
+  --text:#2b2417;--muted:#6b5f48;--soft:#4a4030;
+  --gold:#94680f;--gold2:#7a540a;--gold-ink:#fff8e6;
+  --green:#3f7a32;--green-ink:#f4fbef;--brick:#c23a26;--mithril:#3f6475;--ember:#b4651c;--violet:#7a4bb0;
+  --shadow:0 14px 34px #5a46241f;--topbar:#efe6d0e8;--rune:#94680f14;
+  color-scheme:light;
+}
+:root{--font-display:Cinzel,"Trajan Pro",Georgia,serif;--font-body:Alegreya,Georgia,"Times New Roman",serif;--radius:18px;--max:1180px;--gutter:36px;--top-h:64px}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top-h) + 20px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;overflow-x:clip;background:radial-gradient(ellipse at 8% 0%,var(--bg-glow-a) 0,transparent 34rem),radial-gradient(ellipse at 100% 28%,var(--bg-glow-b) 0,transparent 32rem),var(--bg);color:var(--text);font:17px/1.6 var(--font-body);transition:background-color .3s,color .3s}
+a{color:var(--gold2);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--text)}
+button,input{font:inherit;margin:0;color:inherit}button{cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(calc(100% - var(--gutter)),var(--max));margin-inline:auto}
+h1,h2,h3,p{margin-top:0}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:20;background:var(--topbar);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line-soft)}
+.topinner{min-height:var(--top-h);display:flex;align-items:center;justify-content:space-between;gap:0 14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.84rem;min-width:0;flex:1 1 auto;color:var(--text);text-decoration:none}
+.brand>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brandmark{flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);transform:rotate(45deg);border-radius:8px}
+.brandmark span{transform:rotate(-45deg);font-size:1rem}
+.nav{display:flex;gap:22px;font-size:.95rem;color:var(--muted)}
+.nav a{color:inherit;text-decoration:none;padding:5px 0}.nav a:hover{color:var(--gold2)}
+.nav a[aria-current="page"]{color:var(--gold2);border-bottom:1px solid var(--gold)}
+.top-actions{display:flex;align-items:center;gap:6px}
+.iconbtn{flex:none;width:42px;height:42px;display:grid;place-items:center;background:transparent;border:1px solid transparent;border-radius:10px;color:var(--gold);padding:0}
+.iconbtn:hover{border-color:var(--line)}.iconbtn svg{width:20px;height:20px}
+[data-theme="dark"] .icon-sun,[data-theme="light"] .icon-moon{display:none}
+.menu-toggle{display:none;font-size:1.5rem;line-height:1}
+.topprogress{position:absolute;left:0;right:0;bottom:-1px;height:2px}
+.topprogress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--violet),var(--gold));transition:width .35s}
+
+/* Hero */
+.hero{padding:64px 0 36px;position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.9fr);gap:44px;align-items:center}
+.hero:after{content:"ᛟ";position:absolute;left:44%;top:-20px;font-family:Georgia,serif;font-size:clamp(9rem,24vw,22rem);line-height:1;color:var(--rune);pointer-events:none;z-index:-1}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;font-weight:700}
+.eyebrow:before{content:"";flex:none;height:1px;width:34px;background:var(--gold)}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.3rem,6vw,4.8rem);line-height:1.04;margin:18px 0 20px}
+h1 em{font-style:normal;color:var(--gold)}
+.lede{max-width:600px;color:var(--soft);font-size:clamp(1.05rem,1.8vw,1.2rem)}
+.backlink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:.95rem}
+
+.panel{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center}
+.ring{position:relative;width:120px;height:120px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .track{fill:none;stroke:var(--line);stroke-width:9}
+.ring .fill{fill:none;stroke:url(#ringGrad);stroke-width:9;stroke-linecap:round;transition:stroke-dashoffset .5s ease}
+.ring-label{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring-label strong{font-family:var(--font-display);font-size:1.6rem;line-height:1}
+.ring-label span{font-size:.82rem;color:var(--muted)}
+.rlist{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.rlist li{display:flex;justify-content:space-between;gap:12px;font-size:.95rem}
+.rlist b{font-family:var(--font-display);font-variant-numeric:tabular-nums}
+.panel-note{grid-column:1 / -1;margin:0;color:var(--muted);font-size:.86rem;border-top:1px dashed var(--line);padding-top:12px}
+
+/* Raridade */
+.rar{font-size:.74rem;border-radius:6px;padding:2px 8px;line-height:1.5;border:1px solid;font-variant-numeric:tabular-nums}
+.rar.common{color:var(--muted);border-color:var(--line)}
+.rar.uncommon{color:var(--green);border-color:color-mix(in srgb,var(--green) 50%,transparent)}
+.rar.rare{color:var(--mithril);border-color:color-mix(in srgb,var(--mithril) 50%,transparent)}
+.rar.epic{color:var(--violet);border-color:color-mix(in srgb,var(--violet) 55%,transparent);background:color-mix(in srgb,var(--violet) 8%,transparent)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.dot.common{background:var(--muted)}.dot.uncommon{background:var(--green)}.dot.rare{background:var(--mithril)}.dot.epic{background:var(--violet)}
+
+/* Toolbar */
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:10px 0 6px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.segmented{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel2)}
+.segmented button{border:0;background:transparent;color:var(--muted);padding:9px 14px;min-height:42px;font-size:.92rem}
+.segmented button+button{border-left:1px solid var(--line)}
+.segmented button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink);font-weight:700}
+.search{position:relative;flex:1 1 260px;max-width:420px}
+.search svg{position:absolute;left:13px;top:50%;width:17px;height:17px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:9px 14px 9px 40px;font-size:1rem;min-height:42px}
+.search input::placeholder{color:var(--muted);opacity:.85}
+
+/* Capítulos */
+.chapter{margin-top:42px;scroll-margin-top:calc(var(--top-h) + 12px)}
+.chapter-head{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:end;padding-bottom:12px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.chapter-num{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3.4rem);line-height:.85;color:var(--gold)}
+.chapter-head h2{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);margin:0;line-height:1.15}
+.chapter-head p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.chapter-count{font-family:var(--font-display);color:var(--muted);font-size:1.1rem;white-space:nowrap}
+.chapter.complete .chapter-count{color:var(--green)}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr));gap:14px}
+.ach{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:16px 46px 16px 16px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,var(--panel2),var(--panel));cursor:pointer;transition:border-color .2s,transform .2s,background-color .3s;-webkit-tap-highlight-color:transparent}
+.ach:hover{border-color:var(--gold);transform:translateY(-2px)}
+.ach[data-rarity="epic"]{box-shadow:inset 3px 0 0 color-mix(in srgb,var(--violet) 70%,transparent)}
+.ach input{appearance:none;-webkit-appearance:none;position:absolute;top:14px;right:14px;width:24px;height:24px;margin:0;border:2px solid var(--line);border-radius:7px;background:var(--bg);display:grid;place-items:center;cursor:pointer;transition:background-color .2s,border-color .2s}
+.ach:hover input{border-color:var(--gold)}
+.ach input:checked{background:var(--green);border-color:var(--green)}
+.ach input:checked:after{content:"✓";font-size:15px;color:var(--green-ink);font-weight:900}
+.ach input:focus-visible{outline:none}
+.ach:has(input:focus-visible){outline:2px solid var(--gold);outline-offset:2px}
+.ach-icon{width:64px;height:64px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--bg)}
+.ach-icon img{display:block;width:100%;height:100%;filter:grayscale(1) brightness(.6);transition:filter .35s}
+.ach:hover .ach-icon img{filter:grayscale(.4) brightness(.85)}
+.ach:has(input:checked){border-color:color-mix(in srgb,var(--green) 55%,transparent)}
+.ach:has(input:checked) .ach-icon{border-color:var(--gold);box-shadow:0 0 14px color-mix(in srgb,var(--gold) 35%,transparent)}
+.ach:has(input:checked) .ach-icon img{filter:none}
+.ach:has(input:checked) .ach-tip,.ach:has(input:checked) .ach-desc{opacity:.6}
+.ach-copy{display:flex;flex-direction:column;min-width:0}
+.ach-name{font-weight:700;line-height:1.3}
+.ach-desc{font-style:italic;color:var(--muted);font-size:.93rem;margin-top:2px}
+.ach-tip{color:var(--soft);font-size:.95rem;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
+.rota-link{display:block;margin-top:4px;color:var(--gold2);font-size:.9rem}
+.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 8px;line-height:1.5}
+.flash{animation:flash 1.2s ease}@keyframes flash{30%{box-shadow:0 0 0 4px var(--gold)}}
+.empty-state{text-align:center;color:var(--muted);padding:40px 0}
+.empty-state strong{display:block;font-family:var(--font-display);font-size:1.3rem;color:var(--text);margin-bottom:4px}
+
+.sources{margin-top:48px;padding:22px;border:1px solid var(--line);background:var(--panel);border-radius:16px}
+.sources h2{font-family:var(--font-display);font-size:1.2rem;margin:0 0 8px}
+.sources ul{padding-left:1.2rem;margin:0}.sources li{margin:8px 0;color:var(--soft);font-size:.95rem}
+.sources a{overflow-wrap:anywhere}
+footer{padding:40px 0 calc(60px + env(safe-area-inset-bottom));color:var(--muted);font-size:.88rem}
+.footerline{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:18px}
+
+@media(max-width:960px){.hero{grid-template-columns:1fr;gap:28px}.hero:after{left:auto;right:2%}}
+@media(max-width:760px){
+ .menu-toggle{display:grid}
+ .nav{display:none;order:3;flex-basis:100%;flex-direction:column;gap:0;padding:4px 0 10px;border-top:1px solid var(--line-soft);font-size:1.05rem}
+ .nav.active{display:flex}
+ .nav a{padding:12px 4px;border-bottom:1px solid var(--line-soft)}.nav a:last-child{border-bottom:0}
+ .nav a[aria-current="page"]{border-bottom:1px solid var(--line-soft)}
+ .hero{padding:34px 0 26px}
+ .toolbar{padding:14px}
+ .segmented{width:100%}.segmented button{flex:1}
+ .search{max-width:none}
+}
+@media(max-width:420px){
+ :root{--gutter:28px;--radius:16px}
+ body{font-size:16px}
+ .brand{font-size:.74rem;letter-spacing:.05em}
+ .panel{grid-template-columns:96px 1fr;gap:14px;padding:18px 16px}
+ .ring{width:96px;height:96px}.ring-label strong{font-size:1.3rem}
+ .chapter-head{grid-template-columns:auto 1fr}.chapter-count{grid-column:1 / -1}
+ .ach{grid-template-columns:52px minmax(0,1fr);gap:12px;padding:14px 42px 14px 14px}
+ .ach-icon{width:52px;height:52px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap topinner">
+  <a class="brand" href="index.html"><span class="brandmark"><span>✦</span></span><span>Middle-earth field guide</span></a>
+  <nav class="nav" id="mainNav" aria-label="Navegação principal">
+   <a href="index.html#rota">Rota</a><a href="index.html#custos">Custos</a><a href="conquistas.html" aria-current="page">Conquistas</a>
+  </nav>
+  <div class="top-actions">
+   <button class="iconbtn" id="themeBtn" type="button" aria-label="Alternar tema claro/escuro">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+   </button>
+   <button class="iconbtn menu-toggle" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+ </div>
+ <div class="topprogress" aria-hidden="true"><i id="topFill"></i></div>
+</header>
+
+<main class="wrap">
+ <section class="hero">
+  <div>
+   <div class="eyebrow">Extra · Conquistas da Steam</div>
+   <h1>39 conquistas.<br><em>Rumo ao 100%.</em></h1>
+   <p class="lede">Todas as conquistas de <strong>LEGO The Hobbit</strong> na Steam, com uma dica direta de como conseguir cada uma e a raridade entre os jogadores. Só 6,8% dos jogadores chegaram a 100%.</p>
+   <a class="backlink" href="index.html#rota">← Voltar para a rota de multiplicadores</a>
+  </div>
+  <aside class="panel" aria-label="Seu progresso">
+   <div class="ring">
+    <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" x2="1"><stop offset="0" stop-color="var(--violet)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" id="ringFill" cx="60" cy="60" r="52"/></svg>
+    <div class="ring-label"><strong id="ringPct">0%</strong><span id="ringSub">0/39</span></div>
+   </div>
+   <ul class="rlist">
+    <li><span><i class="dot epic"></i>Épicas <small>(&lt;8%)</small></span><b id="r-epic">0/14</b></li>
+    <li><span><i class="dot rare"></i>Raras <small>(8–15%)</small></span><b id="r-rare">0/5</b></li>
+    <li><span><i class="dot uncommon"></i>Incomuns <small>(15–30%)</small></span><b id="r-uncommon">0/13</b></li>
+    <li><span><i class="dot common"></i>Comuns <small>(30%+)</small></span><b id="r-common">0/7</b></li>
+   </ul>
+   <p class="panel-note">Raridade = % global de jogadores da Steam que desbloquearam, coletada em 09/10/2026.</p>
+  </aside>
+ </section>
+
+ <div class="toolbar">
+  <div class="segmented" role="group" aria-label="Filtrar conquistas">
+   <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+   <button type="button" data-filter="pending" aria-pressed="false">Pendentes</button>
+   <button type="button" data-filter="done" aria-pressed="false">Concluídas</button>
+  </div>
+  <label class="search">
+   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+   <input type="search" id="searchInput" placeholder="Buscar conquista ou dica… (ex.: Beorn, mithril, épica)" aria-label="Buscar conquista">
+  </label>
+ </div>
+
+  <section class="chapter" id="historia">
+   <header class="chapter-head"><span class="chapter-num">I</span><div><h2>História</h2><p>As 16 fases da campanha, em ordem</p></div><span class="chapter-count">0/16</span></header>
+   <div class="grid">
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT1">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent1.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Cidade transformada em cinzas</span>
+       <span class="ach-desc">“Conclua ‘O Maior Reino na Terra-média’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 1 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 58,8%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT2">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent2.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Em um buraco no chão...</span>
+       <span class="ach-desc">“Conclua ‘Uma Festa Inesperada’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 2 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 52,9%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT3">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent3.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">De volta para onde veio</span>
+       <span class="ach-desc">“Conclua ‘Azog, o Profano’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 3 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 44,4%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT4">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent4.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Estou Petrificado</span>
+       <span class="ach-desc">“Conclua ‘Carneiro Assado’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 4 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 38,7%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT5">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent5.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Mais que um abridor de cartas!</span>
+       <span class="ach-desc">“Conclua ‘Tesouro de Troll’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 5 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 34,5%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT6">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent6.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Mais do que uma tempestade!</span>
+       <span class="ach-desc">“Conclua ‘Sobre e Sob a Colina’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 6 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar common">Comum · 31,1%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT7">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent7.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">É o suficiente...</span>
+       <span class="ach-desc">“Conclua ‘Cidade dos Orcs’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 7 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 29,1%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT8">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent8.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Eu acredito que o pior já passou</span>
+       <span class="ach-desc">“Conclua ‘Da Frigideira Para o Fogo…’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 8 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 27,6%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT9">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent9.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">O que você precisa?</span>
+       <span class="ach-desc">“Conclua ‘Estranhos Alojamentos’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 9 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 26,8%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT10">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent10.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Aranha, aranhona!</span>
+       <span class="ach-desc">“Conclua ‘Moscas e Aranhas’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 10 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 25,9%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT11">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent11.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Escapou das masmorras do Rei</span>
+       <span class="ach-desc">“Conclua ‘Barris Soltos’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 11 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 25,2%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT12">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent12.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">O Retorno do Rei da Montanha</span>
+       <span class="ach-desc">“Conclua ‘Uma Acolhida Calorosa’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 12 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 24,4%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT13">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent13.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Ele está convocando seus servos</span>
+       <span class="ach-desc">“Conclua ‘Procurando Provas’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 13 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 24,0%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT14">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent14.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">É sem dúvida uma armadilha</span>
+       <span class="ach-desc">“Conclua ‘O Necromante’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 14 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 23,5%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT15">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent15.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Hora de ganhar sua recompensa</span>
+       <span class="ach-desc">“Conclua ‘Na Soleira da Porta’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 15 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 22,9%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="COMPLETE_STORYEVENT16">
+      <span class="ach-icon"><img src="assets/achievements/complete_storyevent16.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Pense numa fornalha, com asas</span>
+       <span class="ach-desc">“Conclua ‘Informação de Dentro’”</span>
+       <span class="ach-tip">Desbloqueia ao concluir a fase 16 no Modo História; acontece naturalmente seguindo a campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 22,6%</span></span>
+      </span>
+     </label>
+   </div>
+  </section>
+  <section class="chapter" id="habilidades">
+   <header class="chapter-head"><span class="chapter-num">II</span><div><h2>Habilidades e diversão</h2><p>Conquistas rápidas de mecânicas, personagens e itens</p></div><span class="chapter-count">0/12</span></header>
+   <div class="grid">
+     <label class="ach" data-rarity="common">
+      <input type="checkbox" data-id="COLLECT_99_OF_ANY_LOOT">
+      <span class="ach-icon"><img src="assets/achievements/collect_99_of_any_loot.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Profissão de Ladrão</span>
+       <span class="ach-desc">“Colete 99 de qualquer tesouro”</span>
+       <span class="ach-tip">Sai cedo na história: madeira, pedra, couro e corda são os materiais mais comuns e chegam a 99 rapidamente.</span>
+       <span class="meta"><span class="rar common">Comum · 42,2%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="PLAY_A_LEVEL_IN_COOP">
+      <span class="ach-icon"><img src="assets/achievements/play_a_level_in_coop.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Compartilhando uma aventura</span>
+       <span class="ach-desc">“Jogue uma fase em modo co-op”</span>
+       <span class="ach-tip">Não precisa de outra pessoa: ative o segundo jogador (no teclado padrão, F2) e conclua uma fase com ele ativo.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 23,3%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="CREATE_A_CUSTOM_CHARACTER">
+      <span class="ach-icon"><img src="assets/achievements/create_a_custom_character.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Quem é a criatura horripilante?</span>
+       <span class="ach-desc">“Crie um personagem personalizado”</span>
+       <span class="ach-tip">Use o Customizador de Personagens em Lake-town.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 15,6%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="rare">
+      <input type="checkbox" data-id="TRANSFORM_TO_BEORNS_BEAR_FORM">
+      <span class="ach-icon"><img src="assets/achievements/transform_to_beorns_bear_form.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Na Pele de Beorn</span>
+       <span class="ach-desc">“Transforme-se na forma de urso de Beorn”</span>
+       <span class="ach-tip">Depois de desbloquear Beorn, segure o botão especial com ele para virar urso.</span>
+       <span class="meta"><span class="rar rare">Rara · 12,1%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="uncommon">
+      <input type="checkbox" data-id="OBTAIN_X_BONUSES_DURING_INSTRUCTION_BUILDS">
+      <span class="ach-icon"><img src="assets/achievements/obtain_x_bonuses_during_instruction_builds.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Construtor Mestre</span>
+       <span class="ach-desc">“Consiga 150.000 peças de bônus das Instruções de Construções.”</span>
+       <span class="ach-tip">Nas placas de construção, escolha rápido e certo a peça que falta para ganhar o bônus de studs. Acumule 150.000 nesses bônus; vem naturalmente ao longo da campanha.</span>
+       <span class="meta"><span class="rar uncommon">Incomum · 20,9%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="rare">
+      <input type="checkbox" data-id="COMPLETE_BONUS_LEVEL">
+      <span class="ach-icon"><img src="assets/achievements/complete_bonus_level.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Pisão do Gigante de Pedra</span>
+       <span class="ach-desc">“Conclua a fase bônus”</span>
+       <span class="ach-tip">A fase bônus é liberada depois das 16 fases da história; o acesso fica perto de Erebor.</span>
+       <span class="meta"><span class="rar rare">Rara · 12,1%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="rare">
+      <input type="checkbox" data-id="COMPLETE_MINING_GAME_PERFECTLY_X_TIMES">
+      <span class="ach-icon"><img src="assets/achievements/complete_mining_game_perfectly_x_times.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">A Riqueza está na Terra</span>
+       <span class="ach-desc">“Conclua perfeitamente o jogo de mineração 50 vezes.”</span>
+       <span class="ach-tip">Com um personagem minerador, aperte ataque quando a seta estiver no centro do medidor: o depósito quebra num golpe só. Repita 50 vezes.</span>
+       <span class="meta"><span class="rar rare">Rara · 10,4%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="USE_STARTLE_ABILITY_ON_X_ENEMIES">
+      <span class="ach-icon"><img src="assets/achievements/use_startle_ability_on_x_enemies.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Conjurador de Truques Baratos</span>
+       <span class="ach-desc">“Use a habilidade surpreendente de Gandalf para ofuscar 50 inimigos”</span>
+       <span class="ach-tip">Com Gandalf, segure o botão especial perto de inimigos para ofuscá-los. O Free Play de Azog, o Profano junta muitos inimigos: 12 a 15 usos costumam bastar.</span>
+       <span class="meta"><span class="rar epic">Épica · 5,9%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="USE_X_BUDDYUP_ATTACKS">
+      <span class="ach-icon"><img src="assets/achievements/use_x_buddyup_attacks.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Nem o Ouro nos Separa</span>
+       <span class="ach-desc">“Use 50 ataques em grupo”</span>
+       <span class="ach-tip">Faça 50 ataques em dupla (Buddy-Up). Sai naturalmente enquanto você busca “Trabalho em Equipe”.</span>
+       <span class="meta"><span class="rar epic">Épica · 5,7%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="USE_EVERY_DWARF_BUDDY_COMBINATION">
+      <span class="ach-icon"><img src="assets/achievements/use_every_dwarf_buddy_combination.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Trabalho em Equipe</span>
+       <span class="ach-desc">“Use todas as combinações de anões da Companhia de Thorin para ataques em grupo”</span>
+       <span class="ach-tip">Controle cada anão da Companhia de Thorin e faça um ataque em dupla com ele. Só conta para o anão que você está controlando, então anote e risque cada um.</span>
+       <span class="meta"><span class="rar epic">Épica · 5,1%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="EQUIP_THORIN_WITH_MITHRIL_MUSHROOM_CROWN">
+      <span class="ach-icon"><img src="assets/achievements/equip_thorin_with_mithril_mushroom_crown.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Alvorecer do Rei Cogumelo</span>
+       <span class="ach-desc">“Equipe Thorin com a Coroa Cogumelo de Mithril”</span>
+       <span class="ach-tip">Forje a Mithril Mushroom Crown (esquema ao norte de Bree, a mesma coroa da etapa 05 da rota) e equipe-a em Thorin. <span class="rota-link">Ver <a href="index.html#rota">etapa 05 da rota</a>.</span></span>
+       <span class="meta"><span class="rar epic">Épica · 7,3%</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="EQUIP_DAZZLE_AND_MITHRIL_ITEMS">
+      <span class="ach-icon"><img src="assets/achievements/equip_dazzle_and_mithril_items.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Senhor do Rebolado</span>
+       <span class="ach-desc">“Equipe-se com a Peruca Deslumbrante, Bastão Rítmico de Mithril e Botas de Dança de Mithril”</span>
+       <span class="ach-tip">Equipe juntos a Peruca Deslumbrante (tesouro do Free Play de Moscas e Aranhas), o Mithril Rhythm Stick e as Mithril Dance Boots. Os dois esquemas ficam em Rivendell: um numa ilha do lago (vá de barco) e outro numa caverna com três interruptores.</span>
+       <span class="meta"><span class="rar epic">Épica · 6,2%</span></span>
+      </span>
+     </label>
+   </div>
+  </section>
+  <section class="chapter" id="colecao">
+   <header class="chapter-head"><span class="chapter-num">III</span><div><h2>Coleção e 100%</h2><p>O fim da jornada: coletar, forjar e completar tudo</p></div><span class="chapter-count">0/11</span></header>
+   <div class="grid">
+     <label class="ach" data-rarity="rare">
+      <input type="checkbox" data-id="OBTAIN_ALL_MASTER_BURGLAR_TITLES">
+      <span class="ach-icon"><img src="assets/achievements/obtain_all_master_burglar_titles.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Por isso um ladrão é necessário!</span>
+       <span class="ach-desc">“Consiga todos os títulos de Ladrão Mestre.”</span>
+       <span class="ach-tip">Atinja a meta de studs de Ladrão Mestre em cada fase da história. Deixe para depois dos multiplicadores: com eles fica muito mais fácil.</span>
+       <span class="meta"><span class="rar rare">Rara · 8,2%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="rare">
+      <input type="checkbox" data-id="COLLECT_ALL_TREASURE_ITEMS">
+      <span class="ach-icon"><img src="assets/achievements/collect_all_treasure_items.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Peças de Crochê da sua Mãe</span>
+       <span class="ach-desc">“Colete todos os itens de tesouro nas fases.”</span>
+       <span class="ach-tip">São 4 tesouros em cada fase da história, a maioria no Free Play. O Red Brick Treasure Item Detector aponta onde estão.</span>
+       <span class="meta"><span class="rar rare">Rara · 8,0%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COLLECT_ALL_MINIKITS">
+      <span class="ach-icon"><img src="assets/achievements/collect_all_minikits.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Nosso Ouro Esquecido Há Tempos</span>
+       <span class="ach-desc">“Colete todos os Minikits.”</span>
+       <span class="ach-tip">São 10 baús de minikit por fase. Antes, pegue o Red Brick Minikit Detector: forje as Mithril Bandit Gloves (esquema em Lake-town) e entregue no Reino de Thranduil.</span>
+       <span class="meta"><span class="rar epic">Épica · 7,8%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COLLECT_ALL_SCHEMATICS">
+      <span class="ach-icon"><img src="assets/achievements/collect_all_schematics.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Trabalhando nas Vilas dos Homens</span>
+       <span class="ach-desc">“Colete todos os projetos.”</span>
+       <span class="ach-tip">São 32 esquemas de ferreiro, parte nas fases (Free Play) e parte na Terra-média. Eles aparecem no mapa, mas alguns só depois de certas missões.</span>
+       <span class="meta"><span class="rar epic">Épica · 7,7%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COLLECT_ALL_MITHRIL_BRICKS">
+      <span class="ach-icon"><img src="assets/achievements/collect_all_mithril_bricks.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">A Ganância dos Anões</span>
+       <span class="ach-desc">“Colete todos os blocos de mithril.”</span>
+       <span class="ach-tip">São 250 Mithril Bricks, vindos de missões, puzzles e Free Play. O Red Brick Mithril Brick Detector aponta os que faltam na Terra-média.</span>
+       <span class="meta"><span class="rar epic">Épica · 7,1%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="FORGE_ALL_MITHRIL_TREASURES">
+      <span class="ach-icon"><img src="assets/achievements/forge_all_mithril_treasures.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Objetos de grande beleza</span>
+       <span class="ach-desc">“Forje todos os itens de tesouro de mithril.”</span>
+       <span class="ach-tip">Forje todos os itens de mithril em Bree. Se você forjar tudo perfeito, ela sai junto com a próxima.</span>
+       <span class="meta"><span class="rar epic">Épica · 7,0%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="FORGE_ALL_PERFECT_MITHRIL_TREASURES">
+      <span class="ach-icon"><img src="assets/achievements/forge_all_perfect_mithril_treasures.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Habilidade inigualável dos anões</span>
+       <span class="ach-desc">“Forje todos os itens de tesouro de mithril perfeitos.”</span>
+       <span class="ach-tip">Ao forjar, encha o anel interno apertando o botão quando ele brilhar dourado. Forjar perfeito de primeira evita refazer depois; o Red Brick Perfect Forging deixa tudo automático.</span>
+       <span class="meta"><span class="rar epic">Épica · 6,7%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COMPLETE_ALL_MIDDLE_EARTH_QUESTS">
+      <span class="ach-icon"><img src="assets/achievements/complete_all_middle_earth_quests.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Sempre o “Herói do Povo”</span>
+       <span class="ach-desc">“Conclua todas as missões na Terra-média.”</span>
+       <span class="ach-tip">São 137 missões na Terra-média, e as de Red Brick contam (todas as entregas da rota entram aqui).</span>
+       <span class="meta"><span class="rar epic">Épica · 7,0%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COLLECT_ALL_CHARACTERS">
+      <span class="ach-icon"><img src="assets/achievements/collect_all_characters.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Uma reunião muito alegre</span>
+       <span class="ach-desc">“Colete todos os personagens.”</span>
+       <span class="ach-tip">São 96 personagens para desbloquear e comprar. Alguns só aparecem depois de missões específicas, e um deles só depois de todos os Red Bricks.</span>
+       <span class="meta"><span class="rar epic">Épica · 6,9%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="COLLECT_ONE_BILLION_STUDS">
+      <span class="ach-icon"><img src="assets/achievements/collect_one_billion_studs.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">O Incalculavelmente Opulento</span>
+       <span class="ach-desc">“Colete 10.000.000.000 peças.”</span>
+       <span class="ach-tip">Você precisa ter 10 bilhões de studs ao mesmo tempo. Com todos os multiplicadores ativos (x2·x4·x6·x8·x10 = <strong>x3840</strong>), repita fases da história ou farme Bree montado num warg. <span class="rota-link">Objetivo final da <a href="index.html#rota">rota de multiplicadores</a>.</span></span>
+       <span class="meta"><span class="rar epic">Épica · 5,4%</span><span class="tag">Só 1 jogador</span></span>
+      </span>
+     </label>
+     <label class="ach" data-rarity="epic">
+      <input type="checkbox" data-id="WATCH_100_PERCENT_ENDING">
+      <span class="ach-icon"><img src="assets/achievements/watch_100_percent_ending.jpg" alt="" width="64" height="64" loading="lazy" decoding="async"></span>
+      <span class="ach-copy">
+       <span class="ach-name">Continua...</span>
+       <span class="ach-desc">“Consiga 100% de progresso”</span>
+       <span class="ach-tip">Chegue a 100% de progresso do jogo. Se as outras conquistas de coleção estiverem feitas, ela vem junto.</span>
+       <span class="meta"><span class="rar epic">Épica · 6,8%</span></span>
+      </span>
+     </label>
+   </div>
+  </section>
+
+ <div class="empty-state" id="emptyState" hidden><strong>Nenhum rastro por aqui.</strong>Nenhuma conquista corresponde à busca ou ao filtro atual.</div>
+
+ <section class="sources">
+  <h2>Fontes</h2>
+  <ul>
+   <li><a href="https://steamcommunity.com/stats/285160/achievements/?l=brazilian" target="_blank" rel="noopener noreferrer">Steam — Estatísticas de conquistas de LEGO The Hobbit</a>: nomes, descrições oficiais, ícones e porcentagens globais.</li>
+   <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=372668674" target="_blank" rel="noopener noreferrer">Steam Community — 100% Achievement Guide</a>: dicas práticas por conquista.</li>
+   <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007" target="_blank" rel="noopener noreferrer">Steam Community — BLVGH: LEGO The Hobbit</a>: totais de coleção (250 Mithril Bricks, 32 esquemas, 137 missões, 96 personagens) e detalhes de forja.</li>
+  </ul>
+ </section>
+ <footer><div class="footerline"></div><p>LEGO The Hobbit · Guia comunitário não oficial. Nomes e ícones de conquistas pertencem aos seus respectivos proprietários. Esta página não é afiliada nem endossada pela LEGO, Warner Bros. ou Valve.</p></footer>
+</main>
+
+<script>
+(function(){
+ const KEY='hobbit-achievements-v1', THEME='hobbit-theme', FILTER='hobbit-achievements-filter-v1';
+ const store=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+ const read=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+ const boxes=[...document.querySelectorAll('.ach input[data-id]')];
+ const chapters=[...document.querySelectorAll('.chapter')];
+ const ring=document.getElementById('ringFill'), C=2*Math.PI*52;
+ ring.style.strokeDasharray=C; ring.style.strokeDashoffset=C;
+ const state={filter:'all',query:''};
+
+ try{const saved=JSON.parse(read(KEY)||'{}');boxes.forEach(b=>b.checked=!!saved[b.dataset.id]);}catch(e){}
+
+ function update(){
+   const done=boxes.filter(b=>b.checked).length, pct=Math.round(done/boxes.length*100);
+   document.getElementById('ringPct').textContent=pct+'%';
+   document.getElementById('ringSub').textContent=`${done}/${boxes.length}`;
+   document.getElementById('topFill').style.width=pct+'%';
+   ring.style.strokeDashoffset=C*(1-done/boxes.length);
+   ['epic','rare','uncommon','common'].forEach(r=>{
+     const bs=boxes.filter(b=>b.closest('.ach').dataset.rarity===r);
+     document.getElementById('r-'+r).textContent=`${bs.filter(b=>b.checked).length}/${bs.length}`;
+   });
+   chapters.forEach(ch=>{
+     const bs=[...ch.querySelectorAll('input[data-id]')], d=bs.filter(b=>b.checked).length;
+     ch.querySelector('.chapter-count').textContent=`${d}/${bs.length}`;
+     ch.classList.toggle('complete',d===bs.length);
+   });
+   const data={};boxes.forEach(b=>{if(b.checked)data[b.dataset.id]=true});
+   store(KEY,JSON.stringify(data));
+   applyFilter();
+ }
+
+ const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+ function applyFilter(){
+   const q=norm(state.query.trim());let visible=0;
+   boxes.forEach(b=>{
+     const card=b.closest('.ach');
+     const ok=(state.filter==='all'||(state.filter==='done')===b.checked)&&(!q||norm(card.textContent).includes(q));
+     card.hidden=!ok;if(ok)visible++;
+   });
+   chapters.forEach(ch=>ch.hidden=!ch.querySelector('.ach:not([hidden])'));
+   document.getElementById('emptyState').hidden=visible>0;
+ }
+ function setFilter(f,persist){
+   state.filter=f;
+   document.querySelectorAll('.segmented button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===f)));
+   if(persist)store(FILTER,f);
+   applyFilter();
+ }
+ document.querySelectorAll('.segmented button').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter,true)));
+ document.getElementById('searchInput').addEventListener('input',e=>{state.query=e.target.value;applyFilter();});
+ boxes.forEach(b=>b.addEventListener('change',update));
+ const sf=read(FILTER); if(sf==='pending'||sf==='done')state.filter=sf;
+ setFilter(state.filter,false);
+ update();
+
+ // Menu
+ const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+ function setMenu(o){nav.classList.toggle('active',o);menuBtn.setAttribute('aria-expanded',o);menuBtn.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');menuBtn.textContent=o?'✕':'☰';}
+ menuBtn.addEventListener('click',()=>setMenu(!nav.classList.contains('active')));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);});
+ window.matchMedia('(min-width:761px)').addEventListener('change',e=>{if(e.matches)setMenu(false);});
+
+ // Tema (mesma preferência da página da rota)
+ const meta=document.querySelector('meta[name="theme-color"]');
+ function applyTheme(t){document.documentElement.setAttribute('data-theme',t);if(meta)meta.setAttribute('content',t==='dark'?'#0c100d':'#efe6d0');}
+ applyTheme(document.documentElement.getAttribute('data-theme')||'dark');
+ document.getElementById('themeBtn').addEventListener('click',()=>{const n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';applyTheme(n);store(THEME,n);});
+ if(!read(THEME)&&window.matchMedia)matchMedia('(prefers-color-scheme: light)').addEventListener('change',e=>{if(!read(THEME))applyTheme(e.matches?'light':'dark');});
+})();
+</script>
+</body>
+</html>
