@@ -109,7 +109,18 @@ Se a atualização semanal falhar com erro de permissão, habilite em **Settings
 
 - Cores: tokens no topo de `assets/css/base.css` (um bloco para o tema escuro, outro para o claro). Mudar ali vale para todas as páginas.
 - Fontes: Cinzel (títulos) e Alegreya (texto), via Google Fonts.
-- A imagem de compartilhamento (`og-image.png`, 1200×630) é estática; se o visual mudar muito, vale gerar uma nova.
+### Imagem de compartilhamento (WhatsApp, Discord…)
+
+`og-image.jpg` (1200×630) é gerada a partir de `tools/og/og-image.html`, que lê os números (multiplicadores, studs, tarefas) de `data/rota.json`. Regenere quando esses números ou o visual mudarem:
+
+1. Com o servidor local rodando (veja acima), gere o PNG com o Chrome:
+
+   ```bash
+   chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=8000 --screenshot=og.png http://localhost:8000/tools/og/og-image.html
+   ```
+
+2. Converta para JPG (qualidade ~85) e salve como `og-image.jpg` na raiz. Mantenha abaixo de ~300 KB, ou o WhatsApp pode ignorar a imagem.
+3. Para o WhatsApp buscar a imagem nova, mude o nome do arquivo (ex.: `og-image-2.jpg`) e atualize as tags `og:image`/`twitter:image` das duas páginas, ou teste com `?v=2` no fim do link.
 
 ## Fontes do conteúdo
 
