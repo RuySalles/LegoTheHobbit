@@ -48,7 +48,7 @@ def main():
     if '--check' in sys.argv:
         return
     data['updated'] = datetime.now(timezone.utc).date().isoformat()
-    FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(f'Gravado em {FILE.relative_to(ROOT)} (updated = {data["updated"]}).')
 
 if __name__ == '__main__':

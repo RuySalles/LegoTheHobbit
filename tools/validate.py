@@ -121,7 +121,7 @@ def main():
     lock = json.loads(LOCK.read_text(encoding='utf-8')) if LOCK.is_file() else {'rota': [], 'conquistas': []}
     if '--lock' in sys.argv and not errors:
         for k in ids: lock[k] = sorted(set(lock.get(k, [])) | set(ids[k]), key=lambda x: (len(x), x))
-        LOCK.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        LOCK.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
         print(f'IDs registrados em {LOCK.relative_to(ROOT)}.')
     for k in ids:
         gone = sorted(set(lock.get(k, [])) - set(ids[k]))
