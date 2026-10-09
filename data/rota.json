@@ -1,0 +1,898 @@
+{
+  "_leia-me": "Conteúdo da rota. Veja o README.md antes de editar. Regra de ouro: nunca mude ou reutilize o \"id\" de uma tarefa (t1, t2…), porque é ele que guarda o progresso de quem já usa o site. Tarefas novas recebem o próximo número livre.",
+  "materials": [
+    {
+      "key": "mithril",
+      "name": "Mithril Bricks"
+    },
+    {
+      "key": "madeira",
+      "name": "madeira"
+    },
+    {
+      "key": "prata",
+      "name": "prata"
+    },
+    {
+      "key": "cenouras",
+      "name": "cenouras"
+    },
+    {
+      "key": "pedra",
+      "name": "pedra"
+    },
+    {
+      "key": "esmeraldas",
+      "name": "esmeraldas"
+    },
+    {
+      "key": "couro",
+      "name": "couro"
+    },
+    {
+      "key": "cobre",
+      "name": "cobre"
+    },
+    {
+      "key": "coxas",
+      "name": "coxas"
+    },
+    {
+      "key": "diamantes",
+      "name": "diamantes"
+    },
+    {
+      "key": "peixes",
+      "name": "peixes"
+    },
+    {
+      "key": "corda",
+      "name": "corda"
+    },
+    {
+      "key": "paes",
+      "name": "pães"
+    },
+    {
+      "key": "safiras",
+      "name": "safiras"
+    },
+    {
+      "key": "ouro",
+      "name": "ouro"
+    },
+    {
+      "key": "rubis",
+      "name": "rubis"
+    },
+    {
+      "key": "ferro",
+      "name": "ferro"
+    }
+  ],
+  "redBricks": [
+    {
+      "label": "ATR",
+      "name": "Attract Studs",
+      "tableName": "Attract Studs",
+      "item": "Mithril Mirror Armour",
+      "quest": "No Harm in Armour",
+      "where": "Lake-town",
+      "cost": 175000,
+      "unlock": "t6",
+      "multiplier": false
+    },
+    {
+      "label": "x2",
+      "name": "Multiplicador x2",
+      "tableName": "x2",
+      "item": "Mithril Flail",
+      "quest": "A Flail of a Time",
+      "where": "Hobbiton · Dia",
+      "cost": 500000,
+      "unlock": "t8",
+      "multiplier": true
+    },
+    {
+      "label": "x4",
+      "name": "Multiplicador x4",
+      "tableName": "x4",
+      "item": "Mithril Shadow Blade",
+      "quest": "Dual Wielding",
+      "where": "High Pass · Noite",
+      "cost": 1500000,
+      "unlock": "t12",
+      "multiplier": true
+    },
+    {
+      "label": "x6",
+      "name": "Multiplicador x6",
+      "tableName": "x6",
+      "item": "Mithril Construction Hat",
+      "quest": "Build Day",
+      "where": "Moria · Noite",
+      "cost": 4500000,
+      "unlock": "t16",
+      "multiplier": true
+    },
+    {
+      "label": "x8",
+      "name": "Multiplicador x8",
+      "tableName": "x8",
+      "item": "Mithril Beanstalk",
+      "quest": "Bilbo and the Beanstalk",
+      "where": "The Barrow-downs · Noite",
+      "cost": 10000000,
+      "unlock": "t20",
+      "multiplier": true
+    },
+    {
+      "label": "x10",
+      "name": "Multiplicador x10",
+      "tableName": "x10",
+      "item": "Mithril Candle Staff",
+      "quest": "Candle With Care",
+      "where": "Elven Forest",
+      "cost": 20000000,
+      "unlock": "t25",
+      "multiplier": true
+    }
+  ],
+  "stages": [
+    {
+      "title": "Desbloqueios fundamentais",
+      "subtitle": "História 1–6 · acesso ao Free Play e à forja",
+      "tag": "Base",
+      "tasks": [
+        {
+          "id": "t1",
+          "title": "Complete os níveis 1 a 6",
+          "desc": "Avance de <em>Greatest Kingdom in Middle-earth</em> até <em>Over Hill and Under Hill</em>. Isso libera o Free Play dos níveis concluídos e amplia as opções de personagens.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Níveis 1–6"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "title": "Desbloqueie a forja em Bree",
+          "desc": "Complete a missão <em>Smithy in Peril</em> e resgate o ferreiro. Sem isso, os esquemas não podem virar itens de Mithril.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Bree"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "title": "Colete o Mirror Armour no nível 1",
+          "desc": "No Free Play de <em>Greatest Kingdom in Middle-earth</em>, use um elfo para atirar nos encaixes de flecha da área de mineração e alcançar a plataforma elevada.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 1"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "title": "Colete o Flail no nível 6",
+          "desc": "No início de <em>Over Hill and Under Hill</em>, use um elfo nos encaixes de flecha e atravesse os apoios até a plataforma com o esquema.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Primeiro retorno econômico",
+      "subtitle": "Attract Studs e x2 · investimento inicial controlado",
+      "tag": "Prioridade",
+      "tasks": [
+        {
+          "id": "t5",
+          "title": "Fabrique o Mithril Mirror Armour",
+          "desc": "Use a forja em Bree. O item não é um multiplicador; ele é a entrega exigida para desbloquear o extra Attract Studs.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "safiras",
+              10
+            ],
+            [
+              "couro",
+              20
+            ],
+            [
+              "pedra",
+              20
+            ],
+            [
+              "prata",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t6",
+          "title": "Entregue a armadura em Lake-town",
+          "desc": "Complete <em>No Harm in Armour</em>, na região nordeste de Lake-town. A partir da estátua de Lake-town, siga a trilha de studs pela doca até o homem que pede a armadura. Depois compre Attract Studs por 175.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Lake-town"
+            },
+            {
+              "text": "175.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t7",
+          "title": "Fabrique o Mithril Flail",
+          "desc": "Forje o item em Bree usando o esquema coletado no nível 6.",
+          "materials": [
+            [
+              "mithril",
+              6
+            ],
+            [
+              "esmeraldas",
+              5
+            ],
+            [
+              "safiras",
+              5
+            ],
+            [
+              "corda",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t8",
+          "title": "Entregue o Flail em Hobbiton, durante o dia",
+          "desc": "Complete <em>A Flail of a Time</em>, no setor norte de Hobbiton. Compre o Red Brick x2 por 500.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Hobbiton · Dia"
+            },
+            {
+              "text": "500.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preparar habilidades e desbloquear x4",
+      "subtitle": "Avance a história e conclua o puzzle do Shadow Blade",
+      "tag": "Exploração",
+      "tasks": [
+        {
+          "id": "t9",
+          "title": "Avance pelos níveis 7–9 conforme necessário",
+          "desc": "Complete <em>Goblin Town</em> até <em>Queer Lodgings</em> para ampliar o elenco e abrir caminho para as próximas regiões. Não compre personagens antes de confirmar o bloqueio específico.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Níveis 7–9"
+            }
+          ]
+        },
+        {
+          "id": "t10",
+          "title": "Obtenha o esquema Mithril Shadow Blade",
+          "desc": "A área fica ao sul/sudeste de Bree, ao sul de Weathertop. Siga as placas amarelas e vá na direção oposta às roxas; cave no ponto indicado para achar a chave, abra a porta e resolva o trecho com alvos e estátuas. O altar exige gemas.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Sul de Weathertop"
+            },
+            {
+              "text": "Arco + escavação"
+            }
+          ]
+        },
+        {
+          "id": "t11",
+          "title": "Fabrique o Mithril Shadow Blade",
+          "desc": "Volte à forja de Bree e confirme os materiais necessários antes de viajar para a entrega.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "cenouras",
+              25
+            ],
+            [
+              "coxas",
+              10
+            ],
+            [
+              "prata",
+              10
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t12",
+          "title": "Entregue em High Pass, à noite",
+          "desc": "Complete <em>Dual Wielding</em>. O personagem da missão fica em uma área elevada acessada descendo a formação de blocos e atravessando o vão com um ponto de gancho. Compre x4 por 1.500.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "High Pass · Noite"
+            },
+            {
+              "text": "1.500.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multiplicador x6",
+      "subtitle": "Mithril Construction Hat · esquema em Mirkwood, entrega em Moria",
+      "tag": "Corrigido",
+      "tasks": [
+        {
+          "id": "t13",
+          "title": "Desbloqueie a escalada Goblin e a magia de Saruman",
+          "desc": "Use um Goblin para paredes próprias dessa classe e Saruman para quebrar blocos de Mithril. Confirme que esses personagens estão disponíveis antes de iniciar o desvio.",
+          "tags": [
+            {
+              "text": "Habilidades"
+            },
+            {
+              "text": "Goblin"
+            },
+            {
+              "text": "Saruman"
+            }
+          ]
+        },
+        {
+          "id": "t14",
+          "title": "Colete o esquema Mithril Construction Hat em Mirkwood",
+          "desc": "Siga o caminho próximo à casa de Radagast, escale a parede Goblin, atravesse as plataformas e resolva o puzzle da caverna: mova o bloco, acenda o fogo e abra o recipiente após derreter o gelo.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Mirkwood"
+            }
+          ]
+        },
+        {
+          "id": "t15",
+          "title": "Fabrique o Mithril Construction Hat",
+          "desc": "Forje o item em Bree. O nome pode aparecer como Construction Hat ou Construction Helmet em guias diferentes.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "diamantes",
+              10
+            ],
+            [
+              "cobre",
+              10
+            ],
+            [
+              "ouro",
+              5
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t16",
+          "title": "Entregue em Moria, durante a noite",
+          "desc": "A missão <em>Build Day</em> fica em <strong>Moria (Night)</strong>, junto à tenda a oeste do ponto da águia. Entregue o chapéu e compre x6 por 4.500.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Moria · Noite"
+            },
+            {
+              "text": "4.500.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missões em cadeia do x8",
+      "subtitle": "Heirloom in the Making e Weighting for a Stranger · liberam a missão do Beanstalk",
+      "tag": "Corrigido",
+      "note": "A missão do x8 (<em>Bilbo and the Beanstalk</em>) só aparece depois destas duas entregas, feitas nesta ordem. Cada uma também rende um Red Brick extra: Super Slap e Attract Loot.",
+      "tasks": [
+        {
+          "id": "t26",
+          "title": "Colete o esquema Mithril Mushroom Crown",
+          "desc": "Ao norte de Bree, entre na caverna de porta marrom marcada com um “H”. Passe pela escotilha inferior esquerda e atravesse a tábua para pegar a chave. Depois, limpe as pedras no fim da descida, entre pela escotilha que aparece e abra o baú com a chave.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Norte de Bree"
+            }
+          ]
+        },
+        {
+          "id": "t27",
+          "title": "Fabrique a Mithril Mushroom Crown",
+          "desc": "Forje o item em Bree.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "couro",
+              10
+            ],
+            [
+              "peixes",
+              20
+            ],
+            [
+              "coxas",
+              15
+            ],
+            [
+              "paes",
+              10
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t28",
+          "title": "Entregue a coroa em Heirloom in the Making",
+          "desc": "A missão fica numa casa encravada no penhasco, a nordeste de Bree, com a porta cercada de pedras wraith. Suba no penhasco logo acima da porta, quebre as pedras com Bilbo usando o Anel e monte a manivela para abri-la. Entregue a coroa à anã lá dentro; a recompensa é o Red Brick Super Slap.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Nordeste de Bree"
+            },
+            {
+              "text": "Bilbo + Anel"
+            }
+          ]
+        },
+        {
+          "id": "t29",
+          "title": "Colete o esquema Mithril Megapult",
+          "desc": "Perto de Bywater, atravesse a ponte próxima à estátua e procure uma porta prateada com três rodas coloridas acima. Em frente a ela há outra porta com uma águia de pedra: suba com um elfo até a águia e observe as três corujas coloridas, cuja ordem é a combinação. Ajuste as rodas com o estilingue de Ori, entre e quebre o baú de pedra.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Bywater"
+            },
+            {
+              "text": "Elfo + Ori"
+            }
+          ]
+        },
+        {
+          "id": "t30",
+          "title": "Fabrique o Mithril Megapult",
+          "desc": "Forje o item em Bree.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "pedra",
+              25
+            ],
+            [
+              "prata",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t31",
+          "title": "Entregue em Weighting for a Stranger, durante o dia",
+          "desc": "Só aparece depois de <em>Heirloom in the Making</em>. A partir da estátua de Bree, siga a trilha de studs por um curto trecho até a mulher, perto da entrada dos Barrow-downs, e entregue o Megapult. A recompensa é o Red Brick Attract Loot.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bree · Dia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Express Delivery",
+      "subtitle": "Punctual Pumpkins → Cart Departed → Mithril Horse Shoes · libera Double Loot",
+      "tag": "Recomendada",
+      "note": "Segundo o IGN, <em>Express Delivery</em> também é exigida para a missão do x8; os outros guias não a citam. Mesmo que seja opcional, o Red Brick Double Loot dobra os materiais coletados e acelera o farm do restante da rota.",
+      "optional": "Express Delivery",
+      "tasks": [
+        {
+          "id": "t32",
+          "title": "Complete Punctual Pumpkins e Cart Departed",
+          "desc": "À noite, em Bywater, escolte a hobbit das abóboras até Bree, derrotando três grupos de goblins (<em>Punctual Pumpkins</em>). Depois, também à noite, fale com ela em Bree e recupere a carroça roubada seguindo a trilha de studs (<em>Cart Departed</em>).",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Bywater → Bree"
+            },
+            {
+              "text": "Noite"
+            }
+          ]
+        },
+        {
+          "id": "t33",
+          "title": "Colete o esquema Mithril Horse Shoes",
+          "desc": "Em Rivendell, atravesse as plataformas de pedra do lago até uma porta e entre. Acerte a pedra de dica à direita para começar o enigma; as marcas no chão são horas: acerte XII, IV e VI. Em seguida, acerte a pedra atrás da árvore no canto esquerdo, a do topo da coluna caída à direita, a escondida no arbusto à direita e, por fim, a pedra verde.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Rivendell"
+            }
+          ]
+        },
+        {
+          "id": "t34",
+          "title": "Fabrique as Mithril Horse Shoes",
+          "desc": "Forje o item em Bree. É a forja mais cara da rota em Mithril Bricks.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "esmeraldas",
+              20
+            ],
+            [
+              "cenouras",
+              30
+            ],
+            [
+              "paes",
+              10
+            ],
+            [
+              "ferro",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t35",
+          "title": "Entregue as ferraduras em Express Delivery",
+          "desc": "Fale com a hobbit na barraca de abóboras em Bree e entregue as Mithril Horse Shoes. A recompensa é o Red Brick Double Loot, que dobra os materiais coletados.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bree"
+            },
+            {
+              "text": "750.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multiplicador x8",
+      "subtitle": "Mithril Beanstalk · esquema em Pass of Caradhras, entrega em Barrow-downs",
+      "tag": "Corrigido",
+      "tasks": [
+        {
+          "id": "t17",
+          "title": "Colete o esquema Mithril Beanstalk",
+          "desc": "Em Pass of Caradhras, encontre as rochas de Mithril próximas ao boneco de neve e destrua-as com Saruman. Recolha o esquema atrás delas.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Pass of Caradhras"
+            }
+          ]
+        },
+        {
+          "id": "t18",
+          "title": "Desbloqueie a missão Bilbo and the Beanstalk",
+          "desc": "A missão só aparece depois de concluir <em>Heirloom in the Making</em> e <em>Weighting for a Stranger</em> (etapa 05) e, segundo o IGN, também <em>Express Delivery</em> (etapa 06). Quem pede o Beanstalk é a mesma mulher do Megapult, nos Barrow-downs, logo ao sul de Bree.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            }
+          ]
+        },
+        {
+          "id": "t19",
+          "title": "Fabrique o Mithril Beanstalk",
+          "desc": "Forje o item em Bree e verifique os materiais antes de se deslocar até o local da missão.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "esmeraldas",
+              30
+            ],
+            [
+              "diamantes",
+              10
+            ],
+            [
+              "cenouras",
+              25
+            ],
+            [
+              "paes",
+              10
+            ],
+            [
+              "madeira",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t20",
+          "title": "Entregue em The Barrow-downs, à noite",
+          "desc": "A missão <em>Bilbo and the Beanstalk</em> fica em <strong>The Barrow-downs (Night)</strong>. Entregue o item e compre x8 por 10.000.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "The Barrow-downs · Noite"
+            },
+            {
+              "text": "10.000.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fechamento: multiplicador x10",
+      "subtitle": "Mithril Candle Staff · campanha avançada e missão na Floresta Élfica",
+      "tag": "Final",
+      "tasks": [
+        {
+          "id": "t21",
+          "title": "Avance a campanha até desbloquear Dol Guldur e o Anel",
+          "desc": "Complete os níveis restantes conforme o progresso da história. Para os blocos invisíveis, use Bilbo com o Anel.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Bilbo + Anel"
+            }
+          ]
+        },
+        {
+          "id": "t22",
+          "title": "Colete o esquema Mithril Candle Staff em Dol Guldur",
+          "desc": "Na área florestal ao sul de Dol Guldur, use o Anel para atravessar a barreira de blocos Wraith. Resolva os mecanismos e colete as chaves necessárias para abrir o compartimento do esquema.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Dol Guldur"
+            }
+          ]
+        },
+        {
+          "id": "t23",
+          "title": "Fabrique o Mithril Candle Staff",
+          "desc": "Forje o cajado em Bree. Confirme que a missão de entrega foi desbloqueada antes de viajar.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "rubis",
+              15
+            ],
+            [
+              "madeira",
+              50
+            ],
+            [
+              "cobre",
+              20
+            ],
+            [
+              "prata",
+              15
+            ],
+            [
+              "ouro",
+              10
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t24",
+          "title": "Complete Staff and Nonsense",
+          "desc": "Esse é o pré-requisito indicado para desbloquear <em>Candle With Care</em>. A missão pede o tesouro <em>Sir Moustaff</em>: no Free Play de <em>A Warm Welcome</em>, depois do baú 4, quebre a jaula prateada para pegá-lo. Entregue à elfa atrás da porta no muro de pedra, na Floresta Élfica.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            }
+          ]
+        },
+        {
+          "id": "t25",
+          "title": "Entregue na Floresta Élfica e compre x10",
+          "desc": "A missão <em>Candle With Care</em> fica a leste do ponto da águia da Floresta Élfica. Entregue o Candle Staff e compre o último multiplicador por 20.000.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Elven Forest"
+            },
+            {
+              "text": "20.000.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=3004515436\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — Red Bricks and Blacksmith Design Locations</a>: locais/horários de x6, x8 e x10 e esquemas correspondentes.",
+    "<a href=\"https://gamefaqs.gamespot.com/xbox360/739681-lego-the-hobbit/faqs/69353\" target=\"_blank\" rel=\"noopener noreferrer\">GameFAQs — LEGO The Hobbit Guide and Walkthrough</a>: lista dos extras, custos e missões de recompensa.",
+    "<a href=\"https://www.gamefront.com/news/lego-the-hobbit-schematics-locations-guide\" target=\"_blank\" rel=\"noopener noreferrer\">GameFront — Schematics Locations Guide</a>: esquemas encontrados em níveis da história, incluindo Mirror Armour e Flail.",
+    "<a href=\"https://www.trueachievements.com/game/lego-the-hobbit/walkthrough/5\" target=\"_blank\" rel=\"noopener noreferrer\">TrueAchievements — Free Play and Middle-earth</a>: detalhes do puzzle do Mithril Shadow Blade.",
+    "<a href=\"https://www.gamesradar.com/lego-hobbit-red-brick-locations-guide/6/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesRadar — Red Brick Quests</a>: localização/horário das missões x2, x4 e x6.",
+    "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Heirloom_in_the_Making\" target=\"_blank\" rel=\"noopener noreferrer\">Heirloom in the Making</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Weighting_for_a_Stranger\" target=\"_blank\" rel=\"noopener noreferrer\">Weighting for a Stranger</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Bilbo_and_the_Beanstalk\" target=\"_blank\" rel=\"noopener noreferrer\">Bilbo and the Beanstalk</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/No_Harm_in_Armour\" target=\"_blank\" rel=\"noopener noreferrer\">No Harm in Armour</a>: cadeia de pré-requisitos do x8 e locais dos esquemas da coroa e do Megapult.",
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense."
+  ],
+  "confirm": [
+    "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting.",
+    "Ordem das cores das rodas do Megapult: o IGN indica verde, vermelho, azul; outro guia, verde, azul, vermelho. As corujas vistas da águia de pedra mostram a resposta certa.",
+    "Quando o Anel de Bilbo fica disponível: a entrega de Heirloom (etapa 05) exige o Anel, mas a etapa 08 o trata como desbloqueio tardio da campanha."
+  ]
+}

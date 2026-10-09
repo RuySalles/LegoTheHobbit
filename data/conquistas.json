@@ -1,0 +1,317 @@
+{
+  "_leia-me": "Conteúdo da página de conquistas. Nomes, descrições e porcentagens vêm da Steam e são atualizados por tools/update_steam.py (as dicas e capítulos não são tocados). Nunca mude a chave de uma conquista (ex.: COMPLETE_STORYEVENT1): ela é o id oficial da Steam e guarda o progresso.",
+  "steamAppId": 285160,
+  "updated": "2026-10-09",
+  "intro": "Todas as conquistas de <strong>LEGO The Hobbit</strong> na Steam, com uma dica direta de como conseguir cada uma e a raridade entre os jogadores. Só {pct100} dos jogadores chegaram a 100%.",
+  "chapters": [
+    {
+      "id": "historia",
+      "title": "História",
+      "subtitle": "As 16 fases da campanha, em ordem",
+      "achievements": [
+        "COMPLETE_STORYEVENT1",
+        "COMPLETE_STORYEVENT2",
+        "COMPLETE_STORYEVENT3",
+        "COMPLETE_STORYEVENT4",
+        "COMPLETE_STORYEVENT5",
+        "COMPLETE_STORYEVENT6",
+        "COMPLETE_STORYEVENT7",
+        "COMPLETE_STORYEVENT8",
+        "COMPLETE_STORYEVENT9",
+        "COMPLETE_STORYEVENT10",
+        "COMPLETE_STORYEVENT11",
+        "COMPLETE_STORYEVENT12",
+        "COMPLETE_STORYEVENT13",
+        "COMPLETE_STORYEVENT14",
+        "COMPLETE_STORYEVENT15",
+        "COMPLETE_STORYEVENT16"
+      ]
+    },
+    {
+      "id": "habilidades",
+      "title": "Habilidades e diversão",
+      "subtitle": "Conquistas rápidas de mecânicas, personagens e itens",
+      "achievements": [
+        "COLLECT_99_OF_ANY_LOOT",
+        "PLAY_A_LEVEL_IN_COOP",
+        "CREATE_A_CUSTOM_CHARACTER",
+        "TRANSFORM_TO_BEORNS_BEAR_FORM",
+        "OBTAIN_X_BONUSES_DURING_INSTRUCTION_BUILDS",
+        "COMPLETE_BONUS_LEVEL",
+        "COMPLETE_MINING_GAME_PERFECTLY_X_TIMES",
+        "USE_STARTLE_ABILITY_ON_X_ENEMIES",
+        "USE_X_BUDDYUP_ATTACKS",
+        "USE_EVERY_DWARF_BUDDY_COMBINATION",
+        "EQUIP_THORIN_WITH_MITHRIL_MUSHROOM_CROWN",
+        "EQUIP_DAZZLE_AND_MITHRIL_ITEMS"
+      ]
+    },
+    {
+      "id": "colecao",
+      "title": "Coleção e 100%",
+      "subtitle": "O fim da jornada: coletar, forjar e completar tudo",
+      "achievements": [
+        "OBTAIN_ALL_MASTER_BURGLAR_TITLES",
+        "COLLECT_ALL_TREASURE_ITEMS",
+        "COLLECT_ALL_MINIKITS",
+        "COLLECT_ALL_SCHEMATICS",
+        "COLLECT_ALL_MITHRIL_BRICKS",
+        "FORGE_ALL_MITHRIL_TREASURES",
+        "FORGE_ALL_PERFECT_MITHRIL_TREASURES",
+        "COMPLETE_ALL_MIDDLE_EARTH_QUESTS",
+        "COLLECT_ALL_CHARACTERS",
+        "COLLECT_ONE_BILLION_STUDS",
+        "WATCH_100_PERCENT_ENDING"
+      ]
+    }
+  ],
+  "achievements": {
+    "COMPLETE_STORYEVENT1": {
+      "name": "Cidade transformada em cinzas",
+      "desc": "Conclua ‘O Maior Reino na Terra-média’",
+      "pct": 58.8,
+      "tip": "Desbloqueia ao concluir a fase 1 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT2": {
+      "name": "Em um buraco no chão...",
+      "desc": "Conclua ‘Uma Festa Inesperada’",
+      "pct": 52.9,
+      "tip": "Desbloqueia ao concluir a fase 2 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT3": {
+      "name": "De volta para onde veio",
+      "desc": "Conclua ‘Azog, o Profano’",
+      "pct": 44.4,
+      "tip": "Desbloqueia ao concluir a fase 3 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT4": {
+      "name": "Estou Petrificado",
+      "desc": "Conclua ‘Carneiro Assado’",
+      "pct": 38.7,
+      "tip": "Desbloqueia ao concluir a fase 4 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT5": {
+      "name": "Mais que um abridor de cartas!",
+      "desc": "Conclua ‘Tesouro de Troll’",
+      "pct": 34.5,
+      "tip": "Desbloqueia ao concluir a fase 5 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT6": {
+      "name": "Mais do que uma tempestade!",
+      "desc": "Conclua ‘Sobre e Sob a Colina’",
+      "pct": 31.1,
+      "tip": "Desbloqueia ao concluir a fase 6 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT7": {
+      "name": "É o suficiente...",
+      "desc": "Conclua ‘Cidade dos Orcs’",
+      "pct": 29.1,
+      "tip": "Desbloqueia ao concluir a fase 7 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT8": {
+      "name": "Eu acredito que o pior já passou",
+      "desc": "Conclua ‘Da Frigideira Para o Fogo…’",
+      "pct": 27.6,
+      "tip": "Desbloqueia ao concluir a fase 8 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT9": {
+      "name": "O que você precisa?",
+      "desc": "Conclua ‘Estranhos Alojamentos’",
+      "pct": 26.8,
+      "tip": "Desbloqueia ao concluir a fase 9 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT10": {
+      "name": "Aranha, aranhona!",
+      "desc": "Conclua ‘Moscas e Aranhas’",
+      "pct": 25.9,
+      "tip": "Desbloqueia ao concluir a fase 10 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT11": {
+      "name": "Escapou das masmorras do Rei",
+      "desc": "Conclua ‘Barris Soltos’",
+      "pct": 25.2,
+      "tip": "Desbloqueia ao concluir a fase 11 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT12": {
+      "name": "O Retorno do Rei da Montanha",
+      "desc": "Conclua ‘Uma Acolhida Calorosa’",
+      "pct": 24.4,
+      "tip": "Desbloqueia ao concluir a fase 12 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT13": {
+      "name": "Ele está convocando seus servos",
+      "desc": "Conclua ‘Procurando Provas’",
+      "pct": 24.0,
+      "tip": "Desbloqueia ao concluir a fase 13 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT14": {
+      "name": "É sem dúvida uma armadilha",
+      "desc": "Conclua ‘O Necromante’",
+      "pct": 23.5,
+      "tip": "Desbloqueia ao concluir a fase 14 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT15": {
+      "name": "Hora de ganhar sua recompensa",
+      "desc": "Conclua ‘Na Soleira da Porta’",
+      "pct": 22.9,
+      "tip": "Desbloqueia ao concluir a fase 15 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COMPLETE_STORYEVENT16": {
+      "name": "Pense numa fornalha, com asas",
+      "desc": "Conclua ‘Informação de Dentro’",
+      "pct": 22.6,
+      "tip": "Desbloqueia ao concluir a fase 16 no Modo História; acontece naturalmente seguindo a campanha."
+    },
+    "COLLECT_99_OF_ANY_LOOT": {
+      "name": "Profissão de Ladrão",
+      "desc": "Colete 99 de qualquer tesouro",
+      "pct": 42.2,
+      "tip": "Sai cedo na história: madeira, pedra, couro e corda são os materiais mais comuns e chegam a 99 rapidamente."
+    },
+    "PLAY_A_LEVEL_IN_COOP": {
+      "name": "Compartilhando uma aventura",
+      "desc": "Jogue uma fase em modo co-op",
+      "pct": 23.3,
+      "tip": "Não precisa de outra pessoa: ative o segundo jogador (no teclado padrão, F2) e conclua uma fase com ele ativo."
+    },
+    "CREATE_A_CUSTOM_CHARACTER": {
+      "name": "Quem é a criatura horripilante?",
+      "desc": "Crie um personagem personalizado",
+      "pct": 15.6,
+      "tip": "Use o Customizador de Personagens em Lake-town."
+    },
+    "TRANSFORM_TO_BEORNS_BEAR_FORM": {
+      "name": "Na Pele de Beorn",
+      "desc": "Transforme-se na forma de urso de Beorn",
+      "pct": 12.1,
+      "tip": "Depois de desbloquear Beorn, segure o botão especial com ele para virar urso."
+    },
+    "OBTAIN_X_BONUSES_DURING_INSTRUCTION_BUILDS": {
+      "name": "Construtor Mestre",
+      "desc": "Consiga 150.000 peças de bônus das Instruções de Construções.",
+      "pct": 20.9,
+      "solo": true,
+      "tip": "Nas placas de construção, escolha rápido e certo a peça que falta para ganhar o bônus de studs. Acumule 150.000 nesses bônus; vem naturalmente ao longo da campanha."
+    },
+    "COMPLETE_BONUS_LEVEL": {
+      "name": "Pisão do Gigante de Pedra",
+      "desc": "Conclua a fase bônus",
+      "pct": 12.1,
+      "tip": "A fase bônus é liberada depois das 16 fases da história; o acesso fica perto de Erebor."
+    },
+    "COMPLETE_MINING_GAME_PERFECTLY_X_TIMES": {
+      "name": "A Riqueza está na Terra",
+      "desc": "Conclua perfeitamente o jogo de mineração 50 vezes.",
+      "pct": 10.4,
+      "tip": "Com um personagem minerador, aperte ataque quando a seta estiver no centro do medidor: o depósito quebra num golpe só. Repita 50 vezes."
+    },
+    "USE_STARTLE_ABILITY_ON_X_ENEMIES": {
+      "name": "Conjurador de Truques Baratos",
+      "desc": "Use a habilidade surpreendente de Gandalf para ofuscar 50 inimigos",
+      "pct": 5.9,
+      "tip": "Com Gandalf, segure o botão especial perto de inimigos para ofuscá-los. O Free Play de Azog, o Profano junta muitos inimigos: 12 a 15 usos costumam bastar."
+    },
+    "USE_X_BUDDYUP_ATTACKS": {
+      "name": "Nem o Ouro nos Separa",
+      "desc": "Use 50 ataques em grupo",
+      "pct": 5.7,
+      "tip": "Faça 50 ataques em dupla (Buddy-Up). Sai naturalmente enquanto você busca “Trabalho em Equipe”."
+    },
+    "USE_EVERY_DWARF_BUDDY_COMBINATION": {
+      "name": "Trabalho em Equipe",
+      "desc": "Use todas as combinações de anões da Companhia de Thorin para ataques em grupo",
+      "pct": 5.1,
+      "tip": "Controle cada anão da Companhia de Thorin e faça um ataque em dupla com ele. Só conta para o anão que você está controlando, então anote e risque cada um."
+    },
+    "EQUIP_THORIN_WITH_MITHRIL_MUSHROOM_CROWN": {
+      "name": "Alvorecer do Rei Cogumelo",
+      "desc": "Equipe Thorin com a Coroa Cogumelo de Mithril",
+      "pct": 7.3,
+      "rota": "Ver <a href=\"index.html#rota\">etapa 05 da rota</a>.",
+      "tip": "Forje a Mithril Mushroom Crown (esquema ao norte de Bree, a mesma coroa da etapa 05 da rota) e equipe-a em Thorin."
+    },
+    "EQUIP_DAZZLE_AND_MITHRIL_ITEMS": {
+      "name": "Senhor do Rebolado",
+      "desc": "Equipe-se com a Peruca Deslumbrante, Bastão Rítmico de Mithril e Botas de Dança de Mithril",
+      "pct": 6.2,
+      "tip": "Equipe juntos a Peruca Deslumbrante (tesouro do Free Play de Moscas e Aranhas), o Mithril Rhythm Stick e as Mithril Dance Boots. Os dois esquemas ficam em Rivendell: um numa ilha do lago (vá de barco) e outro numa caverna com três interruptores."
+    },
+    "OBTAIN_ALL_MASTER_BURGLAR_TITLES": {
+      "name": "Por isso um ladrão é necessário!",
+      "desc": "Consiga todos os títulos de Ladrão Mestre.",
+      "pct": 8.2,
+      "solo": true,
+      "tip": "Atinja a meta de studs de Ladrão Mestre em cada fase da história. Deixe para depois dos multiplicadores: com eles fica muito mais fácil."
+    },
+    "COLLECT_ALL_TREASURE_ITEMS": {
+      "name": "Peças de Crochê da sua Mãe",
+      "desc": "Colete todos os itens de tesouro nas fases.",
+      "pct": 8.0,
+      "solo": true,
+      "tip": "São 4 tesouros em cada fase da história, a maioria no Free Play. O Red Brick Treasure Item Detector aponta onde estão."
+    },
+    "COLLECT_ALL_MINIKITS": {
+      "name": "Nosso Ouro Esquecido Há Tempos",
+      "desc": "Colete todos os Minikits.",
+      "pct": 7.8,
+      "solo": true,
+      "tip": "São 10 baús de minikit por fase. Antes, pegue o Red Brick Minikit Detector: forje as Mithril Bandit Gloves (esquema em Lake-town) e entregue no Reino de Thranduil."
+    },
+    "COLLECT_ALL_SCHEMATICS": {
+      "name": "Trabalhando nas Vilas dos Homens",
+      "desc": "Colete todos os projetos.",
+      "pct": 7.7,
+      "solo": true,
+      "tip": "São 32 esquemas de ferreiro, parte nas fases (Free Play) e parte na Terra-média. Eles aparecem no mapa, mas alguns só depois de certas missões."
+    },
+    "COLLECT_ALL_MITHRIL_BRICKS": {
+      "name": "A Ganância dos Anões",
+      "desc": "Colete todos os blocos de mithril.",
+      "pct": 7.1,
+      "solo": true,
+      "tip": "São 250 Mithril Bricks, vindos de missões, puzzles e Free Play. O Red Brick Mithril Brick Detector aponta os que faltam na Terra-média."
+    },
+    "FORGE_ALL_MITHRIL_TREASURES": {
+      "name": "Objetos de grande beleza",
+      "desc": "Forje todos os itens de tesouro de mithril.",
+      "pct": 7.0,
+      "solo": true,
+      "tip": "Forje todos os itens de mithril em Bree. Se você forjar tudo perfeito, ela sai junto com a próxima."
+    },
+    "FORGE_ALL_PERFECT_MITHRIL_TREASURES": {
+      "name": "Habilidade inigualável dos anões",
+      "desc": "Forje todos os itens de tesouro de mithril perfeitos.",
+      "pct": 6.7,
+      "solo": true,
+      "tip": "Ao forjar, encha o anel interno apertando o botão quando ele brilhar dourado. Forjar perfeito de primeira evita refazer depois; o Red Brick Perfect Forging deixa tudo automático."
+    },
+    "COMPLETE_ALL_MIDDLE_EARTH_QUESTS": {
+      "name": "Sempre o “Herói do Povo”",
+      "desc": "Conclua todas as missões na Terra-média.",
+      "pct": 7.0,
+      "solo": true,
+      "tip": "São 137 missões na Terra-média, e as de Red Brick contam (todas as entregas da rota entram aqui)."
+    },
+    "COLLECT_ALL_CHARACTERS": {
+      "name": "Uma reunião muito alegre",
+      "desc": "Colete todos os personagens.",
+      "pct": 6.9,
+      "solo": true,
+      "tip": "São 96 personagens para desbloquear e comprar. Alguns só aparecem depois de missões específicas, e um deles só depois de todos os Red Bricks."
+    },
+    "COLLECT_ONE_BILLION_STUDS": {
+      "name": "O Incalculavelmente Opulento",
+      "desc": "Colete 10.000.000.000 peças.",
+      "pct": 5.4,
+      "solo": true,
+      "rota": "Objetivo final da <a href=\"index.html#rota\">rota de multiplicadores</a>.",
+      "tip": "Você precisa ter 10 bilhões de studs ao mesmo tempo. Com todos os multiplicadores ativos (x2·x4·x6·x8·x10 = <strong>x3840</strong>), repita fases da história ou farme Bree montado num warg."
+    },
+    "WATCH_100_PERCENT_ENDING": {
+      "name": "Continua...",
+      "desc": "Consiga 100% de progresso",
+      "pct": 6.8,
+      "tip": "Chegue a 100% de progresso do jogo. Se as outras conquistas de coleção estiverem feitas, ela vem junto."
+    }
+  }
+}
