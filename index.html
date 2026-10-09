@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10140f">
+<title>LEGO The Hobbit — Rota de Progressão</title>
+<style>
+:root{
+  --bg:#0c100d;--panel:#151b16;--panel2:#1c241d;--line:#344236;
+  --text:#f2f1e8;--muted:#b2b9a9;--gold:#e8bd58;--gold2:#f6df9b;
+  --green:#8abf77;--red:#ef8b72;--blue:#9fc7d9;--shadow:0 18px 55px #0007;
+  --radius:20px;--max:1160px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:
+ radial-gradient(ellipse at 8% 0%,#283b26 0,transparent 34rem),
+ radial-gradient(ellipse at 100% 28%,#3c2d17 0,transparent 32rem),var(--bg);
+ color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--gold2);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#fff}
+button,input{font:inherit}
+button{cursor:pointer}
+.wrap{width:min(calc(100% - 36px),var(--max));margin-inline:auto}
+.topbar{position:sticky;top:0;z-index:20;background:#0c100de8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+.topinner{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.07em;text-transform:uppercase;font-size:.82rem}
+.brandmark{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);transform:rotate(45deg);border-radius:8px}
+.brandmark span{transform:rotate(-45deg);font-size:1.05rem}
+.nav{display:flex;gap:18px;font-size:.84rem;color:var(--muted)}
+.nav a{color:inherit;text-decoration:none}.nav a:hover{color:var(--gold2)}
+.hero{padding:74px 0 44px;position:relative;overflow:hidden}
+.hero:after{content:"ᚠ";position:absolute;right:4%;top:5px;font-family:Georgia,serif;font-size:clamp(15rem,34vw,29rem);line-height:1;color:#e8bd5808;pointer-events:none}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:800}
+.eyebrow:before{content:"";height:1px;width:34px;background:var(--gold)}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(2.7rem,7vw,6rem);line-height:.98;letter-spacing:-.065em;max-width:850px;margin:18px 0 22px}
+h1 em{font-style:normal;color:var(--gold)}
+.lede{max-width:760px;color:#d2d7cb;font-size:clamp(1rem,1.8vw,1.2rem)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.pill{border:1px solid #ffffff20;background:#ffffff08;border-radius:99px;padding:7px 12px;color:var(--muted);font-size:.78rem}
+.pill strong{color:var(--text)}
+.warning{margin:0 0 28px;border:1px solid #e8bd5855;background:linear-gradient(115deg,#3b2e14aa,#191e16dd);border-radius:var(--radius);padding:20px 22px;display:grid;grid-template-columns:auto 1fr;gap:15px}
+.warning-icon{font-size:1.4rem;color:var(--gold)}
+.warning h2{font-size:1rem;margin:0 0 5px}.warning p{margin:0;color:#d2d7cb;font-size:.93rem}
+.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:44px 0 18px}
+.sectionhead h2{font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-.04em;margin:0}
+.sectionhead p{color:var(--muted);margin:5px 0 0;font-size:.92rem}
+.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{padding:19px;border:1px solid var(--line);background:linear-gradient(145deg,#1a221b,#111611);border-radius:16px}
+.stat small{display:block;color:var(--muted);font-size:.77rem;text-transform:uppercase;letter-spacing:.08em}
+.stat strong{display:block;font-size:1.7rem;letter-spacing:-.04em;color:var(--gold2);margin:4px 0}
+.stat span{font-size:.8rem;color:var(--muted)}
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:20px 0}
+.progressbox{flex:1;min-width:210px}
+.progressline{height:8px;background:#ffffff12;border-radius:99px;overflow:hidden;margin-top:8px}
+.progressfill{height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--gold));border-radius:99px;transition:width .25s}
+#progressText{font-size:.83rem;color:var(--muted)}
+.btn{border:1px solid var(--line);background:#ffffff08;color:var(--text);border-radius:10px;padding:9px 13px;font-size:.84rem}
+.btn:hover{border-color:var(--gold);background:#e8bd5810}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#1b1b11;font-weight:800}
+.btn.primary:hover{background:var(--gold2)}
+.stages{display:grid;gap:14px}
+.stage{border:1px solid var(--line);background:linear-gradient(150deg,#192019f2,#111611f5);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.stagehead{display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:15px;padding:20px 22px;border-bottom:1px solid #ffffff10}
+.stage-num{height:48px;width:48px;display:grid;place-items:center;border:1px solid #e8bd5866;border-radius:14px;color:var(--gold);font-size:1.2rem;font-weight:850}
+.stagehead h3{margin:0;font-size:1.18rem;letter-spacing:-.02em}
+.stagehead p{margin:3px 0 0;color:var(--muted);font-size:.88rem}
+.stage-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold2);border:1px solid #e8bd5844;border-radius:99px;padding:6px 9px;white-space:nowrap}
+.stagebody{padding:8px 22px 20px}
+.task{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid #ffffff0c}
+.task:last-child{border-bottom:0}
+.task input{appearance:none;width:20px;height:20px;border:1px solid #66705e;border-radius:6px;margin:3px 0 0;background:#0c100d;display:grid;place-items:center;cursor:pointer}
+.task input:checked{background:var(--green);border-color:var(--green)}
+.task input:checked:after{content:"✓";font-size:14px;color:#10200d;font-weight:900}
+.task:has(input:checked) .taskcopy{opacity:.58}
+.task:has(input:checked) .tasktitle{text-decoration:line-through;text-decoration-color:#8abf77aa}
+.tasktitle{font-weight:750;margin-bottom:3px}
+.taskdesc{color:#c1c8bb;font-size:.9rem}
+.meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+.tag{font-size:.7rem;color:var(--muted);border:1px solid #ffffff18;border-radius:6px;padding:3px 7px}
+.tag.gold{color:var(--gold2);border-color:#e8bd5840}
+.callout{border-left:3px solid var(--blue);background:#9fc7d90c;padding:13px 15px;border-radius:0 10px 10px 0;color:#cbd9dd;font-size:.88rem;margin:12px 0}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:16px}
+table{border-collapse:collapse;width:100%;min-width:650px;background:#121813;font-size:.9rem}
+th,td{text-align:left;padding:13px 15px;border-bottom:1px solid #ffffff12}
+th{color:var(--gold2);font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;background:#ffffff05}
+td{color:#d2d7cb}tr:last-child td{border-bottom:0}td strong{color:var(--text)}
+.sources{padding:22px;border:1px solid var(--line);background:#121813;border-radius:16px}
+.sources li{margin:8px 0;color:#c5cbbf;font-size:.88rem}
+.sources a{overflow-wrap:anywhere}
+footer{padding:40px 0 60px;color:var(--muted);font-size:.8rem}
+.footerline{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:18px}
+.hidden{display:none!important}
+@media(max-width:760px){
+ .nav{display:none}.hero{padding-top:50px}.summary-grid{grid-template-columns:repeat(2,1fr)}
+ .stagehead{grid-template-columns:44px 1fr;gap:12px;padding:17px}.stage-num{width:42px;height:42px}
+ .stage-tag{grid-column:2;justify-self:start}.stagebody{padding:5px 17px 15px}
+ .warning{padding:16px}
+}
+@media(max-width:420px){.wrap{width:min(calc(100% - 24px),var(--max))}.summary-grid{gap:8px}.stat{padding:14px}.stat strong{font-size:1.4rem}.sectionhead{align-items:start;flex-direction:column}.stagehead h3{font-size:1.04rem}}
+@media print{
+ :root{--bg:#fff;--panel:#fff;--panel2:#fff;--text:#111;--muted:#444;--line:#ccc;--gold:#8b6b12;--gold2:#6b5010}
+ body{background:#fff;color:#111}.topbar,.toolbar .btn{display:none!important}.hero{padding:24px 0}
+ .hero:after{display:none}.stage,.stat,.sources,.warning{box-shadow:none;background:#fff;border-color:#bbb;break-inside:avoid}
+ .taskdesc,.warning p,.sources li,td{color:#333}.stagehead{border-color:#ddd}
+ a{color:#333}.stage{break-inside:avoid}.wrap{width:100%}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap topinner">
+  <div class="brand"><div class="brandmark"><span>✦</span></div><span>Middle-earth field guide</span></div>
+  <nav class="nav" aria-label="Navegação principal">
+   <a href="#rota">Rota</a><a href="#custos">Custos</a><a href="#fontes">Fontes</a>
+  </nav>
+ </div>
+</header>
+<main class="wrap">
+ <section class="hero">
+  <div class="eyebrow">Guia tático · Progressão eficiente</div>
+  <h1>Uma jornada.<br><em>Menos desvios.</em></h1>
+  <p class="lede">Rota revisada de <strong>LEGO The Hobbit</strong> para desbloquear os cinco multiplicadores de studs sem confundir três etapas diferentes: encontrar o esquema, forjar o item em Bree e entregá-lo na missão correta.</p>
+  <div class="hero-meta">
+   <span class="pill"><strong>5</strong> multiplicadores</span>
+   <span class="pill"><strong>36,5M</strong> studs para comprar todos</span>
+   <span class="pill">Checklist com progresso local</span>
+  </div>
+ </section>
+
+ <section class="warning" aria-label="Correção importante">
+  <div class="warning-icon">⚑</div>
+  <div><h2>Regra de ouro: esquema ≠ recompensa</h2>
+   <p>O esquema libera a fabricação; o item fabricado precisa ser entregue em uma missão específica; só então o Red Brick pode ser comprado. Os locais e horários abaixo se referem à <strong>missão de entrega</strong>, não à localização do esquema.</p>
+  </div>
+ </section>
+
+ <div class="sectionhead">
+  <div><h2>Visão geral da rota</h2><p>Ordem recomendada para reduzir viagens repetidas.</p></div>
+ </div>
+ <section class="summary-grid" aria-label="Resumo dos multiplicadores">
+  <div class="stat"><small>Primeiro retorno</small><strong>Attract</strong><span>175 mil · coleta studs à distância</span></div>
+  <div class="stat"><small>Multiplicador inicial</small><strong>x2</strong><span>500 mil · Hobbiton, de dia</span></div>
+  <div class="stat"><small>Meta intermediária</small><strong>x4 / x6</strong><span>1,5M + 4,5M studs</span></div>
+  <div class="stat"><small>Meta final</small><strong>x8 / x10</strong><span>10M + 20M studs</span></div>
+ </section>
+
+ <section id="rota">
+  <div class="sectionhead">
+   <div><h2>Rota passo a passo</h2><p>Marque cada tarefa concluída. O navegador mantém o progresso enquanto os dados locais não forem limpos.</p></div>
+  </div>
+  <div class="toolbar">
+   <div class="progressbox"><div id="progressText">0 de 25 tarefas concluídas · 0%</div><div class="progressline"><div class="progressfill" id="progressFill"></div></div></div>
+   <button class="btn" id="expandBtn" type="button">Expandir tudo</button>
+   <button class="btn" id="printBtn" type="button">Imprimir / PDF</button>
+   <button class="btn" id="resetBtn" type="button">Zerar checklist</button>
+  </div>
+
+  <div class="stages">
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">01</div><div><h3>Desbloqueios fundamentais</h3><p>História 1–6 · acesso ao Free Play e à forja</p></div><span class="stage-tag">Base</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t1"><span class="taskcopy"><div class="tasktitle">Complete os níveis 1 a 6</div><div class="taskdesc">Avance de <em>Greatest Kingdom in Middle-earth</em> até <em>Over Hill and Under Hill</em>. Isso libera o Free Play dos níveis concluídos e amplia as opções de personagens.</div><span class="meta"><span class="tag">História</span><span class="tag">Níveis 1–6</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t2"><span class="taskcopy"><div class="tasktitle">Desbloqueie a forja em Bree</div><div class="taskdesc">Complete a missão <em>Smithy in Peril</em> e resgate o ferreiro. Sem isso, os esquemas não podem virar itens de Mithril.</div><span class="meta"><span class="tag gold">Pré-requisito</span><span class="tag">Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t3"><span class="taskcopy"><div class="tasktitle">Colete o Mirror Armour no nível 1</div><div class="taskdesc">No Free Play de <em>Greatest Kingdom in Middle-earth</em>, use um elfo para atirar nos encaixes de flecha da área de mineração e alcançar a plataforma elevada.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Nível 1</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t4"><span class="taskcopy"><div class="tasktitle">Colete o Flail no nível 6</div><div class="taskdesc">No início de <em>Over Hill and Under Hill</em>, use um elfo nos encaixes de flecha e atravesse os apoios até a plataforma com o esquema.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Nível 6</span></span></span></label>
+    </div>
+   </article>
+
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">02</div><div><h3>Primeiro retorno econômico</h3><p>Attract Studs e x2 · investimento inicial controlado</p></div><span class="stage-tag">Prioridade</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t5"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Mirror Armour</div><div class="taskdesc">Use a forja em Bree. O item não é um multiplicador; ele é a entrega exigida para desbloquear o extra Attract Studs.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t6"><span class="taskcopy"><div class="tasktitle">Entregue a armadura em Lake-town</div><div class="taskdesc">Complete <em>No Harm in Armour</em>, na região nordeste de Lake-town. Depois compre Attract Studs por 175.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">Lake-town</span><span class="tag gold">175.000 studs</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t7"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Flail</div><div class="taskdesc">Forje o item em Bree usando o esquema coletado no nível 6.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t8"><span class="taskcopy"><div class="tasktitle">Entregue o Flail em Hobbiton, durante o dia</div><div class="taskdesc">Complete <em>A Flail of a Time</em>, no setor norte de Hobbiton. Compre o Red Brick x2 por 500.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">Hobbiton · Dia</span><span class="tag gold">500.000 studs</span></span></span></label>
+    </div>
+   </article>
+
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">03</div><div><h3>Preparar habilidades e desbloquear x4</h3><p>Avance a história e conclua o puzzle do Shadow Blade</p></div><span class="stage-tag">Exploração</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t9"><span class="taskcopy"><div class="tasktitle">Avance pelos níveis 7–9 conforme necessário</div><div class="taskdesc">Complete <em>Goblin Town</em> até <em>Queer Lodgings</em> para ampliar o elenco e abrir caminho para as próximas regiões. Não compre personagens antes de confirmar o bloqueio específico.</div><span class="meta"><span class="tag">História</span><span class="tag">Níveis 7–9</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t10"><span class="taskcopy"><div class="tasktitle">Obtenha o esquema Mithril Shadow Blade</div><div class="taskdesc">A área fica ao sul/sudeste de Bree, ao sul de Weathertop. Siga as placas amarelas e vá na direção oposta às roxas; cave no ponto indicado para achar a chave, abra a porta e resolva o trecho com alvos e estátuas. O altar exige gemas.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Sul de Weathertop</span><span class="tag">Arco + escavação</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t11"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Shadow Blade</div><div class="taskdesc">Volte à forja de Bree e confirme os materiais necessários antes de viajar para a entrega.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t12"><span class="taskcopy"><div class="tasktitle">Entregue em High Pass, à noite</div><div class="taskdesc">Complete <em>Dual Wielding</em>. O personagem da missão fica em uma área elevada acessada descendo a formação de blocos e atravessando o vão com um ponto de gancho. Compre x4 por 1.500.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">High Pass · Noite</span><span class="tag gold">1.500.000 studs</span></span></span></label>
+    </div>
+   </article>
+
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">04</div><div><h3>Multiplicador x6</h3><p>Mithril Construction Hat · esquema em Mirkwood, entrega em Moria</p></div><span class="stage-tag">Corrigido</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t13"><span class="taskcopy"><div class="tasktitle">Desbloqueie a escalada Goblin e a magia de Saruman</div><div class="taskdesc">Use um Goblin para paredes próprias dessa classe e Saruman para quebrar blocos de Mithril. Confirme que esses personagens estão disponíveis antes de iniciar o desvio.</div><span class="meta"><span class="tag">Habilidades</span><span class="tag">Goblin</span><span class="tag">Saruman</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t14"><span class="taskcopy"><div class="tasktitle">Colete o esquema Mithril Construction Hat em Mirkwood</div><div class="taskdesc">Siga o caminho próximo à casa de Radagast, escale a parede Goblin, atravesse as plataformas e resolva o puzzle da caverna: mova o bloco, acenda o fogo e abra o recipiente após derreter o gelo.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Mirkwood</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t15"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Construction Hat</div><div class="taskdesc">Forje o item em Bree. O nome pode aparecer como Construction Hat ou Construction Helmet em guias diferentes.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t16"><span class="taskcopy"><div class="tasktitle">Entregue em Moria, durante a noite</div><div class="taskdesc">A missão <em>Build Day</em> fica em <strong>Moria (Night)</strong>, junto à tenda a oeste do ponto da águia. Entregue o chapéu e compre x6 por 4.500.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">Moria · Noite</span><span class="tag gold">4.500.000 studs</span></span></span></label>
+    </div>
+   </article>
+
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">05</div><div><h3>Multiplicador x8</h3><p>Mithril Beanstalk · esquema em Pass of Caradhras, entrega em Barrow-downs</p></div><span class="stage-tag">Corrigido</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t17"><span class="taskcopy"><div class="tasktitle">Colete o esquema Mithril Beanstalk</div><div class="taskdesc">Em Pass of Caradhras, encontre as rochas de Mithril próximas ao boneco de neve e destrua-as com Saruman. Recolha o esquema atrás delas.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Pass of Caradhras</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t18"><span class="taskcopy"><div class="tasktitle">Desbloqueie a missão Bilbo and the Beanstalk</div><div class="taskdesc">Complete <em>Heirloom in the Making</em> para liberar a missão de recompensa. A entrega não é em Bree.</div><span class="meta"><span class="tag">Pré-requisito</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t19"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Beanstalk</div><div class="taskdesc">Forje o item em Bree e verifique os materiais antes de se deslocar até o local da missão.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t20"><span class="taskcopy"><div class="tasktitle">Entregue em The Barrow-downs, à noite</div><div class="taskdesc">A missão <em>Bilbo and the Beanstalk</em> fica em <strong>The Barrow-downs (Night)</strong>. Entregue o item e compre x8 por 10.000.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">The Barrow-downs · Noite</span><span class="tag gold">10.000.000 studs</span></span></span></label>
+    </div>
+   </article>
+
+   <article class="stage">
+    <div class="stagehead"><div class="stage-num">06</div><div><h3>Fechamento: multiplicador x10</h3><p>Mithril Candle Staff · campanha avançada e missão na Floresta Élfica</p></div><span class="stage-tag">Final</span></div>
+    <div class="stagebody">
+     <label class="task"><input type="checkbox" data-id="t21"><span class="taskcopy"><div class="tasktitle">Avance a campanha até desbloquear Dol Guldur e o Anel</div><div class="taskdesc">Complete os níveis restantes conforme o progresso da história. Para os blocos invisíveis, use Bilbo com o Anel.</div><span class="meta"><span class="tag">História</span><span class="tag">Bilbo + Anel</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t22"><span class="taskcopy"><div class="tasktitle">Colete o esquema Mithril Candle Staff em Dol Guldur</div><div class="taskdesc">Na área florestal ao sul de Dol Guldur, use o Anel para atravessar a barreira de blocos Wraith. Resolva os mecanismos e colete as chaves necessárias para abrir o compartimento do esquema.</div><span class="meta"><span class="tag">Esquema</span><span class="tag">Dol Guldur</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t23"><span class="taskcopy"><div class="tasktitle">Fabrique o Mithril Candle Staff</div><div class="taskdesc">Forje o cajado em Bree. Confirme que a missão de entrega foi desbloqueada antes de viajar.</div><span class="meta"><span class="tag">Forja · Bree</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t24"><span class="taskcopy"><div class="tasktitle">Complete Staff and Nonsense</div><div class="taskdesc">Esse é o pré-requisito indicado para desbloquear <em>Candle With Care</em>.</div><span class="meta"><span class="tag">Pré-requisito</span></span></span></label>
+     <label class="task"><input type="checkbox" data-id="t25"><span class="taskcopy"><div class="tasktitle">Entregue na Floresta Élfica e compre x10</div><div class="taskdesc">A missão <em>Candle With Care</em> fica a leste do ponto da águia da Floresta Élfica. Entregue o Candle Staff e compre o último multiplicador por 20.000.000 studs.</div><span class="meta"><span class="tag">Entrega</span><span class="tag">Elven Forest</span><span class="tag gold">20.000.000 studs</span></span></span></label>
+    </div>
+   </article>
+  </div>
+ </section>
+
+ <section id="custos">
+  <div class="sectionhead"><div><h2>Custos e destinos de entrega</h2><p>Consulte antes de gastar studs ou viajar para outra região.</p></div></div>
+  <div class="tablewrap">
+   <table>
+    <thead><tr><th>Desbloqueio</th><th>Item exigido</th><th>Missão de entrega</th><th>Local / horário</th><th>Custo</th></tr></thead>
+    <tbody>
+     <tr><td><strong>Attract Studs</strong></td><td>Mithril Mirror Armour</td><td>No Harm in Armour</td><td>Lake-town</td><td>175.000</td></tr>
+     <tr><td><strong>x2</strong></td><td>Mithril Flail</td><td>A Flail of a Time</td><td>Hobbiton · Dia</td><td>500.000</td></tr>
+     <tr><td><strong>x4</strong></td><td>Mithril Shadow Blade</td><td>Dual Wielding</td><td>High Pass · Noite</td><td>1.500.000</td></tr>
+     <tr><td><strong>x6</strong></td><td>Mithril Construction Hat</td><td>Build Day</td><td>Moria · Noite</td><td>4.500.000</td></tr>
+     <tr><td><strong>x8</strong></td><td>Mithril Beanstalk</td><td>Bilbo and the Beanstalk</td><td>The Barrow-downs · Noite</td><td>10.000.000</td></tr>
+     <tr><td><strong>x10</strong></td><td>Mithril Candle Staff</td><td>Candle With Care</td><td>Elven Forest</td><td>20.000.000</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="callout"><strong>Orçamento de referência:</strong> os cinco multiplicadores custam 36.500.000 studs no total. Incluindo Attract Studs, o total dos seis extras desta rota é 36.675.000 studs, sem contar personagens, materiais ou outras compras.</div>
+ </section>
+
+ <section id="fontes">
+  <div class="sectionhead"><div><h2>Fontes de verificação</h2><p>Guias consultados para validar esquemas, missões, horários e custos.</p></div></div>
+  <div class="sources">
+   <ul>
+    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3004515436" target="_blank" rel="noopener noreferrer">Steam Community — Red Bricks and Blacksmith Design Locations</a>: locais/horários de x6, x8 e x10 e esquemas correspondentes.</li>
+    <li><a href="https://gamefaqs.gamespot.com/xbox360/739681-lego-the-hobbit/faqs/69353" target="_blank" rel="noopener noreferrer">GameFAQs — LEGO The Hobbit Guide and Walkthrough</a>: lista dos extras, custos e missões de recompensa.</li>
+    <li><a href="https://www.gamefront.com/news/lego-the-hobbit-schematics-locations-guide" target="_blank" rel="noopener noreferrer">GameFront — Schematics Locations Guide</a>: esquemas encontrados em níveis da história, incluindo Mirror Armour e Flail.</li>
+    <li><a href="https://www.trueachievements.com/game/lego-the-hobbit/walkthrough/5" target="_blank" rel="noopener noreferrer">TrueAchievements — Free Play and Middle-earth</a>: detalhes do puzzle do Mithril Shadow Blade.</li>
+    <li><a href="https://www.gamesradar.com/lego-hobbit-red-brick-locations-guide/6/" target="_blank" rel="noopener noreferrer">GamesRadar — Red Brick Quests</a>: localização/horário das missões x2, x4 e x6.</li>
+   </ul>
+   <p style="margin:14px 0 0;color:var(--muted);font-size:.8rem">Nota: os guias podem usar nomes ligeiramente diferentes para alguns itens, como Construction Hat/Helmet. As instruções de puzzle foram resumidas para caber no formato de checklist.</p>
+  </div>
+ </section>
+ <footer><div class="footerline"></div><p>LEGO The Hobbit · Guia comunitário não oficial. LEGO é uma marca de seus respectivos proprietários. Esta página não é afiliada nem endossada pela LEGO ou pela Warner Bros.</p></footer>
+</main>
+<script>
+(function(){
+ const boxes=[...document.querySelectorAll('input[type="checkbox"][data-id]')];
+ const storageKey='hobbit-route-checklist-v1';
+ function update(){
+   const done=boxes.filter(b=>b.checked).length;
+   const pct=boxes.length?Math.round(done/boxes.length*100):0;
+   document.getElementById('progressText').textContent=`${done} de ${boxes.length} tarefas concluídas · ${pct}%`;
+   document.getElementById('progressFill').style.width=pct+'%';
+   try{localStorage.setItem(storageKey,JSON.stringify(boxes.filter(b=>b.checked).map(b=>b.dataset.id)))}catch(e){}
+ }
+ try{
+   const saved=JSON.parse(localStorage.getItem(storageKey)||'[]');
+   boxes.forEach(b=>b.checked=saved.includes(b.dataset.id));
+ }catch(e){}
+ boxes.forEach(b=>b.addEventListener('change',update));
+ update();
+ let expanded=true;
+ document.getElementById('expandBtn').addEventListener('click',()=>{
+   expanded=!expanded;
+   document.querySelectorAll('.stagebody').forEach(el=>el.classList.toggle('hidden',!expanded));
+   document.getElementById('expandBtn').textContent=expanded?'Recolher tudo':'Expandir tudo';
+ });
+ document.getElementById('printBtn').addEventListener('click',()=>window.print());
+ document.getElementById('resetBtn').addEventListener('click',()=>{
+   if(confirm('Deseja limpar todas as marcações do checklist?')){
+     boxes.forEach(b=>b.checked=false);
+     try{localStorage.removeItem(storageKey)}catch(e){}
+     update();
+   }
+ });
+})();
+</script>
+</body>
+</html>
