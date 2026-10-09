@@ -1,0 +1,39 @@
+# Atualiza as porcentagens das conquistas com a Steam toda segunda-feira (e sob demanda, pela aba Actions).
+# Só faz commit se alguma porcentagem mudou; o GitHub Pages publica sozinho em seguida.
+name: Atualizar porcentagens da Steam
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # segundas, 09:00 UTC (06:00 em Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-steam
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar porcentagens
+        run: python tools/update_steam.py
+      - name: Validar
+        run: python tools/validate.py
+      - name: Commit (se mudou)
+        run: |
+          if git diff --quiet -- data/conquistas.json; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/conquistas.json
+          git commit -m "Atualiza porcentagens das conquistas (Steam)"
+          git push
