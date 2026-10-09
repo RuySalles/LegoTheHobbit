@@ -1,0 +1,9 @@
+# Quebras de linha sempre LF no repositório (evita avisos LF/CRLF no Windows)
+* text=auto eol=lf
+
+# Binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.webp binary

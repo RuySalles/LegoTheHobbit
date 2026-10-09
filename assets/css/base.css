@@ -1,0 +1,116 @@
+/* LEGO The Hobbit — estilos compartilhados por todas as páginas.
+   Cores ficam nos tokens abaixo: mude aqui e vale para o site inteiro. */
+
+/* =========================================================
+   TOKENS — Dark: "Noite em Mirkwood, brasa da forja"
+   ========================================================= */
+:root,[data-theme="dark"]{
+  --bg:#0c100d;--bg-glow-a:#22331f;--bg-glow-b:#3a2a15;
+  --panel:#141a15;--panel2:#1a221b;--panel3:#202a21;
+  --line:#2f3b30;--line-soft:#ffffff10;
+  --text:#f0ecdd;--muted:#a9b2a0;--soft:#cdd3c4;
+  --gold:#e3b955;--gold2:#f3d892;--gold-ink:#1b1709;
+  --green:#8abf77;--green-ink:#10200d;
+  --brick:#d2442f;--brick-hi:#ec6a52;--brick-lo:#9c2a1b;
+  --mithril:#9fc7d9;--ember:#f0a04b;--violet:#c39bf0;
+  --shadow:0 18px 50px #0008;
+  --topbar:#0c100de6;
+  --rune:#e3b95810;
+  color-scheme:dark;
+}
+/* Light: "Mapa de Thror — pergaminho e tinta" */
+[data-theme="light"]{
+  --bg:#efe6d0;--bg-glow-a:#dfe6c9;--bg-glow-b:#ead2a6;
+  --panel:#fbf6e8;--panel2:#f5edd8;--panel3:#efe4ca;
+  --line:#d5c6a3;--line-soft:#2b241712;
+  --text:#2b2417;--muted:#6b5f48;--soft:#4a4030;
+  --gold:#94680f;--gold2:#7a540a;--gold-ink:#fff8e6;
+  --green:#3f7a32;--green-ink:#f4fbef;
+  --brick:#c23a26;--brick-hi:#df5a43;--brick-lo:#8f2616;
+  --mithril:#3f6475;--ember:#b4651c;--violet:#7a4bb0;
+  --shadow:0 14px 34px #5a46241f;
+  --topbar:#efe6d0e8;
+  --rune:#94680f14;
+  color-scheme:light;
+}
+:root{
+  --font-display:Cinzel,"Trajan Pro",Georgia,serif;
+  --font-body:Alegreya,Georgia,"Times New Roman",serif;
+  --radius:18px;--max:1180px;--gutter:36px;--top-h:64px;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top-h) + 20px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* overflow-x:clip evita rolagem lateral sem quebrar o menu fixo (sticky) */
+body{margin:0;overflow-x:clip;background:
+ radial-gradient(ellipse at 8% 0%,var(--bg-glow-a) 0,transparent 34rem),
+ radial-gradient(ellipse at 100% 28%,var(--bg-glow-b) 0,transparent 32rem),var(--bg);
+ color:var(--text);font:17px/1.6 var(--font-body);transition:background-color .3s,color .3s}
+a{color:var(--gold2);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--text)}
+button,input{font:inherit;margin:0;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(calc(100% - var(--gutter)),var(--max));margin-inline:auto}
+h1,h2,h3,p{margin-top:0}
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+.topbar{position:sticky;top:0;z-index:20;background:var(--topbar);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line-soft);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+.topinner{min-height:var(--top-h);display:flex;align-items:center;justify-content:space-between;gap:0 14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.84rem;min-width:0;flex:1 1 auto;color:var(--text);text-decoration:none}
+.brand>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brandmark{flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);transform:rotate(45deg);border-radius:8px}
+.brandmark span{transform:rotate(-45deg);font-size:1rem}
+.nav{display:flex;gap:22px;font-size:.95rem;color:var(--muted)}
+.nav a{color:inherit;text-decoration:none;padding:5px 0}.nav a:hover{color:var(--gold2)}
+.top-actions{display:flex;align-items:center;gap:6px}
+.iconbtn{flex:none;width:42px;height:42px;display:grid;place-items:center;background:transparent;border:1px solid transparent;border-radius:10px;color:var(--gold);padding:0}
+.iconbtn:hover{border-color:var(--line)}
+.iconbtn svg{width:20px;height:20px}
+[data-theme="dark"] .icon-sun,[data-theme="light"] .icon-moon{display:none}
+.menu-toggle{display:none;font-size:1.5rem;line-height:1}
+/* Linha fina de progresso no pé da barra fixa */
+.topprogress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:transparent}
+.topprogress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--gold));transition:width .35s}
+.nav a[aria-current="page"]{color:var(--gold2);border-bottom:1px solid var(--gold)}
+
+/* Componentes comuns */
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;font-weight:700}
+.eyebrow:before{content:"";flex:none;height:1px;width:34px;background:var(--gold)}
+.tag{font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 8px;line-height:1.5}
+.flash{animation:flash 1.2s ease}
+@keyframes flash{30%{box-shadow:0 0 0 4px var(--gold)}}
+.empty-state{text-align:center;color:var(--muted);padding:40px 0}
+.empty-state strong{display:block;font-family:var(--font-display);font-size:1.3rem;color:var(--text);margin-bottom:4px}
+.sources{padding:22px;border:1px solid var(--line);background:var(--panel);border-radius:16px}
+.sources ul{padding-left:1.2rem;margin:0}
+.sources li{margin:8px 0;color:var(--soft);font-size:.95rem}
+.sources a{overflow-wrap:anywhere}
+footer{padding:40px 0 calc(60px + env(safe-area-inset-bottom));color:var(--muted);font-size:.88rem}
+.footerline{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:18px}
+
+/* Tablet em pé e celular: menu vira "hambúrguer" */
+@media(max-width:760px){
+ .menu-toggle{display:grid}
+ .nav{display:none;order:3;flex-basis:100%;flex-direction:column;gap:0;padding:4px 0 10px;border-top:1px solid var(--line-soft);font-size:1.05rem}
+ .nav.active{display:flex}
+ .nav a{padding:12px 4px;border-bottom:1px solid var(--line-soft)}
+ .nav a:last-child{border-bottom:0}
+ .nav a[aria-current="page"]{border-bottom:1px solid var(--line-soft)}
+}
+
+/* Celulares */
+@media(max-width:420px){
+ :root{--gutter:28px;--radius:16px}
+ body{font-size:16px}
+ .brand{font-size:.74rem;letter-spacing:.05em}
+}
+
+/* Respeita quem prefere menos animação */
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *{transition:none!important;animation:none!important}
+}
