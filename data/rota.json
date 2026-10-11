@@ -141,7 +141,7 @@
   "stages": [
     {
       "title": "Desbloqueios fundamentais",
-      "subtitle": "História 1–6 · acesso ao Free Play e à forja",
+      "subtitle": "História 1–8 · águias, Free Play e forja",
       "tag": "Base",
       "tasks": [
         {
@@ -158,9 +158,26 @@
           ]
         },
         {
+          "id": "t36",
+          "title": "Avance até a fase 8 e libere as águias",
+          "desc": "Continue a história por <em>Goblin-town</em> (7) e <em>Out of the Frying Pan…</em> (8). No interlúdio <em>The Carrock</em>, as Águias resgatam a companhia e liberam as estátuas de águia: abra o mapa e escolha qualquer estátua para ser levado até ela.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Níveis 7–8"
+            },
+            {
+              "text": "Viagem rápida",
+              "type": "prereq"
+            }
+          ]
+        },
+        {
           "id": "t2",
           "title": "Desbloqueie a forja em Bree",
-          "desc": "Complete a missão <em>Smithy in Peril</em> e resgate o ferreiro. Sem isso, os esquemas não podem virar itens de Mithril.",
+          "desc": "Voe até Bree por uma estátua de águia e complete a missão <em>Smithy in Peril</em>: a esposa do ferreiro, na porta da loja, pede para resgatá-lo numa caverna perto de Weathertop. Lá dentro você vai precisar de Ori (estilingue) e de alguém com pá, como Sam. Sem isso, os esquemas não podem virar itens de Mithril.",
           "tags": [
             {
               "text": "Pré-requisito",
@@ -199,7 +216,8 @@
             }
           ]
         }
-      ]
+      ],
+      "note": "A forja fica em Bree, e até a fase 8 a história só leva a companhia para longe de lá: não dá para voltar a pé. As <strong>estátuas de águia</strong> (viagem rápida pelo mapa) só aparecem depois de <em>Out of the Frying Pan…</em>."
     },
     {
       "title": "Primeiro retorno econômico",
@@ -313,14 +331,14 @@
       "tasks": [
         {
           "id": "t9",
-          "title": "Avance pelos níveis 7–9 conforme necessário",
-          "desc": "Complete <em>Goblin Town</em> até <em>Queer Lodgings</em> para ampliar o elenco e abrir caminho para as próximas regiões. Não compre personagens antes de confirmar o bloqueio específico.",
+          "title": "Complete o nível 9 (Queer Lodgings)",
+          "desc": "Os níveis 7 e 8 já ficaram para trás na etapa 01. Complete <em>Queer Lodgings</em> para ampliar o elenco; no interlúdio seguinte, Beorn empresta pôneis e as viagens pela Terra-média ficam mais rápidas. Não compre personagens antes de confirmar o bloqueio específico.",
           "tags": [
             {
               "text": "História"
             },
             {
-              "text": "Níveis 7–9"
+              "text": "Nível 9"
             }
           ]
         },
@@ -887,8 +905,8 @@
     "<a href=\"https://www.gamefront.com/news/lego-the-hobbit-schematics-locations-guide\" target=\"_blank\" rel=\"noopener noreferrer\">GameFront — Schematics Locations Guide</a>: esquemas encontrados em níveis da história, incluindo Mirror Armour e Flail.",
     "<a href=\"https://www.trueachievements.com/game/lego-the-hobbit/walkthrough/5\" target=\"_blank\" rel=\"noopener noreferrer\">TrueAchievements — Free Play and Middle-earth</a>: detalhes do puzzle do Mithril Shadow Blade.",
     "<a href=\"https://www.gamesradar.com/lego-hobbit-red-brick-locations-guide/6/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesRadar — Red Brick Quests</a>: localização/horário das missões x2, x4 e x6.",
-    "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Heirloom_in_the_Making\" target=\"_blank\" rel=\"noopener noreferrer\">Heirloom in the Making</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Weighting_for_a_Stranger\" target=\"_blank\" rel=\"noopener noreferrer\">Weighting for a Stranger</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Bilbo_and_the_Beanstalk\" target=\"_blank\" rel=\"noopener noreferrer\">Bilbo and the Beanstalk</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/No_Harm_in_Armour\" target=\"_blank\" rel=\"noopener noreferrer\">No Harm in Armour</a>: cadeia de pré-requisitos do x8 e locais dos esquemas da coroa e do Megapult.",
-    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense."
+    "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Heirloom_in_the_Making\" target=\"_blank\" rel=\"noopener noreferrer\">Heirloom in the Making</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Weighting_for_a_Stranger\" target=\"_blank\" rel=\"noopener noreferrer\">Weighting for a Stranger</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Bilbo_and_the_Beanstalk\" target=\"_blank\" rel=\"noopener noreferrer\">Bilbo and the Beanstalk</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Smithy_in_Peril\" target=\"_blank\" rel=\"noopener noreferrer\">Smithy in Peril</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/No_Harm_in_Armour\" target=\"_blank\" rel=\"noopener noreferrer\">No Harm in Armour</a>: cadeia de pré-requisitos do x8 e locais dos esquemas da coroa e do Megapult; detalhes do resgate do ferreiro.",
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: interlúdios da história (estátuas de águia após a fase 8, pôneis após a fase 9), materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense."
   ],
   "confirm": [
     "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting.",
