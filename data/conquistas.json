@@ -1,7 +1,7 @@
 {
   "_leia-me": "Conteúdo da página de conquistas. Nomes, descrições e porcentagens vêm da Steam e são atualizados por tools/update_steam.py (as dicas e capítulos não são tocados). Nunca mude a chave de uma conquista (ex.: COMPLETE_STORYEVENT1): ela é o id oficial da Steam e guarda o progresso.",
   "steamAppId": 285160,
-  "updated": "2026-10-09",
+  "updated": "2026-10-12",
   "intro": "Todas as conquistas de <strong>LEGO The Hobbit</strong> na Steam, com uma dica direta de como conseguir cada uma e a raridade entre os jogadores. Só {pct100} dos jogadores chegaram a 100%.",
   "chapters": [
     {
@@ -141,7 +141,7 @@
     "COMPLETE_STORYEVENT13": {
       "name": "Ele está convocando seus servos",
       "desc": "Conclua ‘Procurando Provas’",
-      "pct": 24.0,
+      "pct": 23.9,
       "tip": "Desbloqueia ao concluir a fase 13 no Modo História; acontece naturalmente seguindo a campanha."
     },
     "COMPLETE_STORYEVENT14": {
