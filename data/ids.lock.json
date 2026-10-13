@@ -78,5 +78,13 @@
     "COMPLETE_MINING_GAME_PERFECTLY_X_TIMES",
     "EQUIP_THORIN_WITH_MITHRIL_MUSHROOM_CROWN",
     "OBTAIN_X_BONUSES_DURING_INSTRUCTION_BUILDS"
-  ]
+  ],
+  "aposentados": {
+    "rota": [
+      "t1",
+      "t9",
+      "t36"
+    ],
+    "conquistas": []
+  }
 }

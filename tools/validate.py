@@ -60,7 +60,7 @@ def check_rota(d):
         if not st.get('tasks'): err(f'{w}: etapa sem tarefas')
         for t in st.get('tasks', []):
             tid = t.get('id', '?'); tw = f'{w} tarefa {tid}'
-            if not re.fullmatch(r't\d+', str(tid)): err(f'{tw}: id deve ser "t" + número (ex.: t36)')
+            if not re.fullmatch(r't\d+', str(tid)): err(f'{tw}: id deve ser "t" + número (ex.: t38)')
             ids.append(tid)
             check_html(f'{tw} title', t.get('title')); check_html(f'{tw} desc', t.get('desc'))
             for m in t.get('materials', []):
@@ -123,9 +123,12 @@ def main():
         for k in ids: lock[k] = sorted(set(lock.get(k, [])) | set(ids[k]), key=lambda x: (len(x), x))
         LOCK.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
         print(f'IDs registrados em {LOCK.relative_to(ROOT)}.')
+    retired = lock.get('aposentados', {})
     for k in ids:
-        gone = sorted(set(lock.get(k, [])) - set(ids[k]))
-        if gone: err(f'{k}: IDs publicados que sumiram: {", ".join(gone)}. Não apague nem renomeie IDs; se a tarefa não vale mais, mude o texto.')
+        back = sorted(set(retired.get(k, [])) & set(ids[k]))
+        if back: err(f'{k}: IDs aposentados não podem ser reutilizados: {", ".join(back)}. Use o próximo número livre.')
+        gone = sorted(set(lock.get(k, [])) - set(ids[k]) - set(retired.get(k, [])))
+        if gone: err(f'{k}: IDs publicados que sumiram: {", ".join(gone)}. Não apague nem renomeie IDs; se a tarefa não vale mais, mude o texto ou aposente o id (veja o README).')
         new = sorted(set(ids[k]) - set(lock.get(k, [])))
         if new: err(f'{k}: IDs novos ainda não registrados: {", ".join(new)}. Rode "python tools/validate.py --lock" ou adicione-os em data/ids.lock.json.')
 

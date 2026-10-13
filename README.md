@@ -36,8 +36,9 @@ tools/
 O progresso de cada visitante fica salvo no navegador dele, ligado ao **id** de cada item (`t1`, `t2`… na rota; `COMPLETE_STORYEVENT1`… nas conquistas).
 
 - **Tarefa nova** → use o próximo número livre (hoje o maior é `t37`, então a próxima é `t38`), mesmo que ela fique no meio da rota. A ordem na tela é a ordem no JSON, não o número.
-- **Tarefa que não vale mais** → mude o texto; não apague o id.
-- O arquivo `data/ids.lock.json` lista todos os IDs já publicados. O validador **falha** se algum deles sumir, e também se aparecer um id novo que ainda não está na lista. Para registrar IDs novos, rode `python tools/validate.py --lock` (ou acrescente o id à lista à mão, pelo próprio GitHub).
+- **Tarefa que não vale mais** → de preferência, mude o texto e mantenha o id.
+- **Tarefa que precisa sair** (ex.: várias juntadas numa só) → apague-a da rota e acrescente o id em `aposentados` no `data/ids.lock.json`. Quem tinha marcado essa tarefa só perde aquela marcação. Id aposentado nunca volta a ser usado (hoje: `t1`, `t9`, `t36`).
+- O arquivo `data/ids.lock.json` lista todos os IDs já publicados. O validador **falha** se algum deles sumir sem estar em `aposentados`, se um id aposentado reaparecer, e também se aparecer um id novo que ainda não está na lista. Para registrar IDs novos, rode `python tools/validate.py --lock` (ou acrescente o id à lista à mão, pelo próprio GitHub).
 
 As chaves de salvamento no navegador (`hobbit-route-checklist-v1`, `hobbit-achievements-v1`, `hobbit-theme`…) também nunca devem mudar.
 
@@ -53,7 +54,7 @@ Campos de texto aceitam HTML simples: `<em>`, `<strong>`, `<b>`, `<a href="...">
 
 ```json
 {
-  "id": "t36",
+  "id": "t38",
   "title": "Fabrique o Mithril Exemplo",
   "desc": "Forje o item em <em>Bree</em>.",
   "materials": [["mithril", 5], ["madeira", 20]],

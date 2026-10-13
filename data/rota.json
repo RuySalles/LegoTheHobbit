@@ -145,61 +145,18 @@
       "tag": "Base",
       "tasks": [
         {
-          "id": "t1",
-          "title": "Complete os níveis 1 a 6",
-          "desc": "Avance de <em>Greatest Kingdom in Middle-earth</em> até <em>Over Hill and Under Hill</em>. Isso libera o Free Play dos níveis concluídos e amplia as opções de personagens.",
-          "tags": [
-            {
-              "text": "História"
-            },
-            {
-              "text": "Níveis 1–6"
-            }
-          ]
-        },
-        {
-          "id": "t36",
-          "title": "Avance até a fase 8 e libere as águias",
-          "desc": "Continue a história por <em>Goblin-town</em> (7) e <em>Out of the Frying Pan…</em> (8). No interlúdio <em>The Carrock</em>, as Águias resgatam a companhia e liberam as estátuas de águia: abra o mapa e escolha qualquer estátua para ser levado até ela.",
-          "tags": [
-            {
-              "text": "História"
-            },
-            {
-              "text": "Níveis 7–8"
-            },
-            {
-              "text": "Viagem rápida",
-              "type": "prereq"
-            }
-          ]
-        },
-        {
-          "id": "t9",
-          "title": "Complete o nível 9 (Queer Lodgings)",
-          "desc": "Complete <em>Queer Lodgings</em>, a casa de Beorn. No interlúdio seguinte, Beorn empresta pôneis e as viagens pela Terra-média ficam mais rápidas.",
-          "tags": [
-            {
-              "text": "História"
-            },
-            {
-              "text": "Nível 9"
-            }
-          ]
-        },
-        {
           "id": "t37",
-          "title": "Complete o nível 10 e libere os elfos",
-          "desc": "Complete <em>Flies and Spiders</em>, em Mirkwood. É a primeira fase em que um elfo é jogável: Legolas e Tauriel entram nela e passam a ficar disponíveis no Free Play. Os dois esquemas abaixo pedem um elfo, então não dá para pegá-los antes disso. Não compre personagens antes: não há elfo confirmado à venda mais cedo.",
+          "title": "Avance a história até o nível 10 (Flies and Spiders)",
+          "desc": "Jogue a história de <em>Greatest Kingdom in Middle-earth</em> até <em>Flies and Spiders</em>, em Mirkwood. No caminho, tudo de que a rota precisa é liberado: o <strong>Free Play</strong> de cada fase concluída; as <strong>estátuas de águia</strong> (viagem rápida), no interlúdio <em>The Carrock</em>, depois de <em>Out of the Frying Pan…</em> (8); os pôneis de Beorn, depois de <em>Queer Lodgings</em> (9); e os <strong>elfos</strong> Legolas e Tauriel, em <em>Flies and Spiders</em> (10). Não compre personagens antes: não há elfo confirmado à venda mais cedo.",
           "tags": [
             {
               "text": "História"
             },
             {
-              "text": "Nível 10"
+              "text": "Níveis 1–10"
             },
             {
-              "text": "Libera elfos",
+              "text": "Águias e elfos",
               "type": "prereq"
             }
           ]
@@ -247,7 +204,7 @@
           ]
         }
       ],
-      "note": "A forja fica em Bree, e até a fase 8 a história só leva a companhia para longe de lá: não dá para voltar a pé. As <strong>estátuas de águia</strong> (viagem rápida pelo mapa) só aparecem depois de <em>Out of the Frying Pan…</em>. Os esquemas dos níveis 1 e 6 exigem um <strong>elfo</strong>, e o primeiro só fica jogável em <em>Flies and Spiders</em> (nível 10)."
+      "note": "Primeiro a história, depois o Free Play, por último Bree: os esquemas dos níveis 1 e 6 exigem um <strong>elfo</strong>, que só fica jogável no nível 10, e a forja de Bree só é alcançável depois das águias (nível 8). Assim você chega ao ferreiro já com os dois esquemas na mão."
     },
     {
       "title": "Primeiro retorno econômico",
