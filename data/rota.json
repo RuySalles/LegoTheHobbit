@@ -147,7 +147,7 @@
         {
           "id": "t37",
           "title": "Avance a história até o nível 10 (Flies and Spiders)",
-          "desc": "Jogue a história de <em>Greatest Kingdom in Middle-earth</em> até <em>Flies and Spiders</em>, em Mirkwood. No caminho, tudo de que a rota precisa é liberado: o <strong>Free Play</strong> de cada fase concluída; as <strong>estátuas de águia</strong> (viagem rápida), no interlúdio <em>The Carrock</em>, depois de <em>Out of the Frying Pan…</em> (8); os pôneis de Beorn, depois de <em>Queer Lodgings</em> (9); e os <strong>elfos</strong> Legolas e Tauriel, em <em>Flies and Spiders</em> (10). Não compre personagens antes: não há elfo confirmado à venda mais cedo.",
+          "desc": "Jogue a história de <em>Greatest Kingdom in Middle-earth</em> até <em>Flies and Spiders</em>, em Mirkwood. No caminho, tudo de que a rota precisa é liberado: o <strong>Free Play</strong> de cada fase concluída; as <strong>estátuas de águia</strong> (viagem rápida), no interlúdio <em>The Carrock</em>, depois de <em>Out of the Frying Pan…</em> (8); os pôneis de Beorn, depois de <em>Queer Lodgings</em> (9); e os <strong>elfos</strong> Legolas e Tauriel, em <em>Flies and Spiders</em> (10). Lindir e Elrond aparecem à venda antes, mas não têm arco; os esquemas dos níveis 1 e 6 pedem um elfo que atire no alvo e suba girando nas barras, como Legolas ou Tauriel.",
           "tags": [
             {
               "text": "História"
@@ -164,7 +164,7 @@
         {
           "id": "t3",
           "title": "Colete o Mirror Armour no nível 1",
-          "desc": "No Free Play de <em>Greatest Kingdom in Middle-earth</em>, use Legolas ou Tauriel para atirar nos encaixes de flecha da área de mineração e alcançar a plataforma elevada.",
+          "desc": "No Free Play de <em>Greatest Kingdom in Middle-earth</em>, na área de mineração, use Legolas ou Tauriel para atirar no alvo das barras giratórias e suba por elas até a plataforma com o esquema.",
           "tags": [
             {
               "text": "Esquema",
@@ -178,7 +178,7 @@
         {
           "id": "t4",
           "title": "Colete o Flail no nível 6",
-          "desc": "No Free Play de <em>Over Hill and Under Hill</em>, logo no início, use Legolas ou Tauriel nos encaixes de flecha e atravesse os apoios até a plataforma com o esquema.",
+          "desc": "No Free Play de <em>Over Hill and Under Hill</em>, logo na primeira área, use Legolas ou Tauriel para atirar nos alvos das barras giratórias do lado esquerdo e suba por elas até a plataforma com o esquema.",
           "tags": [
             {
               "text": "Esquema",
@@ -192,7 +192,7 @@
         {
           "id": "t2",
           "title": "Desbloqueie a forja em Bree",
-          "desc": "Com os dois esquemas em mãos, voe até Bree por uma estátua de águia e complete a missão <em>Smithy in Peril</em>: a esposa do ferreiro, na porta da loja, pede para resgatá-lo numa caverna perto de Weathertop. Lá dentro você vai precisar de Ori (estilingue) e de alguém com pá, como Sam. Sem isso, os esquemas não podem virar itens de Mithril.",
+          "desc": "Com os dois esquemas em mãos, voe até Bree por uma estátua de águia e complete a missão <em>Smithy in Peril</em>: a esposa do ferreiro, na porta da loja, pede para resgatá-lo numa caverna perto de Weathertop. Lá dentro você vai precisar de Ori (estilingue) e de Fíli (pá, para cavar), os dois da própria companhia. Sem isso, os esquemas não podem virar itens de Mithril.",
           "tags": [
             {
               "text": "Pré-requisito",
@@ -208,60 +208,9 @@
     },
     {
       "title": "Primeiro retorno econômico",
-      "subtitle": "Attract Studs e x2 · investimento inicial controlado",
+      "subtitle": "x2 e Attract Studs · investimento inicial controlado",
       "tag": "Prioridade",
       "tasks": [
-        {
-          "id": "t5",
-          "title": "Fabrique o Mithril Mirror Armour",
-          "desc": "Use a forja em Bree. O item não é um multiplicador; ele é a entrega exigida para desbloquear o extra Attract Studs.",
-          "materials": [
-            [
-              "mithril",
-              5
-            ],
-            [
-              "safiras",
-              10
-            ],
-            [
-              "couro",
-              20
-            ],
-            [
-              "pedra",
-              20
-            ],
-            [
-              "prata",
-              20
-            ]
-          ],
-          "tags": [
-            {
-              "text": "Forja · Bree",
-              "type": "forja"
-            }
-          ]
-        },
-        {
-          "id": "t6",
-          "title": "Entregue a armadura em Lake-town",
-          "desc": "Complete <em>No Harm in Armour</em>, na região nordeste de Lake-town. A partir da estátua de Lake-town, siga a trilha de studs pela doca até o homem que pede a armadura. Depois compre Attract Studs por 175.000 studs.",
-          "tags": [
-            {
-              "text": "Entrega",
-              "type": "entrega"
-            },
-            {
-              "text": "Lake-town"
-            },
-            {
-              "text": "175.000 studs",
-              "type": "custo"
-            }
-          ]
-        },
         {
           "id": "t7",
           "title": "Fabrique o Mithril Flail",
@@ -308,8 +257,64 @@
               "type": "custo"
             }
           ]
+        },
+        {
+          "id": "t5",
+          "title": "Fabrique o Mithril Mirror Armour",
+          "desc": "Use a forja em Bree. O item não é um multiplicador; ele é a entrega exigida para desbloquear o extra Attract Studs.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "safiras",
+              10
+            ],
+            [
+              "couro",
+              20
+            ],
+            [
+              "pedra",
+              20
+            ],
+            [
+              "prata",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja · Bree",
+              "type": "forja"
+            }
+          ]
+        },
+        {
+          "id": "t6",
+          "title": "Entregue a armadura em Lake-town",
+          "desc": "Só depois de <em>A Warm Welcome</em> (fase 12), se Lake-town ainda não estiver aberto antes disso. Complete <em>No Harm in Armour</em>, na região nordeste de Lake-town: a partir da estátua de Lake-town, siga a trilha de studs pela doca até o homem que pede a armadura. Depois compre Attract Studs por 175.000 studs.",
+          "tags": [
+            {
+              "text": "Entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Lake-town"
+            },
+            {
+              "text": "Após fase 12",
+              "type": "prereq"
+            },
+            {
+              "text": "175.000 studs",
+              "type": "custo"
+            }
+          ]
         }
-      ]
+      ],
+      "note": "O x2 vem primeiro porque Hobbiton já está aberto. A entrega da armadura é em Lake-town, e não há confirmação de que Lake-town esteja aberto antes de <em>A Warm Welcome</em> (fase 12): se ainda não estiver, forje a armadura e guarde a entrega para depois dessa fase."
     },
     {
       "title": "Preparar habilidades e desbloquear x4",
@@ -389,24 +394,25 @@
       "tasks": [
         {
           "id": "t13",
-          "title": "Desbloqueie a escalada Goblin e a magia de Saruman",
-          "desc": "Use um Goblin para paredes próprias dessa classe e Saruman para quebrar blocos de Mithril. Confirme que esses personagens estão disponíveis antes de iniciar o desvio.",
+          "title": "Compre Saruman e libere o Goblin",
+          "desc": "<strong>Saruman</strong> fica à venda em <em>Rivendell</em> depois de <em>The Troll Hoard</em> (fase 5), por 50.000 studs; é ele que quebra os objetos de Mithril prateados. O <strong>Goblin (Confused)</strong>, que escala as paredes Goblin, é liberado de graça ao completar <em>Goblin-town</em> (fase 7).",
           "tags": [
             {
-              "text": "Habilidades"
+              "text": "Personagens"
             },
             {
-              "text": "Goblin"
+              "text": "Saruman · Rivendell"
             },
             {
-              "text": "Saruman"
+              "text": "50.000 studs",
+              "type": "custo"
             }
           ]
         },
         {
           "id": "t14",
           "title": "Colete o esquema Mithril Construction Hat em Mirkwood",
-          "desc": "Siga o caminho próximo à casa de Radagast, escale a parede Goblin, atravesse as plataformas e resolva o puzzle da caverna: mova o bloco, acenda o fogo e abra o recipiente após derreter o gelo.",
+          "desc": "Siga o caminho próximo à casa de Radagast, escale a parede Goblin, atravesse as plataformas e resolva o puzzle da caverna: mova o bloco, acenda o fogo e abra o recipiente após derreter o gelo. Personagens usados: Goblin, Saruman, Dwalin (Young), um elfo, Fíli (plantar) e Sam (fogo), que já fica disponível no Free Play bem cedo na história.",
           "tags": [
             {
               "text": "Esquema",
@@ -522,7 +528,7 @@
         {
           "id": "t28",
           "title": "Entregue a coroa em Heirloom in the Making",
-          "desc": "A missão fica numa casa encravada no penhasco, a nordeste de Bree, com a porta cercada de pedras wraith. Suba no penhasco logo acima da porta, quebre as pedras com Bilbo usando o Anel e monte a manivela para abri-la. Entregue a coroa à anã lá dentro; a recompensa é o Red Brick Super Slap.",
+          "desc": "A missão fica numa casa encravada no penhasco, a nordeste de Bree, com a porta cercada de pedras wraith. Suba no penhasco logo acima da porta, quebre as pedras com Bilbo usando o Anel (disponível desde a fase 2) e monte a manivela para abri-la. Entregue a coroa à anã lá dentro; a recompensa é o Red Brick Super Slap.",
           "tags": [
             {
               "text": "Entrega",
@@ -539,7 +545,7 @@
         {
           "id": "t29",
           "title": "Colete o esquema Mithril Megapult",
-          "desc": "Perto de Bywater, atravesse a ponte próxima à estátua e procure uma porta prateada com três rodas coloridas acima. Em frente a ela há outra porta com uma águia de pedra: suba com um elfo até a águia e observe as três corujas coloridas, cuja ordem é a combinação. Ajuste as rodas com o estilingue de Ori, entre e quebre o baú de pedra.",
+          "desc": "Perto de Bywater, atravesse a ponte próxima à estátua e procure uma porta prateada com três rodas coloridas acima. Em frente a ela há outra porta com uma águia de pedra: suba com um elfo até a águia e observe as três corujas coloridas, cuja ordem é a combinação (provavelmente verde, azul, vermelho, da esquerda para a direita; confira nas corujas). Ajuste as rodas com o estilingue de Ori, entre e quebre o baú de pedra.",
           "tags": [
             {
               "text": "Esquema",
@@ -621,7 +627,7 @@
         {
           "id": "t33",
           "title": "Colete o esquema Mithril Horse Shoes",
-          "desc": "Em Rivendell, atravesse as plataformas de pedra do lago até uma porta e entre. Acerte a pedra de dica à direita para começar o enigma; as marcas no chão são horas: acerte XII, IV e VI. Em seguida, acerte a pedra atrás da árvore no canto esquerdo, a do topo da coluna caída à direita, a escondida no arbusto à direita e, por fim, a pedra verde.",
+          "desc": "Em Rivendell, atravesse as plataformas de pedra do lago até uma porta e entre. Acerte a pedra de dica à direita para começar o enigma; as marcas no chão são horas: acerte XII, IV e VI. Em seguida, acerte a pedra atrás da árvore no canto esquerdo, a do topo da coluna caída à direita, a escondida no arbusto à direita e, por fim, a pedra verde. Se não achar a porta em Rivendell, o IGN indica uma porta com “H” perto da estátua de High Pass, com o mesmo enigma.",
           "tags": [
             {
               "text": "Esquema",
@@ -779,14 +785,11 @@
       "tasks": [
         {
           "id": "t21",
-          "title": "Avance a campanha até desbloquear Dol Guldur e o Anel",
-          "desc": "Complete os níveis restantes conforme o progresso da história. Para os blocos invisíveis, use Bilbo com o Anel.",
+          "title": "Avance a campanha até desbloquear Dol Guldur",
+          "desc": "Complete os níveis restantes da história até a região de Dol Guldur estar acessível no mapa e <em>A Warm Welcome</em> (fase 12) estar no Free Play. O Anel não depende disso: Bilbo já interage com peças wraith desde <em>An Unexpected Party</em> (fase 2).",
           "tags": [
             {
               "text": "História"
-            },
-            {
-              "text": "Bilbo + Anel"
             }
           ]
         },
@@ -844,7 +847,7 @@
         {
           "id": "t24",
           "title": "Complete Staff and Nonsense",
-          "desc": "Esse é o pré-requisito indicado para desbloquear <em>Candle With Care</em>. A missão pede o tesouro <em>Sir Moustaff</em>: no Free Play de <em>A Warm Welcome</em>, depois do baú 4, quebre a jaula prateada para pegá-lo. Entregue à elfa atrás da porta no muro de pedra, na Floresta Élfica.",
+          "desc": "Esse é o pré-requisito indicado para desbloquear <em>Candle With Care</em>. A missão pede o tesouro <em>Sir Moustaff</em>: no Free Play de <em>A Warm Welcome</em>, depois do baú 4, quebre a jaula prateada com Saruman para pegá-lo. Entregue à elfa atrás da porta no muro de pedra, na Floresta Élfica.",
           "tags": [
             {
               "text": "Pré-requisito",
@@ -880,11 +883,11 @@
     "<a href=\"https://www.trueachievements.com/game/lego-the-hobbit/walkthrough/5\" target=\"_blank\" rel=\"noopener noreferrer\">TrueAchievements — Free Play and Middle-earth</a>: detalhes do puzzle do Mithril Shadow Blade.",
     "<a href=\"https://www.gamesradar.com/lego-hobbit-red-brick-locations-guide/6/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesRadar — Red Brick Quests</a>: localização/horário das missões x2, x4 e x6.",
     "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Heirloom_in_the_Making\" target=\"_blank\" rel=\"noopener noreferrer\">Heirloom in the Making</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Weighting_for_a_Stranger\" target=\"_blank\" rel=\"noopener noreferrer\">Weighting for a Stranger</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Bilbo_and_the_Beanstalk\" target=\"_blank\" rel=\"noopener noreferrer\">Bilbo and the Beanstalk</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Smithy_in_Peril\" target=\"_blank\" rel=\"noopener noreferrer\">Smithy in Peril</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/No_Harm_in_Armour\" target=\"_blank\" rel=\"noopener noreferrer\">No Harm in Armour</a>: cadeia de pré-requisitos do x8 e locais dos esquemas da coroa e do Megapult; detalhes do resgate do ferreiro.",
-    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: interlúdios da história (estátuas de águia após a fase 8, pôneis após a fase 9), materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense."
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: interlúdios da história (estátuas de águia após a fase 8, pôneis após a fase 9), materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense.",
+    "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Characters\" target=\"_blank\" rel=\"noopener noreferrer\">Characters</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Schematics\" target=\"_blank\" rel=\"noopener noreferrer\">Schematics</a>: quando cada personagem é liberado, preço e local (Saruman, Lindir, Fíli, Bilbo) e personagens exigidos por cada esquema.",
+    "<a href=\"https://www.gamepressure.com/hobbit/schematics-locations-1-8/z46275\" target=\"_blank\" rel=\"noopener noreferrer\">Gamepressure — Schematics locations</a>: local do esquema Horse Shoes e ordem das cores do Megapult."
   ],
   "confirm": [
-    "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting.",
-    "Ordem das cores das rodas do Megapult: o IGN indica verde, vermelho, azul; outro guia, verde, azul, vermelho. As corujas vistas da águia de pedra mostram a resposta certa.",
-    "Quando o Anel de Bilbo fica disponível: a entrega de Heirloom (etapa 05) exige o Anel, mas a etapa 08 o trata como desbloqueio tardio da campanha."
+    "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting."
   ]
 }
