@@ -141,7 +141,7 @@
   "stages": [
     {
       "title": "Desbloqueios fundamentais",
-      "subtitle": "História 1–8 · águias, Free Play e forja",
+      "subtitle": "História 1–10 · águias, forja e elfos",
       "tag": "Base",
       "tasks": [
         {
@@ -175,23 +175,39 @@
           ]
         },
         {
-          "id": "t2",
-          "title": "Desbloqueie a forja em Bree",
-          "desc": "Voe até Bree por uma estátua de águia e complete a missão <em>Smithy in Peril</em>: a esposa do ferreiro, na porta da loja, pede para resgatá-lo numa caverna perto de Weathertop. Lá dentro você vai precisar de Ori (estilingue) e de alguém com pá, como Sam. Sem isso, os esquemas não podem virar itens de Mithril.",
+          "id": "t9",
+          "title": "Complete o nível 9 (Queer Lodgings)",
+          "desc": "Complete <em>Queer Lodgings</em>, a casa de Beorn. No interlúdio seguinte, Beorn empresta pôneis e as viagens pela Terra-média ficam mais rápidas.",
           "tags": [
             {
-              "text": "Pré-requisito",
-              "type": "prereq"
+              "text": "História"
             },
             {
-              "text": "Bree"
+              "text": "Nível 9"
+            }
+          ]
+        },
+        {
+          "id": "t37",
+          "title": "Complete o nível 10 e libere os elfos",
+          "desc": "Complete <em>Flies and Spiders</em>, em Mirkwood. É a primeira fase em que um elfo é jogável: Legolas e Tauriel entram nela e passam a ficar disponíveis no Free Play. Os dois esquemas abaixo pedem um elfo, então não dá para pegá-los antes disso. Não compre personagens antes: não há elfo confirmado à venda mais cedo.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Nível 10"
+            },
+            {
+              "text": "Libera elfos",
+              "type": "prereq"
             }
           ]
         },
         {
           "id": "t3",
           "title": "Colete o Mirror Armour no nível 1",
-          "desc": "No Free Play de <em>Greatest Kingdom in Middle-earth</em>, use um elfo para atirar nos encaixes de flecha da área de mineração e alcançar a plataforma elevada.",
+          "desc": "No Free Play de <em>Greatest Kingdom in Middle-earth</em>, use Legolas ou Tauriel para atirar nos encaixes de flecha da área de mineração e alcançar a plataforma elevada.",
           "tags": [
             {
               "text": "Esquema",
@@ -205,7 +221,7 @@
         {
           "id": "t4",
           "title": "Colete o Flail no nível 6",
-          "desc": "No início de <em>Over Hill and Under Hill</em>, use um elfo nos encaixes de flecha e atravesse os apoios até a plataforma com o esquema.",
+          "desc": "No Free Play de <em>Over Hill and Under Hill</em>, logo no início, use Legolas ou Tauriel nos encaixes de flecha e atravesse os apoios até a plataforma com o esquema.",
           "tags": [
             {
               "text": "Esquema",
@@ -215,9 +231,23 @@
               "text": "Nível 6"
             }
           ]
+        },
+        {
+          "id": "t2",
+          "title": "Desbloqueie a forja em Bree",
+          "desc": "Com os dois esquemas em mãos, voe até Bree por uma estátua de águia e complete a missão <em>Smithy in Peril</em>: a esposa do ferreiro, na porta da loja, pede para resgatá-lo numa caverna perto de Weathertop. Lá dentro você vai precisar de Ori (estilingue) e de alguém com pá, como Sam. Sem isso, os esquemas não podem virar itens de Mithril.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Bree"
+            }
+          ]
         }
       ],
-      "note": "A forja fica em Bree, e até a fase 8 a história só leva a companhia para longe de lá: não dá para voltar a pé. As <strong>estátuas de águia</strong> (viagem rápida pelo mapa) só aparecem depois de <em>Out of the Frying Pan…</em>."
+      "note": "A forja fica em Bree, e até a fase 8 a história só leva a companhia para longe de lá: não dá para voltar a pé. As <strong>estátuas de águia</strong> (viagem rápida pelo mapa) só aparecem depois de <em>Out of the Frying Pan…</em>. Os esquemas dos níveis 1 e 6 exigem um <strong>elfo</strong>, e o primeiro só fica jogável em <em>Flies and Spiders</em> (nível 10)."
     },
     {
       "title": "Primeiro retorno econômico",
@@ -326,22 +356,9 @@
     },
     {
       "title": "Preparar habilidades e desbloquear x4",
-      "subtitle": "Avance a história e conclua o puzzle do Shadow Blade",
+      "subtitle": "Conclua o puzzle do Shadow Blade",
       "tag": "Exploração",
       "tasks": [
-        {
-          "id": "t9",
-          "title": "Complete o nível 9 (Queer Lodgings)",
-          "desc": "Os níveis 7 e 8 já ficaram para trás na etapa 01. Complete <em>Queer Lodgings</em> para ampliar o elenco; no interlúdio seguinte, Beorn empresta pôneis e as viagens pela Terra-média ficam mais rápidas. Não compre personagens antes de confirmar o bloqueio específico.",
-          "tags": [
-            {
-              "text": "História"
-            },
-            {
-              "text": "Nível 9"
-            }
-          ]
-        },
         {
           "id": "t10",
           "title": "Obtenha o esquema Mithril Shadow Blade",

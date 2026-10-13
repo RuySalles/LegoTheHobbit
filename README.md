@@ -35,7 +35,7 @@ tools/
 
 O progresso de cada visitante fica salvo no navegador dele, ligado ao **id** de cada item (`t1`, `t2`… na rota; `COMPLETE_STORYEVENT1`… nas conquistas).
 
-- **Tarefa nova** → use o próximo número livre (hoje o maior é `t35`, então a próxima é `t36`), mesmo que ela fique no meio da rota. A ordem na tela é a ordem no JSON, não o número.
+- **Tarefa nova** → use o próximo número livre (hoje o maior é `t37`, então a próxima é `t38`), mesmo que ela fique no meio da rota. A ordem na tela é a ordem no JSON, não o número.
 - **Tarefa que não vale mais** → mude o texto; não apague o id.
 - O arquivo `data/ids.lock.json` lista todos os IDs já publicados. O validador **falha** se algum deles sumir, e também se aparecer um id novo que ainda não está na lista. Para registrar IDs novos, rode `python tools/validate.py --lock` (ou acrescente o id à lista à mão, pelo próprio GitHub).
 
