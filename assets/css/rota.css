@@ -35,6 +35,13 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 .brickinfo span{display:block;color:var(--muted);font-size:.82rem}
 .brickcost{font-variant-numeric:tabular-nums;font-size:.86rem;color:var(--gold2);text-align:right;white-space:nowrap}
 .brickrow.on .brickcost:after{content:" ✓";color:var(--green);font-weight:700}
+/* Red Bricks da parte extra (O Tesouro de Erebor), recolhidos por padrão */
+.vault-more{border-top:1px solid var(--line);margin-top:6px;padding-top:4px}
+.vault-more summary{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;cursor:pointer;font-family:var(--font-display);font-size:.92rem;letter-spacing:.04em;list-style:none}
+.vault-more summary::-webkit-details-marker{display:none}
+.vault-more summary span:first-child:before{content:"▸";display:inline-block;margin-right:8px;color:var(--muted);transition:transform .2s}
+.vault-more[open] summary span:first-child:before{transform:rotate(90deg)}
+.vault-more .bricks{max-height:420px;overflow-y:auto;padding-right:4px}
 
 /* =========================================================
    ALERTA, RESUMO, SEÇÕES
@@ -93,6 +100,11 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 .stagehead p{margin:3px 0 0;color:var(--muted);font-size:.95rem}
 .stage-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:99px;padding:5px 10px;white-space:nowrap}
 .stage-count{font-family:var(--font-display);font-size:.98rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+/* Divisor que abre uma nova parte da rota */
+.part-divider{position:relative;z-index:1;text-align:center;padding:26px 18px 22px;margin-top:14px;background:var(--bg);border-top:1px solid color-mix(in srgb,var(--gold) 40%,transparent);border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
+.part-divider .part-rune{display:block;font-family:Georgia,serif;letter-spacing:.5em;color:var(--gold);opacity:.55;font-size:.85rem;user-select:none}
+.part-divider h2{font-family:var(--font-display);color:var(--gold2);font-size:clamp(1.4rem,4vw,1.9rem);letter-spacing:.04em;margin:8px 0 6px}
+.part-divider p{max-width:62ch;margin:0 auto;color:var(--soft);font-size:.98rem}
 .stage.complete .stage-count{color:var(--green)}
 
 /* Tarefas em colunas */
@@ -134,6 +146,7 @@ td{color:var(--soft)}tr:last-child td{border-bottom:0}td strong{color:var(--text
 td:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}
 tr.unlocked td{background:color-mix(in srgb,var(--green) 7%,transparent)}
 tr.unlocked td:first-child strong:after{content:" ✓";color:var(--green)}
+tr.grouprow th{background:var(--panel3);color:var(--gold2);font-size:.82rem;text-align:left}
 .matgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:10px;margin:14px 0}
 .mat{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:12px 14px;min-width:0}
 .mat strong{display:block;font-family:var(--font-display);font-size:1.45rem;color:var(--gold2);line-height:1.2;font-variant-numeric:tabular-nums}
@@ -191,6 +204,8 @@ tr.unlocked td:first-child strong:after{content:" ✓";color:var(--green)}
  tr td:last-child{border-bottom:0}
  td:before{content:attr(data-label);color:var(--gold2);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;padding-top:3px}
  td:first-child strong{font-size:1.05rem}
+ tr.grouprow{border:0;background:transparent;padding:14px 0 4px;margin:0}
+ tr.grouprow th{display:block;background:transparent;padding:0;border:0;white-space:normal}
 }
 
 /* Celulares (S24 Ultra, iPhone etc.) */

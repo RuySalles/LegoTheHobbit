@@ -35,7 +35,9 @@
   function renderStage(st, i) {
     const num = String(i + 1).padStart(2, '0');
     const note = st.note ? `<div class="stage-note">${st.note}</div>\n` : '';
-    return `<article class="stage">
+    // "part" abre uma nova parte da rota (ex.: O Tesouro de Erebor) com um divisor antes da etapa
+    const part = st.part ? `<div class="part-divider"><span class="part-rune" aria-hidden="true">ᛖ ᚱ ᛖ ᛒ ᛟ ᚱ</span><h2>${st.part.title}</h2><p>${st.part.text}</p></div>\n` : '';
+    return `${part}<article class="stage">
 <div class="stagehead"><div class="stage-num">${num}</div><div><h3>${st.title}</h3><p>${st.subtitle}</p></div><span class="chips"><span class="stage-tag">${st.tag}</span><span class="stage-count"></span></span></div>
 <div class="stagebody">
 ${note}${st.tasks.map(renderTask).join('\n')}
@@ -43,46 +45,56 @@ ${note}${st.tasks.map(renderTask).join('\n')}
 </article>`;
   }
 
-  // Soma dos materiais: obrigatórios x etapas opcionais (ex.: Express Delivery)
+  // Soma dos materiais: obrigatórios x cada grupo de etapas opcionais (ex.: Express Delivery, O Tesouro de Erebor)
   function materialTotals() {
-    const req = {}, extra = {}, optLabels = new Set();
+    const req = {}, extra = {};
     data.stages.forEach(st => st.tasks.forEach(t => (t.materials || []).forEach(([k, n]) => {
-      const bucket = st.optional ? extra : req;
+      const bucket = st.optional ? (extra[st.optional] = extra[st.optional] || {}) : req;
       bucket[k] = (bucket[k] || 0) + n;
-      if (st.optional) optLabels.add(st.optional);
     })));
-    const order = data.materials.map(m => m.key).filter(k => req[k] || extra[k]);
+    const groups = Object.keys(extra);
+    const order = data.materials.map(m => m.key).filter(k => req[k] || groups.some(g => extra[g][k]));
     // Mithril Bricks primeiro; depois do mais necessário ao menos (empate: ordem do catálogo)
     order.sort((a, b) => (b === 'mithril') - (a === 'mithril') || (req[b] || 0) - (req[a] || 0) || order.indexOf(a) - order.indexOf(b));
-    return { req, extra, order, optLabel: [...optLabels].join(' e ') };
+    return { req, extra, groups, order };
   }
 
   function render() {
-    const bricks = data.redBricks, mult = bricks.filter(b => b.multiplier), other = bricks.filter(b => !b.multiplier);
+    const bricks = data.redBricks, mult = bricks.filter(b => b.multiplier);
+    // "group" separa os Red Bricks de uma parte extra; sem group = rota principal
+    const main = bricks.filter(b => !b.group), more = bricks.filter(b => b.group);
+    const other = main.filter(b => !b.multiplier);
+    const partTitle = (data.stages.find(s => s.part) || { part: { title: 'Extras' } }).part.title;
     const sum = arr => arr.reduce((a, b) => a + b.cost, 0);
+    const brickRow = b => `<li class="brickrow" data-unlock="${H.esc(b.unlock)}"><span class="brick">${b.label}</span><span class="brickinfo"><strong>${b.name}</strong><span>${b.where}</span></span><span class="brickcost">${H.fmtShort(b.cost)}</span></li>`;
+    const costRow = b => `<tr data-unlock="${H.esc(b.unlock)}"><td data-label="Desbloqueio"><strong>${b.tableName}</strong></td><td data-label="Item exigido">${b.item}</td>`
+      + `<td data-label="Missão de entrega">${b.quest}</td><td data-label="Local / horário">${b.where}</td><td data-label="Custo">${H.fmtInt(b.cost)}</td></tr>`;
 
     $('heroMeta').innerHTML = lines([
       `<span class="pill"><strong>${mult.length}</strong> multiplicadores</span>`,
       `<span class="pill"><strong>${H.fmtShort(sum(mult))}</strong> studs para comprar todos</span>`,
       `<span class="pill">Checklist com progresso local</span>`]);
 
-    $('bricks').innerHTML = lines(bricks.map(b =>
-      `<li class="brickrow" data-unlock="${H.esc(b.unlock)}"><span class="brick">${b.label}</span><span class="brickinfo"><strong>${b.name}</strong><span>${b.where}</span></span><span class="brickcost">${H.fmtShort(b.cost)}</span></li>`));
+    $('bricks').innerHTML = lines(main.map(brickRow));
+    $('bricksMore').innerHTML = lines(more.map(brickRow));
+    $('vaultMore').hidden = !more.length;
+    $('vaultMoreTitle').textContent = partTitle;
     $('vaultCount').textContent = `0/${bricks.length}`;
 
     $('stages').innerHTML = lines(data.stages.map(renderStage));
 
-    $('costRows').innerHTML = lines(bricks.map(b =>
-      `<tr data-unlock="${H.esc(b.unlock)}"><td data-label="Desbloqueio"><strong>${b.tableName}</strong></td><td data-label="Item exigido">${b.item}</td>`
-      + `<td data-label="Missão de entrega">${b.quest}</td><td data-label="Local / horário">${b.where}</td><td data-label="Custo">${H.fmtInt(b.cost)}</td></tr>`));
+    $('costRows').innerHTML = lines(main.map(costRow)) + (more.length
+      ? `<tr class="grouprow"><th colspan="5" scope="rowgroup">${partTitle} · ${more.length} Red Bricks</th></tr>` + lines(more.map(costRow)) : '');
 
     $('budget').innerHTML = `<strong>Orçamento de referência:</strong> os ${H.numWord(mult.length)} multiplicadores custam ${H.fmtInt(sum(mult))} studs no total. `
-      + `Incluindo ${other.map(b => b.name).join(' e ')}, o total dos ${H.numWord(bricks.length)} extras desta rota é ${H.fmtInt(sum(bricks))} studs, sem contar personagens, materiais ou outras compras.`;
+      + `Incluindo ${other.map(b => b.name).join(' e ')}, a rota principal soma ${H.fmtInt(sum(main))} studs.`
+      + (more.length ? ` Os ${more.length} Red Bricks de <em>${partTitle}</em> custam mais ${H.fmtInt(sum(more))} studs, ${H.fmtInt(sum(bricks))} no total, o que é pouco com o x10 ligado.` : '')
+      + ` Sem contar personagens, materiais ou outras compras.`;
 
     const mt = materialTotals();
     $('matGrid').innerHTML = lines(mt.order.map(k => {
-      const n = mt.req[k] || 0, x = mt.extra[k] || 0;
-      const small = x ? `<small>+${x} com ${mt.optLabel}</small>` : '';
+      const n = mt.req[k] || 0;
+      const small = mt.groups.filter(g => mt.extra[g][k]).map(g => `<small>+${mt.extra[g][k]} com ${g}</small>`).join('');
       return `<div class="mat${k === 'mithril' ? ' key' : ''}"><strong>${n || '—'}</strong><span>${cap(matName[k])}</span>${small}</div>`;
     }));
 
@@ -140,6 +152,8 @@ ${note}${st.tasks.map(renderTask).join('\n')}
       if (on && el.classList.contains('brickrow')) bricksOn++;
     });
     $('vaultCount').textContent = `${bricksOn}/${data.redBricks.length}`;
+    const moreRows = [...$('bricksMore').children];
+    $('vaultMoreCount').textContent = `${moreRows.filter(li => li.classList.contains('on')).length}/${moreRows.length}`;
 
     H.store(STORAGE_KEY, JSON.stringify(boxes.filter(b => b.checked).map(b => b.dataset.id)));
     applyFilter();
@@ -159,6 +173,12 @@ ${note}${st.tasks.map(renderTask).join('\n')}
       const any = !!st.querySelector('.task:not([hidden])');
       st.hidden = !any;
       if (q && any) st.classList.remove('collapsed'); // durante a busca, abre as etapas com resultado
+    });
+    // Divisor de parte some se nenhuma etapa dela estiver visível
+    document.querySelectorAll('.part-divider').forEach(div => {
+      let el = div.nextElementSibling, any = false;
+      while (el && !el.classList.contains('part-divider')) { if (el.classList.contains('stage') && !el.hidden) { any = true; break; } el = el.nextElementSibling; }
+      div.hidden = !any;
     });
     $('emptyState').hidden = visible > 0;
   }

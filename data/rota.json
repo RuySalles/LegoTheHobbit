@@ -136,6 +136,318 @@
       "cost": 20000000,
       "unlock": "t25",
       "multiplier": true
+    },
+    {
+      "label": "SS",
+      "name": "Super Slap",
+      "tableName": "Super Slap",
+      "item": "Mithril Mushroom Crown",
+      "quest": "Heirloom in the Making",
+      "where": "Bree",
+      "cost": 50000,
+      "unlock": "t28",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "AL",
+      "name": "Attract Loot",
+      "tableName": "Attract Loot",
+      "item": "Mithril Megapult",
+      "quest": "Weighting for a Stranger",
+      "where": "Bree · Dia",
+      "cost": 100000,
+      "unlock": "t31",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "DL",
+      "name": "Double Loot",
+      "tableName": "Double Loot",
+      "item": "Mithril Horse Shoes",
+      "quest": "Express Delivery",
+      "where": "Bree",
+      "cost": 750000,
+      "unlock": "t35",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "PF",
+      "name": "Perfect Forging",
+      "tableName": "Perfect Forging",
+      "item": "Mithril Pickaxe",
+      "quest": "Manic Mining",
+      "where": "Elven Port · Dia",
+      "cost": 5000000,
+      "unlock": "t46",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "RH",
+      "name": "Regenerate Hearts",
+      "tableName": "Regenerate Hearts",
+      "item": "Mithril Stud Spade",
+      "quest": "Digger's Delight",
+      "where": "Bywater · Dia",
+      "cost": 100000,
+      "unlock": "t47",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "FB",
+      "name": "Fast Build",
+      "tableName": "Fast Build",
+      "item": "Mithril Fishing Pole",
+      "quest": "A Wish to Catch a Fish",
+      "where": "Bywater · Dia",
+      "cost": 100000,
+      "unlock": "t48",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "MK",
+      "name": "Minikit Detector",
+      "tableName": "Minikit Detector",
+      "item": "Mithril Bandit Gloves",
+      "quest": "Spoils of War",
+      "where": "Thranduil's Kingdom · Noite",
+      "cost": 150000,
+      "unlock": "t53",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "TR",
+      "name": "Treasure Item Detector",
+      "tableName": "Treasure Item Detector",
+      "item": "Mithril Slippers",
+      "quest": "Back-to-Roots Boots",
+      "where": "Rivendell · Noite",
+      "cost": 250000,
+      "unlock": "t54",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "MB",
+      "name": "Mithril Brick Detector",
+      "tableName": "Mithril Brick Detector",
+      "item": "Mithril Music Kit",
+      "quest": "One-Orc Band",
+      "where": "The High Fells · Noite",
+      "cost": 175000,
+      "unlock": "t55",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "FR",
+      "name": "Fall Rescue",
+      "tableName": "Fall Rescue",
+      "item": "Mithril Claws",
+      "quest": "The Goblin Who Lost Her Climb",
+      "where": "The High Fells · Noite",
+      "cost": 25000,
+      "unlock": "t75",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "OUR",
+      "name": "Always Loot Gold",
+      "tableName": "Always Loot Gold",
+      "item": "Mithril Rhythm Stick",
+      "quest": "Bop 'Til You Drop",
+      "where": "The High Fells · Noite",
+      "cost": 1000000,
+      "unlock": "t77",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "POO",
+      "name": "Poo Studs",
+      "tableName": "Poo Studs",
+      "item": "Mithril Giddy-up Staff",
+      "quest": "Trader's Turmoil",
+      "where": "Bree · Noite",
+      "cost": 25000,
+      "unlock": "t78",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "INV",
+      "name": "Invincibility",
+      "tableName": "Invincibility",
+      "item": "Mithril Falcon",
+      "quest": "Bird of Pay",
+      "where": "Rivendell · Noite",
+      "cost": 500000,
+      "unlock": "t79",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "MH",
+      "name": "Mithril Hearts",
+      "tableName": "Mithril Hearts",
+      "item": "Mithril Skull Cap",
+      "quest": "The Orc Within",
+      "where": "Dol Guldur · Noite",
+      "cost": 75000,
+      "unlock": "t82",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "RUB",
+      "name": "Always Loot Rubies",
+      "tableName": "Always Loot Rubies",
+      "item": "Mithril Wraith Armour",
+      "quest": "Otherworldly Ambition",
+      "where": "Dol Guldur · Noite",
+      "cost": 250000,
+      "unlock": "t84",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "CAR",
+      "name": "Middle-earth Carnival",
+      "tableName": "Middle-earth Carnival",
+      "item": "Mithril Skeleton Crank",
+      "quest": "Cranks Very Much",
+      "where": "Radagast's House · Noite",
+      "cost": 50000,
+      "unlock": "t85",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "ESM",
+      "name": "Always Loot Emeralds",
+      "tableName": "Always Loot Emeralds",
+      "item": "Mithril Firework Bow",
+      "quest": "Fireworks of Art",
+      "where": "Elven Forest · Noite",
+      "cost": 500000,
+      "unlock": "t87",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "BOS",
+      "name": "Boss Disguises",
+      "tableName": "Boss Disguises",
+      "item": "Mithril Booty Blade",
+      "quest": "Booty From The Beasts",
+      "where": "Lake-town · Noite",
+      "cost": 100000,
+      "unlock": "t89",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "DIA",
+      "name": "Always Loot Diamonds",
+      "tableName": "Always Loot Diamonds",
+      "item": "Mithril Hammerhands",
+      "quest": "Helping Hands",
+      "where": "Lake-town · Noite",
+      "cost": 1000000,
+      "unlock": "t91",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "DSF",
+      "name": "Disguises",
+      "tableName": "Disguises",
+      "item": "Mithril Warhammer",
+      "quest": "World's Strongest Dwarf",
+      "where": "Erebor · Noite",
+      "cost": 50000,
+      "unlock": "t92",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "PRA",
+      "name": "Always Loot Silver",
+      "tableName": "Always Loot Silver",
+      "item": "Mithril Tornado Axe",
+      "quest": "The Art of Combat",
+      "where": "Erebor · Noite",
+      "cost": 750000,
+      "unlock": "t93",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "8B",
+      "name": "8-Bit Music",
+      "tableName": "8-Bit Music",
+      "item": "Mithril Bomb Blade",
+      "quest": "Drama Bomb",
+      "where": "Dale · Noite",
+      "cost": 200000,
+      "unlock": "t94",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "CS",
+      "name": "Character Studs",
+      "tableName": "Character Studs",
+      "item": "Mithril Dance Boots",
+      "quest": "Two Left Feet",
+      "where": "Bywater · Dia",
+      "cost": 85000,
+      "unlock": "t96",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "SAF",
+      "name": "Always Loot Sapphires",
+      "tableName": "Always Loot Sapphires",
+      "item": "Mithril Catchphrase Mallet",
+      "quest": "Mouthy Mallet",
+      "where": "Bywater · Dia",
+      "cost": 600000,
+      "unlock": "t97",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "SNK",
+      "name": "Snake Flails",
+      "tableName": "Snake Flails",
+      "item": "Mithril Multi-bow",
+      "quest": "That's No Slow Bow",
+      "where": "Thranduil's Kingdom · Dia",
+      "cost": 25000,
+      "unlock": "t98",
+      "multiplier": false,
+      "group": "erebor"
+    },
+    {
+      "label": "MIN",
+      "name": "Miniature Characters",
+      "tableName": "Miniature Characters",
+      "item": "Mithril Snowapult",
+      "quest": "Snow and Fire",
+      "where": "Caradhras · Dia",
+      "cost": 300000,
+      "unlock": "t99",
+      "multiplier": false,
+      "group": "erebor"
     }
   ],
   "stages": [
@@ -874,6 +1186,1605 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Fim da campanha",
+      "subtitle": "Os níveis restantes da história · Sauron e o primeiro esquema",
+      "tag": "Campanha",
+      "part": {
+        "title": "O Tesouro de Erebor",
+        "text": "A rota acima é o caminho mais curto até o x10. Daqui em diante vêm os outros 26 Red Bricks: 23 com tarefas novas e 3 (Super Slap, Attract Loot e Double Loot) que você já ganha nas etapas 05 e 06. Com o x10 ligado, os studs deixam de ser problema; o gargalo passa a ser Mithril Bricks e materiais."
+      },
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t38",
+          "title": "Termine a história até Inside Information",
+          "desc": "Jogue os níveis que ainda faltam até <em>Inside Information</em> (16). Quase todos os esquemas desta parte ficam no Free Play das fases, e várias entregas acontecem em regiões do fim do jogo, como Lake-town, Dale e Erebor.",
+          "tags": [
+            {
+              "text": "História"
+            },
+            {
+              "text": "Até o nível 16"
+            }
+          ]
+        },
+        {
+          "id": "t39",
+          "title": "Colete o esquema Mithril Firework Bow em Inside Information",
+          "desc": "Na última área, no térreo perto do centro, quebre o cálice dourado grande da esquerda e pegue o esquema com Bilbo usando o Anel. Este dá para pegar já na história.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 16"
+            }
+          ]
+        },
+        {
+          "id": "t40",
+          "title": "Compre Sauron em Dol Guldur, à noite",
+          "desc": "<strong>Sauron</strong> só aparece à noite, em Dol Guldur, por 70.000 studs. É o único que quebra os objetos <strong>Morgul</strong> (os que soltam escuridão e fazem os outros se encolher), exigidos pelos esquemas de <em>Roast Mutton</em> e <em>Azog the Defiler</em>. Ele também ilumina áreas escuras.",
+          "tags": [
+            {
+              "text": "Personagens"
+            },
+            {
+              "text": "Dol Guldur · Noite"
+            },
+            {
+              "text": "70.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Atalhos do ferreiro",
+      "subtitle": "Perfect Forging, Regenerate Hearts e Fast Build",
+      "tag": "Prioridade",
+      "note": "Perfect Forging vem primeiro: com ele ligado, toda forja daqui em diante sai perfeita sozinha, o que também ajuda na conquista de forjar tudo perfeito. A cadeia que libera <em>Manic Mining</em> passa por Hobbiton de dia e de noite; o esquema do Stud Spade fica no caminho.",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t41",
+          "title": "Colete o esquema Mithril Pickaxe e o Firefly Jar em Barrels Out of Bond",
+          "desc": "No Free Play, na primeira área, quebre a frente do barril com torneira dourada, à esquerda, para revelar uma camada de Mithril, e destrua-a com Saruman. Na mesma fase, pegue o tesouro <em>Firefly Jar</em>: ele é pedido em <em>The Lost Fireflies</em>, em Lake-town.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 11 · Free Play"
+            },
+            {
+              "text": "Saruman"
+            }
+          ]
+        },
+        {
+          "id": "t42",
+          "title": "Colete o esquema Mithril Fishing Pole em Roast Mutton",
+          "desc": "No Free Play, perto do início da fase, use Sauron para destruir o baú Morgul ao lado da pilha de coisas com um alvo.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 4 · Free Play"
+            },
+            {
+              "text": "Sauron"
+            }
+          ]
+        },
+        {
+          "id": "t43",
+          "title": "Colete o esquema Mithril Stud Spade em Hobbiton",
+          "desc": "Da estátua de Hobbiton, siga a trilha de studs até uma cabana com um mecanismo à esquerda. Atravesse o rio pelas plantas flutuantes até o píer de pesca, pesque a manivela com Bilbo e use-a no mecanismo para abrir a cabana.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Hobbiton"
+            },
+            {
+              "text": "Bilbo (pesca)"
+            }
+          ]
+        },
+        {
+          "id": "t44",
+          "title": "Complete Getting My Goat e Sentient Scarecrow, de dia",
+          "desc": "No morro ao lado do campo do Fazendeiro Magote, ajude o hobbit a levar as 5 cabras de volta ao cercado: siga a trilha de studs e monte em cada uma. Depois, no <strong>Character Customiser</strong> de Lake-town, monte um personagem com chapéu e corpo de <em>Scarecrow</em> (as peças custam poucos studs) e fale com o hobbit do campo usando esse personagem.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Hobbiton · Dia"
+            }
+          ]
+        },
+        {
+          "id": "t45",
+          "title": "Complete Farmyard Fiasco e Trolling, à noite",
+          "desc": "No campo do Fazendeiro Magote, espante os lobos que atacam as galinhas. Depois, em Trollshaws, suba o caminho que leva a The High Fells, atravesse o túnel e fale com o homem na saliência: ele leva a uma caverna com três trolls. <em>Trolling</em> é o que libera <em>Manic Mining</em>.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Hobbiton → Trollshaws · Noite"
+            }
+          ]
+        },
+        {
+          "id": "t46",
+          "title": "Forje e entregue o Pickaxe em Manic Mining",
+          "desc": "Forje o Mithril Pickaxe em Bree (este ainda passa pelo minigame) e leve ao hobbit de <em>Manic Mining</em>, no Elven Port; o IGN situa a missão em Hobbiton. Só de dia. Compre <strong>Perfect Forging</strong> e deixe-o ligado em Extras.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "diamantes",
+              20
+            ],
+            [
+              "ferro",
+              30
+            ],
+            [
+              "prata",
+              20
+            ],
+            [
+              "ouro",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Elven Port · Dia"
+            },
+            {
+              "text": "5.000.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t47",
+          "title": "Forje e entregue o Stud Spade em Digger's Delight",
+          "desc": "Fale com a hobbit de Bywater, de dia. A missão exige <em>Smithy in Peril</em>, que já foi feita. Compre <strong>Regenerate Hearts</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "esmeraldas",
+              10
+            ],
+            [
+              "cenouras",
+              20
+            ],
+            [
+              "pedra",
+              20
+            ],
+            [
+              "madeira",
+              35
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bywater · Dia"
+            },
+            {
+              "text": "100.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t48",
+          "title": "Forje e entregue o Fishing Pole em A Wish to Catch a Fish",
+          "desc": "Só aparece depois de <em>Digger's Delight</em>: outra hobbit em Bywater, também de dia. Compre <strong>Fast Build</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "safiras",
+              5
+            ],
+            [
+              "peixes",
+              30
+            ],
+            [
+              "madeira",
+              35
+            ],
+            [
+              "ferro",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bywater · Dia"
+            },
+            {
+              "text": "100.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Os três detectores",
+      "subtitle": "Minikits, tesouros e Mithril Bricks antes do Free Play",
+      "tag": "100%",
+      "note": "Os 23 itens desta parte pedem 189 Mithril Bricks; somados aos 61 da rota principal, são <strong>todos os 250</strong> do jogo. Por isso o Mithril Brick Detector entra cedo, junto com os detectores de minikits e tesouros, que deixam a varredura do Free Play bem mais rápida.",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t49",
+          "title": "Colete o esquema Mithril Bandit Gloves em Lake-town",
+          "desc": "Da estátua de Lake-town, siga a trilha de studs até a porta com uma âncora. Lá dentro: puxe o gancho dourado da direita com Dori para revelar uma manivela e use-a no mecanismo da esquerda; pise no botão que aparece, atire no alvo com Legolas e depois no próximo com Ori. Ajuste as rodas coloridas para <strong>vermelho</strong> (esquerda) e <strong>azul</strong> (direita), pegue a chave no baú da esquerda e abra o baú grande.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Lake-town"
+            },
+            {
+              "text": "Dori + elfo + Ori"
+            }
+          ]
+        },
+        {
+          "id": "t50",
+          "title": "Colete o esquema Mithril Slippers na Floresta Élfica",
+          "desc": "Da estátua da Floresta Élfica, siga a trilha de studs até um pedestal e uma manivela na beira do rio. Pesque o cabo da manivela com Bilbo no píer da direita e use-o na manivela da esquerda para erguer plataformas. Empurre o pedestal para o rio com Dwalin, suba as plataformas com um elfo e quebre o baú de Mithril com Saruman.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Elven Forest"
+            },
+            {
+              "text": "Saruman"
+            }
+          ]
+        },
+        {
+          "id": "t51",
+          "title": "Colete o esquema Mithril Music Kit em Out of the Frying Pan",
+          "desc": "No Free Play, na primeira área, quebre com um anão a caverna da direita para revelar um baú. Cave a chave com Sam no canto da frente, à esquerda, e abra o baú.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 8 · Free Play"
+            }
+          ]
+        },
+        {
+          "id": "t52",
+          "title": "Complete Wandering Wargs em Trollshaws",
+          "desc": "Fale com o elfo perto da ponte que leva a The High Fells e derrote os 6 wargs. Libera a missão do Music Kit.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Trollshaws"
+            }
+          ]
+        },
+        {
+          "id": "t53",
+          "title": "Forje e entregue as Bandit Gloves em Spoils of War",
+          "desc": "Da estátua de Thranduil's Kingdom, siga a trilha de studs para dentro da fortaleza e suba o caminho estreito até a elfa. Compre <strong>Minikit Detector</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "diamantes",
+              20
+            ],
+            [
+              "couro",
+              20
+            ],
+            [
+              "corda",
+              25
+            ],
+            [
+              "cobre",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Thranduil's Kingdom · Noite"
+            },
+            {
+              "text": "150.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t54",
+          "title": "Forje e entregue as Slippers em Back-to-Roots Boots",
+          "desc": "Em Rivendell, a orc fica atrás de portas azuis: quebre-as com magia (Gandalf, por exemplo). Só à noite. Compre <strong>Treasure Item Detector</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "rubis",
+              20
+            ],
+            [
+              "safiras",
+              10
+            ],
+            [
+              "diamantes",
+              10
+            ],
+            [
+              "couro",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Rivendell · Noite"
+            },
+            {
+              "text": "250.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t55",
+          "title": "Forje e entregue o Music Kit em One-Orc Band",
+          "desc": "Em The High Fells, à noite, fale com a orc que aparece depois de <em>Wandering Wargs</em>. Compre <strong>Mithril Brick Detector</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "couro",
+              10
+            ],
+            [
+              "cenouras",
+              10
+            ],
+            [
+              "cobre",
+              10
+            ],
+            [
+              "prata",
+              15
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "The High Fells · Noite"
+            },
+            {
+              "text": "175.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Varredura do Free Play",
+      "subtitle": "Os esquemas restantes das fases, na ordem da história",
+      "tag": "Free Play",
+      "note": "Com os detectores ligados, aproveite cada fase para pegar também minikits e tesouros. Quatro tesouros abrem cadeias de missões mais adiante: <em>Yodelling Shield</em>, <em>Stone-giant Gloves</em>, <em>Crystal Goblin Crown</em> e o <em>Firefly Jar</em>, que já veio junto com o Pickaxe.",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t56",
+          "title": "Colete o esquema Mithril Tornado Axe em An Unexpected Party",
+          "desc": "No jardim dos fundos, deite Bombur na toalha de piquenique e dê a ele 2 pães e 2 coxas para engordá-lo. Depois use a barriga dele como trampolim (placa vermelha perto do poço) para alcançar o esquema no alto.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 2 · Free Play"
+            },
+            {
+              "text": "Bombur"
+            }
+          ]
+        },
+        {
+          "id": "t57",
+          "title": "Colete o esquema Mithril Warhammer e o Yodelling Shield em Azog the Defiler",
+          "desc": "O esquema fica na caverna da ruína, atrás de uma área Morgul: use Sauron. Na mesma fase, pegue o tesouro <em>Yodelling Shield</em>, pedido em <em>Sunken Spirits</em>, em Lake-town.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 3 · Free Play"
+            },
+            {
+              "text": "Sauron"
+            }
+          ]
+        },
+        {
+          "id": "t58",
+          "title": "Colete o esquema Mithril Skeleton Crank em The Troll Hoard",
+          "desc": "Na primeira área, use Sam no ponto de escavação logo à esquerda do ponto de pulo na barriga. Se ainda não pegou na história, pegue agora.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 5"
+            }
+          ]
+        },
+        {
+          "id": "t59",
+          "title": "Pegue o tesouro Stone-giant Gloves em Over Hill and Under Hill",
+          "desc": "Esta fase não tem esquema novo (o do Flail já foi), mas tem o tesouro <em>Stone-giant Gloves</em>, pedido em <em>Heavy Lifting</em>, em Lake-town. O Treasure Item Detector aponta onde ele está.",
+          "tags": [
+            {
+              "text": "Tesouro"
+            },
+            {
+              "text": "Nível 6 · Free Play"
+            }
+          ]
+        },
+        {
+          "id": "t60",
+          "title": "Colete o esquema Mithril Claws e a Crystal Goblin Crown em Goblin-town",
+          "desc": "No início da última seção, logo depois da luta com o troll, atire com Ori três vezes no alvo do alto, à esquerda. Na mesma fase, pegue o tesouro <em>Crystal Goblin Crown</em>, pedido em <em>Crown in the Dumps</em>, no Pine Forest.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 7 · Free Play"
+            },
+            {
+              "text": "Ori"
+            }
+          ]
+        },
+        {
+          "id": "t61",
+          "title": "Colete o esquema Mithril Multi-bow em Queer Lodgings",
+          "desc": "Use Radagast para curar o esquilo doente na frente da árvore dos fundos, do lado esquerdo da casa. Ele é difícil de ver.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 9 · Free Play"
+            },
+            {
+              "text": "Radagast"
+            }
+          ]
+        },
+        {
+          "id": "t62",
+          "title": "Colete o esquema Mithril Bomb Blade em Flies and Spiders",
+          "desc": "Na área final, quebre a placa anã rachada atrás de onde Bombur está amarrado (centro da área, lado esquerdo superior). Depois de forjada, a Bomb Blade também quebra objetos de Mithril, como Saruman.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 10 · Free Play"
+            }
+          ]
+        },
+        {
+          "id": "t63",
+          "title": "Colete o esquema Mithril Booty Blade em A Warm Welcome",
+          "desc": "No andar de cima do arsenal, suba com um elfo pela corda pendurada nas vigas, à direita. Passe pela borda até o centro, suba na viga e pule para a frente até o esquema; pode levar algumas tentativas.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 12 · Free Play"
+            },
+            {
+              "text": "Elfo"
+            }
+          ]
+        },
+        {
+          "id": "t64",
+          "title": "Colete o esquema Mithril Giddy-up Staff em Looking For Proof",
+          "desc": "Na segunda área, a escadaria interna, suba a parede Goblin com o Goblin (Confused).",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 13 · Free Play"
+            },
+            {
+              "text": "Goblin"
+            }
+          ]
+        },
+        {
+          "id": "t65",
+          "title": "Colete o esquema Mithril Wraith Armour em The Necromancer",
+          "desc": "Logo no início da fase, volte até a árvore com barras de giro, atire nos alvos com um elfo e suba girando até o esquema.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 14 · Free Play"
+            },
+            {
+              "text": "Elfo"
+            }
+          ]
+        },
+        {
+          "id": "t66",
+          "title": "Colete o esquema Mithril Hammerhands em On The Doorstep",
+          "desc": "Na última área, antes de pular para a saliência final, atire flechas nos encaixes acima (elfo ou Kíli) e use-as para subir até o esquema.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Nível 15 · Free Play"
+            },
+            {
+              "text": "Arqueiro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Esquemas pela Terra-média",
+      "subtitle": "Os seis esquemas restantes do mapa, de Rivendell a Erebor",
+      "tag": "Exploração",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t67",
+          "title": "Colete o esquema Mithril Dance Boots em Rivendell",
+          "desc": "Da estátua de Rivendell, siga a trilha de studs até uma porta com um \"H\". Lá dentro há três alavancas: suba com um elfo pelos fios até a primeira, continue até a plataforma do alto para a segunda e, de volta ao chão, suba pelas barras de giro da direita até a terceira.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Rivendell"
+            },
+            {
+              "text": "Elfo"
+            }
+          ]
+        },
+        {
+          "id": "t68",
+          "title": "Colete o esquema Mithril Rhythm Stick em Rivendell",
+          "desc": "Da estátua de Rivendell, siga a trilha de studs até o cais e pegue o barco. Siga os studs até a ilhota de pedra, desembarque e quebre o objeto de Mithril com Saruman.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Rivendell"
+            },
+            {
+              "text": "Saruman"
+            }
+          ]
+        },
+        {
+          "id": "t69",
+          "title": "Colete o esquema Mithril Catchphrase Mallet em High Pass",
+          "desc": "À direita da estátua de High Pass, passe pela porta e suba os pedestais na encosta. Do outro lado do riacho há um baú com cadeado de Mithril: quebre-o com Saruman.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "High Pass"
+            },
+            {
+              "text": "Saruman"
+            }
+          ]
+        },
+        {
+          "id": "t70",
+          "title": "Colete o esquema Mithril Skull Cap em Trollshaws",
+          "desc": "Da estátua de Trollshaws, siga a trilha de studs até o cais e atravesse de barco. Destrua o objeto mágico grande com Gandalf para estender as plataformas até a manivela sobre a porta na rocha. Lá dentro, atire com Gandalf no cristal azul e em cada um que for aparecendo, até o esquema surgir.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Trollshaws"
+            },
+            {
+              "text": "Gandalf"
+            }
+          ]
+        },
+        {
+          "id": "t71",
+          "title": "Colete o esquema Mithril Falcon em Erebor",
+          "desc": "Da estátua de Erebor, siga a trilha de studs até uma torre. Ponha um anão no ponto de empilhar, suba por ele com outro personagem e puxe a alavanca à esquerda. Suba de novo, atravesse até a segunda plataforma, use os ganchos com Dori, chegue à escada e quebre a caixa do centro no telhado.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Erebor"
+            },
+            {
+              "text": "Dori"
+            }
+          ]
+        },
+        {
+          "id": "t72",
+          "title": "Colete o esquema Mithril Snowapult em Dale",
+          "desc": "Corrida contra o tempo pelos telhados de Dale: suba a parede Goblin no centro da cidade e quebre as 8 bandeiras vermelhas antes de o tempo acabar, em qualquer ordem. Use Dori nos ganchos e, se puder, Legolas nos fios altos. Se terminar a tempo, o esquema aparece no mapa.",
+          "tags": [
+            {
+              "text": "Esquema",
+              "type": "esquema"
+            },
+            {
+              "text": "Dale"
+            },
+            {
+              "text": "Goblin + Dori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Noites no Oeste",
+      "subtitle": "The High Fells, High Pass, Bree e Rivendell",
+      "tag": "Noite",
+      "note": "Etapa toda noturna: acampe uma vez e faça tudo em sequência. Antes de sair de Bree, forje os itens das três etapas noturnas de uma vez.",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t73",
+          "title": "Complete Miner's Night Delight em High Pass",
+          "desc": "À noite, fale com o ferreiro (liberado por <em>Smithy in Peril</em>) e acompanhe-o atrás de um bom ponto de mineração, derrotando dois grupos de goblins no caminho. Libera <em>Snow and Fire</em>, que é de dia e fica para a última etapa.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "High Pass · Noite"
+            }
+          ]
+        },
+        {
+          "id": "t74",
+          "title": "Complete Goblin in Training e The Goblin's Gauntlet",
+          "desc": "Em The High Fells, à noite, a goblin desafia você a duas corridas na parede Goblin de escalada, a segunda mais difícil.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "The High Fells · Noite"
+            },
+            {
+              "text": "Goblin"
+            }
+          ]
+        },
+        {
+          "id": "t75",
+          "title": "Forje e entregue as Claws em The Goblin Who Lost Her Climb",
+          "desc": "A mesma goblin das corridas, à noite. Compre <strong>Fall Rescue</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "rubis",
+              10
+            ],
+            [
+              "cobre",
+              30
+            ],
+            [
+              "ferro",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "The High Fells · Noite"
+            },
+            {
+              "text": "25.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t76",
+          "title": "Abra a boate de The High Fells",
+          "desc": "Três missões em sequência, à noite: <em>A Light in Dark Places</em> (na caverna escura subindo The High Fells, ilumine o caminho com Sauron, por exemplo, e guie o hobbit para fora); <em>For Orcs' Eyes Only</em> (crie no Character Customiser de Lake-town um personagem com chapéu e corpo de Orc e fale com o troll segurança); e <em>Goblin Gatecrashers</em> (derrote 12 goblins dentro da boate).",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "The High Fells · Noite"
+            }
+          ]
+        },
+        {
+          "id": "t77",
+          "title": "Forje e entregue o Rhythm Stick em Bop 'Til You Drop",
+          "desc": "Dentro da boate, no canto direito mais próximo, fale com o troll segurança. Compre <strong>Always Loot Gold</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "safiras",
+              30
+            ],
+            [
+              "peixes",
+              20
+            ],
+            [
+              "ouro",
+              10
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "The High Fells · Noite"
+            },
+            {
+              "text": "1.000.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t78",
+          "title": "Forje e entregue o Giddy-up Staff em Trader's Turmoil",
+          "desc": "O anão comerciante fica ao lado de uma cabana no sudeste de Bree; o guia da Steam lista a missão em Weathertop. Compre <strong>Poo Studs</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "cenouras",
+              20
+            ],
+            [
+              "paes",
+              10
+            ],
+            [
+              "madeira",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bree · Noite"
+            },
+            {
+              "text": "25.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t79",
+          "title": "Forje e entregue o Falcon em Bird of Pay",
+          "desc": "Da estátua de Rivendell, siga a trilha de studs até um vão no caminho ao sul do lago. Pise no botão para estender as plataformas e siga até a elfa. Compre <strong>Invincibility</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "esmeraldas",
+              12
+            ],
+            [
+              "paes",
+              20
+            ],
+            [
+              "cobre",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Rivendell · Noite"
+            },
+            {
+              "text": "500.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Noites nas florestas",
+      "subtitle": "Pine Forest, Dol Guldur, a casa de Radagast e a Floresta Élfica",
+      "tag": "Noite",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t80",
+          "title": "Complete a cadeia de missões do Pine Forest",
+          "desc": "Quatro missões em sequência, à noite: <em>Goblin-in-Law</em> (derrote a sogra do Grande Goblin numa caverna), <em>Crown in the Dumps</em> (entregue a Crystal Goblin Crown), <em>The Price of Insubordination</em> (derrote 7 goblins) e <em>Gruesome Conclusion</em> (batalha de dança com o goblin grande e mais goblins). Libera a missão do Bomb Blade, em Dale.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Pine Forest · Noite"
+            }
+          ]
+        },
+        {
+          "id": "t81",
+          "title": "Complete Back on the Menu em Dol Guldur",
+          "desc": "À noite, a orc pede carne: deposite 50 coxas no cesto ao lado.",
+          "materials": [
+            [
+              "coxas",
+              50
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Dol Guldur · Noite"
+            }
+          ]
+        },
+        {
+          "id": "t82",
+          "title": "Forje e entregue o Skull Cap em The Orc Within",
+          "desc": "Fale com o orc de Dol Guldur depois de <em>Back on the Menu</em>, à noite. Compre <strong>Mithril Hearts</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "diamantes",
+              10
+            ],
+            [
+              "prata",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Dol Guldur · Noite"
+            },
+            {
+              "text": "75.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t83",
+          "title": "Complete Bats Entertainment em Dol Guldur",
+          "desc": "O portão do segundo nível da fortaleza se abre quando você chega perto. Lá dentro, o elfo pede ajuda: derrote 30 morcegos.",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Dol Guldur"
+            }
+          ]
+        },
+        {
+          "id": "t84",
+          "title": "Forje e entregue a Wraith Armour em Otherworldly Ambition",
+          "desc": "Fale com a elfa de Dol Guldur depois de <em>Bats Entertainment</em>. Compre <strong>Always Loot Rubies</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "rubis",
+              30
+            ],
+            [
+              "safiras",
+              30
+            ],
+            [
+              "couro",
+              30
+            ],
+            [
+              "ferro",
+              30
+            ],
+            [
+              "ouro",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Dol Guldur · Noite"
+            },
+            {
+              "text": "250.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t85",
+          "title": "Forje e entregue o Skeleton Crank em Cranks Very Much",
+          "desc": "A goblin fica perto da casa de Radagast, só à noite. Compre <strong>Middle-earth Carnival</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "coxas",
+              10
+            ],
+            [
+              "madeira",
+              20
+            ],
+            [
+              "ouro",
+              25
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Radagast's House · Noite"
+            },
+            {
+              "text": "50.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t86",
+          "title": "Complete Feline Fishy na Floresta Élfica",
+          "desc": "O elfo quer peixe para o gato: deposite 99 peixes no cesto ao lado.",
+          "materials": [
+            [
+              "peixes",
+              99
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Elven Forest"
+            }
+          ]
+        },
+        {
+          "id": "t87",
+          "title": "Forje e entregue o Firework Bow em Fireworks of Art",
+          "desc": "Depois de <em>Feline Fishy</em>, suba ao topo do prédio principal da Floresta Élfica e atravesse a corda bamba da direita até o elfo. Compre <strong>Always Loot Emeralds</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "rubis",
+              20
+            ],
+            [
+              "corda",
+              30
+            ],
+            [
+              "peixes",
+              20
+            ],
+            [
+              "prata",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Elven Forest · Noite"
+            },
+            {
+              "text": "500.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Noites em Lake-town e Erebor",
+      "subtitle": "Lake-town, Erebor e Dale",
+      "tag": "Noite",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t88",
+          "title": "Complete Ballista Assistance e Lake-town Shakedown",
+          "desc": "Numa plataforma à beira do lago (suba a escada), o homem pede uma balista: construa-a na placa ao lado. Depois, uma moradora na plataforma pede para derrubar 10 goblins nos barcos usando a balista.",
+          "materials": [
+            [
+              "ferro",
+              10
+            ],
+            [
+              "madeira",
+              50
+            ],
+            [
+              "corda",
+              20
+            ],
+            [
+              "pedra",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Lake-town"
+            }
+          ]
+        },
+        {
+          "id": "t89",
+          "title": "Forje e entregue a Booty Blade em Booty From The Beasts",
+          "desc": "Pegue um barco no píer sul de Lake-town e navegue para sudoeste até um pequeno cais, onde a mulher espera. Compre <strong>Boss Disguises</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "safiras",
+              10
+            ],
+            [
+              "peixes",
+              15
+            ],
+            [
+              "madeira",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Lake-town · Noite"
+            },
+            {
+              "text": "100.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t90",
+          "title": "Complete a cadeia da reforma da casa em Lake-town",
+          "desc": "Quatro missões em sequência: <em>Sunken Spirits</em> (entregue o Yodelling Shield), <em>The Lost Fireflies</em> (entregue o Firefly Jar, só à noite), <em>Timber Traversal</em> (puzzle: leve a caixa de madeira até a casa usando os blocos de gelo para tapar o buraco, com um personagem de martelo) e <em>Heavy Lifting</em> (entregue as Stone-giant Gloves).",
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Lake-town"
+            }
+          ]
+        },
+        {
+          "id": "t91",
+          "title": "Forje e entregue as Hammerhands em Helping Hands",
+          "desc": "O homem de <em>Heavy Lifting</em> pede as Hammerhands logo em seguida. Compre <strong>Always Loot Diamonds</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "safiras",
+              20
+            ],
+            [
+              "diamantes",
+              20
+            ],
+            [
+              "coxas",
+              30
+            ],
+            [
+              "pedra",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Lake-town · Noite"
+            },
+            {
+              "text": "1.000.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t92",
+          "title": "Forje e entregue o Warhammer em World's Strongest Dwarf",
+          "desc": "Da estátua de Erebor, vá em direção à cidade, vire à direita e suba o caminho de pedra até a torre. Do lado esquerdo, quebre os bonecos de neve que bloqueiam a escada e suba; o anão fica do outro lado. Compre <strong>Disguises</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "coxas",
+              10
+            ],
+            [
+              "pedra",
+              20
+            ],
+            [
+              "madeira",
+              30
+            ],
+            [
+              "cobre",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Erebor · Noite"
+            },
+            {
+              "text": "50.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t93",
+          "title": "Forje e entregue o Tornado Axe em The Art of Combat",
+          "desc": "Só aparece depois de <em>World's Strongest Dwarf</em>. Na mesma torre, monte a escada wraith com Bilbo usando o Anel, atire nos alvos para estender as plataformas e atravesse a corda bamba até o outro anão. Compre <strong>Always Loot Silver</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "esmeraldas",
+              10
+            ],
+            [
+              "peixes",
+              20
+            ],
+            [
+              "pedra",
+              20
+            ],
+            [
+              "prata",
+              15
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Erebor · Noite"
+            },
+            {
+              "text": "750.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t94",
+          "title": "Forje e entregue a Bomb Blade em Drama Bomb",
+          "desc": "Depois de <em>Gruesome Conclusion</em>, no Pine Forest, o goblin rei aparece em Dale, à noite. Compre <strong>8-Bit Music</strong>.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "rubis",
+              20
+            ],
+            [
+              "pedra",
+              10
+            ],
+            [
+              "ferro",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Dale · Noite"
+            },
+            {
+              "text": "200.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Entregas à luz do dia",
+      "subtitle": "Bywater, Thranduil's Kingdom e Caradhras · os últimos Red Bricks",
+      "tag": "Dia",
+      "optional": "O Tesouro de Erebor",
+      "tasks": [
+        {
+          "id": "t95",
+          "title": "Complete Pie in Peril em Bywater",
+          "desc": "De dia, entre na casa virada para o rio e fale com o hobbit: deposite 50 pães no cesto do canto esquerdo, ao fundo.",
+          "materials": [
+            [
+              "paes",
+              50
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Pré-requisito",
+              "type": "prereq"
+            },
+            {
+              "text": "Bywater · Dia"
+            }
+          ]
+        },
+        {
+          "id": "t96",
+          "title": "Forje e entregue as Dance Boots em Two Left Feet",
+          "desc": "Volte à casa nos arredores de Bywater depois de <em>Pie in Peril</em> e fale com o hobbit lá dentro. Compre <strong>Character Studs</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "rubis",
+              10
+            ],
+            [
+              "couro",
+              10
+            ],
+            [
+              "cenouras",
+              30
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bywater · Dia"
+            },
+            {
+              "text": "85.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t97",
+          "title": "Forje e entregue o Catchphrase Mallet em Mouthy Mallet",
+          "desc": "Só aparece depois de <em>Two Left Feet</em>: o hobbit fica do lado de fora da mesma casa. Compre <strong>Always Loot Sapphires</strong>.",
+          "materials": [
+            [
+              "mithril",
+              12
+            ],
+            [
+              "rubis",
+              30
+            ],
+            [
+              "esmeraldas",
+              20
+            ],
+            [
+              "safiras",
+              10
+            ],
+            [
+              "cenouras",
+              20
+            ],
+            [
+              "ferro",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Bywater · Dia"
+            },
+            {
+              "text": "600.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t98",
+          "title": "Forje e entregue o Multi-bow em That's No Slow Bow",
+          "desc": "Exige <em>No Harm in Armour</em> (etapa 02). Na fortaleza de Thranduil's Kingdom, no alto do primeiro lance de escadas, suba os pedestais da esquerda com um elfo, atire nos alvos, gire nas barras e atravesse o fio até o caminho que leva ao elfo. Compre <strong>Snake Flails</strong>.",
+          "materials": [
+            [
+              "mithril",
+              5
+            ],
+            [
+              "corda",
+              20
+            ],
+            [
+              "coxas",
+              10
+            ],
+            [
+              "madeira",
+              15
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Thranduil's Kingdom · Dia"
+            },
+            {
+              "text": "25.000 studs",
+              "type": "custo"
+            }
+          ]
+        },
+        {
+          "id": "t99",
+          "title": "Forje e entregue o Snowapult em Snow and Fire",
+          "desc": "Depois de <em>Miner's Night Delight</em>, fale com o ferreiro na ilha grande de Caradhras, de dia. Compre <strong>Miniature Characters</strong>: é o último Red Brick.",
+          "materials": [
+            [
+              "mithril",
+              7
+            ],
+            [
+              "safiras",
+              20
+            ],
+            [
+              "prata",
+              20
+            ]
+          ],
+          "tags": [
+            {
+              "text": "Forja + entrega",
+              "type": "entrega"
+            },
+            {
+              "text": "Caradhras · Dia"
+            },
+            {
+              "text": "300.000 studs",
+              "type": "custo"
+            }
+          ]
+        }
+      ]
     }
   ],
   "sources": [
@@ -885,9 +2796,14 @@
     "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Heirloom_in_the_Making\" target=\"_blank\" rel=\"noopener noreferrer\">Heirloom in the Making</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Weighting_for_a_Stranger\" target=\"_blank\" rel=\"noopener noreferrer\">Weighting for a Stranger</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Bilbo_and_the_Beanstalk\" target=\"_blank\" rel=\"noopener noreferrer\">Bilbo and the Beanstalk</a>, <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Smithy_in_Peril\" target=\"_blank\" rel=\"noopener noreferrer\">Smithy in Peril</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/No_Harm_in_Armour\" target=\"_blank\" rel=\"noopener noreferrer\">No Harm in Armour</a>: cadeia de pré-requisitos do x8 e locais dos esquemas da coroa e do Megapult; detalhes do resgate do ferreiro.",
     "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: interlúdios da história (estátuas de águia após a fase 8, pôneis após a fase 9), materiais de forja de cada item, Loot Dispenser e as missões Punctual Pumpkins, Cart Departed, Express Delivery e Staff and Nonsense.",
     "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Characters\" target=\"_blank\" rel=\"noopener noreferrer\">Characters</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Schematics\" target=\"_blank\" rel=\"noopener noreferrer\">Schematics</a>: quando cada personagem é liberado, preço e local (Saruman, Lindir, Fíli, Bilbo) e personagens exigidos por cada esquema.",
-    "<a href=\"https://www.gamepressure.com/hobbit/schematics-locations-1-8/z46275\" target=\"_blank\" rel=\"noopener noreferrer\">Gamepressure — Schematics locations</a>: local do esquema Horse Shoes e ordem das cores do Megapult."
+    "<a href=\"https://www.gamepressure.com/hobbit/schematics-locations-1-8/z46275\" target=\"_blank\" rel=\"noopener noreferrer\">Gamepressure — Schematics locations</a>: local do esquema Horse Shoes e ordem das cores do Megapult.",
+    "IGN Wiki — <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Red_Bricks\" target=\"_blank\" rel=\"noopener noreferrer\">Red Bricks</a> e <a href=\"https://www.ign.com/wikis/lego-the-hobbit/Red_Brick_Side_Quests\" target=\"_blank\" rel=\"noopener noreferrer\">Red Brick Side Quests</a>: lista dos 32 Red Bricks, custos e local de cada missão de entrega.",
+    "<a href=\"https://www.playstationlifestyle.net/?p=312049\" target=\"_blank\" rel=\"noopener noreferrer\">PlayStation LifeStyle — Red Brick Location Guide</a>: horário (dia/noite) das entregas que os outros guias não indicam."
   ],
   "confirm": [
-    "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting."
+    "<em>Express Delivery</em> é obrigatória para liberar o x8? O IGN diz que sim; os demais guias citam apenas Heirloom e Weighting.",
+    "Local de <em>Manic Mining</em> (Perfect Forging): o guia da Steam diz Elven Port; o IGN diz Hobbiton; o PlayStation LifeStyle, ao sul de Hobbiton.",
+    "Horário das entregas de Disguises, Always Loot Silver, Boss Disguises, Always Loot Diamonds, Invincibility, Minikit Detector, Snake Flails, Poo Studs, Always Loot Sapphires, Always Loot Emeralds e Always Loot Rubies: vem só do PlayStation LifeStyle.",
+    "Materiais do Mithril Falcon: o guia da Steam pede 12 esmeraldas; o IGN, 25."
   ]
 }

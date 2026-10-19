@@ -66,11 +66,11 @@ Campos de texto aceitam HTML simples: `<em>`, `<strong>`, `<b>`, `<a href="...">
 - `tags`: `type` é opcional e muda a cor — `esquema` (azul), `forja` (laranja), `entrega` (verde), `prereq` (vermelho), `custo` (dourado).
 - A **lista de materiais da rota**, o total de studs, os contadores e os números das etapas (01, 02…) são **calculados sozinhos**.
 
-**Etapas** (`stages`): `title`, `subtitle`, `tag` e `tasks` são obrigatórios. `note` (opcional) mostra um aviso no topo da etapa. `"optional": "Nome"` marca a etapa como opcional: os materiais dela aparecem como "+N com Nome" na lista de materiais.
+**Etapas** (`stages`): `title`, `subtitle`, `tag` e `tasks` são obrigatórios. `note` (opcional) mostra um aviso no topo da etapa. `"optional": "Nome"` marca a etapa como opcional: os materiais dela aparecem como "+N com Nome" na lista de materiais. `"part": {"title": "…", "text": "…"}` (opcional) põe um divisor antes da etapa, abrindo uma nova parte da rota (hoje: *O Tesouro de Erebor*, a partir da etapa 09).
 
 > Textos que citam "etapa 05" etc. são escritos à mão: se você inserir uma etapa no meio, revise essas referências.
 
-**Red Bricks** (`redBricks`): cada um aparece no painel do topo e na tabela de custos. `unlock` é o id da tarefa de entrega que acende o brick. `multiplier: true` conta no "custo dos multiplicadores".
+**Red Bricks** (`redBricks`): cada um aparece no painel do topo e na tabela de custos. `unlock` é o id da tarefa de entrega que acende o brick. `multiplier: true` conta no "custo dos multiplicadores". `group` (opcional) tira o brick da rota principal: ele vai para a lista recolhível do painel e para um bloco separado da tabela, com o nome da parte.
 
 **Fontes** (`sources`) e **pontos a confirmar** (`confirm`): uma linha HTML por item.
 
