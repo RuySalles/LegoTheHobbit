@@ -49,10 +49,10 @@
   <div class="brand"><span class="mark"><span>✦</span></span>Middle-earth Field Guide</div>
   <div class="eyebrow">LEGO The Hobbit · Rota de progressão</div>
   <h1>Uma jornada.<em>Menos desvios.</em></h1>
-  <p class="sub">Esquema, forja e entrega: a ordem certa para liberar todos os Red Bricks de studs.</p>
+  <p class="sub">Esquema, forja e entrega: a ordem certa para conquistar os <span id="cBricks2">32</span> Red Bricks, começando pelos multiplicadores.</p>
   <div class="chips">
+    <span class="chip"><b id="cBricks">32</b> Red Bricks</span>
     <span class="chip"><b id="cMult">5</b> multiplicadores</span>
-    <span class="chip"><b id="cStuds">36,5M</b> studs</span>
     <span class="chip"><b id="cTasks">35</b> tarefas</span>
   </div>
   <div class="studs" id="studRow"></div>
@@ -75,10 +75,8 @@
   for (let i = 0; i < 10; i++) { const s = document.createElement('span'); s.className = 'stud' + (i < 7 ? '' : ' off'); row.appendChild(s); }
   // Números atualizados a partir dos dados da rota (quando servido pelo servidor local)
   fetch('../../data/rota.json').then(r => r.json()).then(d => {
-    const mult = d.redBricks.filter(b => b.multiplier);
-    const total = mult.reduce((a, b) => a + b.cost, 0);
-    document.getElementById('cMult').textContent = mult.length;
-    document.getElementById('cStuds').textContent = String(+(total / 1e6).toFixed(1)).replace('.', ',') + 'M';
+    document.getElementById('cBricks').textContent = document.getElementById('cBricks2').textContent = d.redBricks.length;
+    document.getElementById('cMult').textContent = d.redBricks.filter(b => b.multiplier).length;
     document.getElementById('cTasks').textContent = d.stages.reduce((a, s) => a + s.tasks.length, 0);
   }).catch(() => {});
 </script>

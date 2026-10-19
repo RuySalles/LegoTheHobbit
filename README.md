@@ -114,7 +114,7 @@ Se a atualização semanal falhar com erro de permissão, habilite em **Settings
 - Fontes: Cinzel (títulos) e Alegreya (texto), via Google Fonts.
 ### Imagem de compartilhamento (WhatsApp, Discord…)
 
-`og-image.jpg` (1200×630) é gerada a partir de `tools/og/og-image.html`, que lê os números (multiplicadores, studs, tarefas) de `data/rota.json`. Regenere quando esses números ou o visual mudarem:
+A imagem de compartilhamento (1200×630, hoje `og-image-2.jpg`) é gerada a partir de `tools/og/og-image.html`, que lê os números (Red Bricks, multiplicadores, tarefas) de `data/rota.json`. Regenere quando esses números ou o visual mudarem:
 
 1. Com o servidor local rodando (veja acima), gere o PNG com o Chrome:
 
@@ -122,8 +122,8 @@ Se a atualização semanal falhar com erro de permissão, habilite em **Settings
    chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=8000 --screenshot=og.png http://localhost:8000/tools/og/og-image.html
    ```
 
-2. Converta para JPG (qualidade ~85) e salve como `og-image.jpg` na raiz. Mantenha abaixo de ~300 KB, ou o WhatsApp pode ignorar a imagem.
-3. Para o WhatsApp buscar a imagem nova, mude o nome do arquivo (ex.: `og-image-2.jpg`) e atualize as tags `og:image`/`twitter:image` das duas páginas, ou teste com `?v=2` no fim do link.
+2. Converta para JPG (qualidade ~85) e salve na raiz com um **nome novo** (ex.: `og-image-3.jpg`). Mantenha abaixo de ~300 KB, ou o WhatsApp pode ignorar a imagem.
+3. Atualize as tags `og:image`/`twitter:image` das duas páginas para o nome novo e apague a imagem antiga. O nome novo é o que faz o WhatsApp buscar a imagem de novo (para só testar, dá para usar `?v=2` no fim do link).
 
 ## Fontes do conteúdo
 
