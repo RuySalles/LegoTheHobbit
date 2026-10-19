@@ -79,57 +79,67 @@
   <div class="stat"><small>Meta final</small><strong>x8 / x10</strong><span>10M + 20M studs</span></div>
  </section>
 
- <section id="rota">
-  <div class="sectionhead">
-   <div><h2>Rota passo a passo</h2><p>Marque cada tarefa concluída. O navegador mantém o progresso enquanto os dados locais não forem limpos.</p></div>
-  </div>
+ <nav class="tabs" id="tabs" role="tablist" aria-label="Partes do guia"></nav>
+
+ <section class="tabpanel" id="panelRoute" aria-label="Rota passo a passo">
   <div class="toolbar">
-   <div class="progressbox">
-    <div id="progressText" aria-live="polite">0 de 35 tarefas concluídas · 0%</div>
-    <div class="studs" id="studs" aria-label="Studs de progresso"></div>
+   <div class="progressline">
+    <div id="progressText" aria-live="polite"></div>
+    <button class="btn btn-gold" id="continueBtn" type="button">Continuar de onde parei →</button>
    </div>
-   <div class="tools">
+   <div class="journeymap" id="journeyMap" aria-label="Mapa da jornada: etapas e progresso"></div>
+   <div class="toolrow">
+    <label class="search">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+     <input type="search" id="searchInput" placeholder="Buscar tarefa, local, item… (ex.: Moria, Saruman, Flail)" aria-label="Buscar tarefa">
+    </label>
     <button class="btn" id="hideDoneBtn" type="button" aria-pressed="false">Ocultar concluídas</button>
-    <button class="btn" id="expandBtn" type="button">Recolher tudo</button>
-    <button class="btn" id="printBtn" type="button">Imprimir / PDF</button>
-    <button class="btn" id="resetBtn" type="button">Zerar checklist</button>
+    <details class="moremenu" id="moreMenu">
+     <summary class="btn" aria-label="Mais opções">⋯</summary>
+     <div class="moremenu-list">
+      <button type="button" id="expandBtn">Expandir tudo</button>
+      <button type="button" id="currentOnlyBtn">Só a etapa atual</button>
+      <button type="button" id="printBtn">Imprimir / PDF</button>
+      <button type="button" id="resetBtn" class="danger">Zerar checklist</button>
+     </div>
+    </details>
    </div>
-   <label class="search">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-    <input type="search" id="searchInput" placeholder="Buscar tarefa, local, item… (ex.: Moria, Saruman, Flail)" aria-label="Buscar tarefa">
-   </label>
   </div>
 
   <div class="stages" id="stages"></div>
-  <div class="empty-state" id="emptyState" hidden><strong>Nada nesta trilha.</strong>Nenhuma tarefa corresponde à busca ou ao filtro atual.</div>
+  <div class="empty-state" id="emptyState" hidden><strong>Nada nesta trilha.</strong>Nenhuma tarefa desta parte corresponde à busca ou ao filtro atual.<div class="empty-hint" id="emptyHint"></div></div>
  </section>
 
- <section id="custos">
-  <div class="sectionhead"><div><h2>Custos e destinos de entrega</h2><p>Consulte antes de gastar studs ou viajar para outra região.</p></div></div>
-  <div class="tablewrap">
-   <table>
-    <thead><tr><th>Desbloqueio</th><th>Item exigido</th><th>Missão de entrega</th><th>Local / horário</th><th>Custo</th></tr></thead>
-    <tbody id="costRows"></tbody>
-   </table>
-  </div>
-  <div class="callout" id="budget"></div>
-
-  <h3 class="subhead" id="materiais">Lista de materiais da rota</h3>
-  <p>Soma de todas as forjas obrigatórias, para farmar tudo de uma vez. Os valores menores indicam o adicional se você também fizer <em>Express Delivery</em> (etapa 06) e <em>O Tesouro de Erebor</em> (etapas 09 em diante).</p>
-  <div class="matgrid" id="matGrid"></div>
-  <div class="callout"><strong>Dica de farm:</strong> em Erebor, quebre em dupla o grande bloco rachado ao lado da porta principal para revelar o <em>Loot Dispenser</em>, que vende materiais em pacotes de 5 por studs. Vale a pena depois de ter alguns multiplicadores ativos.</div>
- </section>
-
- <section id="fontes">
-  <div class="sectionhead"><div><h2>Fontes de verificação</h2><p>Guias consultados para validar esquemas, missões, horários e custos.</p></div></div>
-  <div class="sources">
-   <ul id="sourceList"></ul>
-   <div class="confirm">
-    <strong>Pontos a confirmar no jogo</strong>
-    <ul id="confirmList"></ul>
+ <section class="tabpanel" id="panelRef" aria-label="Referência" hidden>
+  <section id="custos">
+   <div class="sectionhead"><div><h2>Custos e destinos de entrega</h2><p>Consulte antes de gastar studs ou viajar para outra região.</p></div></div>
+   <div class="tablewrap">
+    <table>
+     <thead><tr><th>Desbloqueio</th><th>Item exigido</th><th>Missão de entrega</th><th>Local / horário</th><th>Custo</th></tr></thead>
+     <tbody id="costRows"></tbody>
+    </table>
    </div>
-   <p class="sources-note">Nota: os guias podem usar nomes ligeiramente diferentes para alguns itens, como Construction Hat/Helmet. As instruções de puzzle foram resumidas para caber no formato de checklist.</p>
-  </div>
+   <div class="callout" id="budget"></div>
+  </section>
+
+  <section id="materiais">
+   <h3 class="subhead">Lista de materiais da rota</h3>
+   <p>Soma de todas as forjas obrigatórias, para farmar tudo de uma vez. Os valores menores indicam o adicional se você também fizer <em>Express Delivery</em> (etapa 06) e <em>O Tesouro de Erebor</em> (etapas 09 em diante).</p>
+   <div class="matgrid" id="matGrid"></div>
+   <div class="callout"><strong>Dica de farm:</strong> em Erebor, quebre em dupla o grande bloco rachado ao lado da porta principal para revelar o <em>Loot Dispenser</em>, que vende materiais em pacotes de 5 por studs. Vale a pena depois de ter alguns multiplicadores ativos.</div>
+  </section>
+
+  <section id="fontes">
+   <div class="sectionhead"><div><h2>Fontes de verificação</h2><p>Guias consultados para validar esquemas, missões, horários e custos.</p></div></div>
+   <div class="sources">
+    <ul id="sourceList"></ul>
+    <div class="confirm">
+     <strong>Pontos a confirmar no jogo</strong>
+     <ul id="confirmList"></ul>
+    </div>
+    <p class="sources-note">Nota: os guias podem usar nomes ligeiramente diferentes para alguns itens, como Construction Hat/Helmet. As instruções de puzzle foram resumidas para caber no formato de checklist.</p>
+   </div>
+  </section>
  </section>
  <footer id="footer"></footer>
 </main>

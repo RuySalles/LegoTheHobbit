@@ -78,34 +78,32 @@ export const storeAsMap = key => ({
 });
 
 /**
- * Grupos recolhíveis (clique, toque e teclado). Salva os índices recolhidos em storageKey.
- * @returns {{set:(g,collapsed)=>void, setAll:(collapsed)=>void, allOpen:()=>boolean}}
+ * Grupos recolhíveis (clique, toque e teclado).
+ * A página decide o estado padrão de cada grupo (isCollapsed) e guarda as escolhas do usuário (onToggle).
+ * @param {object} o
+ * @param {Element[]} o.groups
+ * @param {string} o.headSelector              cabeçalho clicável dentro de cada grupo
+ * @param {(g:Element)=>boolean} o.isCollapsed estado de cada grupo ao (re)aplicar
+ * @param {(g:Element, collapsed:boolean)=>void} [o.onToggle] quando o usuário abre/fecha um grupo
  */
-export function collapsible({ groups, headSelector, storageKey, onChange }) {
-  const save = () => store(storageKey, JSON.stringify(groups.map((g, i) => g.classList.contains('collapsed') ? i : -1).filter(i => i >= 0)));
-  const sync = g => g.querySelector(headSelector).setAttribute('aria-expanded', String(!g.classList.contains('collapsed')));
-  const changed = () => { save(); if (onChange) onChange(); };
-
-  readJSON(storageKey, []).forEach(i => groups[i] && groups[i].classList.add('collapsed'));
+export function collapsible({ groups, headSelector, isCollapsed, onToggle }) {
+  const show = (g, collapsed) => {
+    g.classList.toggle('collapsed', collapsed);
+    g.querySelector(headSelector).setAttribute('aria-expanded', String(!collapsed));
+  };
   groups.forEach(g => {
     const head = g.querySelector(headSelector);
     head.setAttribute('role', 'button');
     head.setAttribute('tabindex', '0');
-    const toggle = () => { g.classList.toggle('collapsed'); sync(g); changed(); };
+    const toggle = () => { const c = !g.classList.contains('collapsed'); show(g, c); if (onToggle) onToggle(g, c); };
     head.addEventListener('click', toggle);
     head.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
-    sync(g);
   });
-
+  const refresh = () => groups.forEach(g => show(g, isCollapsed(g)));
+  refresh();
   return {
-    // persist=false muda só a tela (ex.: a busca abre etapas sem mexer no que foi salvo)
-    set(g, collapsed, persist = true) {
-      if (g.classList.contains('collapsed') === collapsed) return;
-      g.classList.toggle('collapsed', collapsed); sync(g);
-      if (persist) changed(); else if (onChange) onChange();
-    },
-    setAll(collapsed) { groups.forEach(g => { g.classList.toggle('collapsed', collapsed); sync(g); }); changed(); },
-    allOpen: () => groups.every(g => !g.classList.contains('collapsed')),
-    syncAll: () => groups.forEach(sync),
+    refresh,                       // reaplica o estado padrão + escolhas salvas
+    show,                          // muda só a tela, sem salvar (ex.: a busca abre etapas)
+    allOpen: (gs = groups) => gs.every(g => !g.classList.contains('collapsed')),
   };
 }

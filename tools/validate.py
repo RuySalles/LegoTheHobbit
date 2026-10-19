@@ -59,6 +59,7 @@ def check_rota(d):
         if st.get('note'): check_html(f'{w} note', st['note'])
         if 'part' in st:
             if not (isinstance(st['part'], dict) and st['part'].get('title') and st['part'].get('text')): err(f'{w}: "part" precisa de "title" e "text"')
+            elif not re.fullmatch(r'[a-z][a-z0-9-]*', str(st['part'].get('id', ''))) or st['part']['id'] == 'jornada': err(f'{w}: "part.id" deve ser curto, minúsculo e sem espaços (ex.: "tesouro"); vira o endereço da aba')
             else: check_html(f'{w} part', st['part']['text'])
         if not st.get('tasks'): err(f'{w}: etapa sem tarefas')
         for t in st.get('tasks', []):

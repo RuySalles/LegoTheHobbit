@@ -68,7 +68,7 @@ Campos de texto aceitam HTML simples: `<em>`, `<strong>`, `<b>`, `<a href="...">
 - `tags`: `type` é opcional e muda a cor — `esquema` (azul), `forja` (laranja), `entrega` (verde), `prereq` (vermelho), `custo` (dourado).
 - A **lista de materiais da rota**, o total de studs, os contadores e os números das etapas (01, 02…) são **calculados sozinhos**.
 
-**Etapas** (`stages`): `title`, `subtitle`, `tag` e `tasks` são obrigatórios. `note` (opcional) mostra um aviso no topo da etapa. `"optional": "Nome"` marca a etapa como opcional: os materiais dela aparecem como "+N com Nome" na lista de materiais. `"part": {"title": "…", "text": "…"}` (opcional) põe um divisor antes da etapa, abrindo uma nova parte da rota (hoje: *O Tesouro de Erebor*, a partir da etapa 09).
+**Etapas** (`stages`): `title`, `subtitle`, `tag` e `tasks` são obrigatórios. `note` (opcional) mostra um aviso no topo da etapa. `"optional": "Nome"` marca a etapa como opcional: os materiais dela aparecem como "+N com Nome" na lista de materiais. `"part": {"id": "…", "title": "…", "text": "…"}` (opcional) abre uma nova parte da rota a partir daquela etapa: ela vira uma **aba** própria (endereço `#id`, ex.: `index.html#tesouro`) com o texto de abertura no topo. Tudo antes do primeiro `part` é a aba *Jornada*; a aba *Referência* (custos, materiais, fontes) é fixa. Endereços antigos (`#rota`, `#custos`, `#materiais`, `#fontes`) continuam funcionando, e `#etapa-09` abre direto uma etapa.
 
 > Textos que citam "etapa 05" etc. são escritos à mão: se você inserir uma etapa no meio, revise essas referências.
 

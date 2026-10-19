@@ -1192,6 +1192,7 @@
       "subtitle": "Termine a história, recrute Sauron e pegue o primeiro esquema",
       "tag": "Campanha",
       "part": {
+        "id": "tesouro",
         "title": "O Tesouro de Erebor",
         "text": "A companhia chegou ao x10 pelo caminho mais curto. Agora é hora de reclamar o resto do tesouro: 26 Red Bricks, 23 deles ainda escondidos e 3 (Super Slap, Attract Loot e Double Loot) já guardados desde as etapas 05 e 06. Studs sobram como no salão de Smaug; o que pesa na mochila são Mithril Bricks e materiais."
       },
