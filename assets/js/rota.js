@@ -14,12 +14,7 @@ const MAT_KEY = 'hobbit-route-materials-v1';
 // Tipo de etiqueta (data/rota.json) → classe CSS
 const TAG_CLASS = { custo: 'gold', esquema: 'k-schem', forja: 'k-forge', entrega: 'k-deliv', prereq: 'k-req' };
 
-renderLayout('rota', [
-  { label: 'Jornada', page: 'rota', hash: 'jornada' },
-  { label: 'O Tesouro de Erebor', page: 'rota', hash: 'tesouro' },
-  { label: 'Referência', page: 'rota', hash: 'referencia' },
-  { label: 'Conquistas', page: 'conquistas' },
-]);
+renderLayout('rota');
 let data;
 try { data = await loadJSON('data/rota.json'); }
 catch (err) { loadError($('stages'), err); throw err; }

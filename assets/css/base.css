@@ -111,6 +111,7 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 .btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:9px 14px;min-height:44px;font-size:.92rem;text-align:center;transition:border-color .2s,background-color .2s}
 .btn:hover{border-color:var(--gold)}
 .btn[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--gold-ink);font-weight:700}
+.btn-gold{background:color-mix(in srgb,var(--gold) 14%,var(--panel2));border-color:color-mix(in srgb,var(--gold) 55%,transparent);color:var(--gold2);font-weight:700}
 .sources-note{margin:14px 0 0;color:var(--muted);font-size:.88rem}
 .segmented{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel2)}
 .segmented button{border:0;background:transparent;color:var(--muted);padding:9px 14px;min-height:42px;font-size:.92rem}

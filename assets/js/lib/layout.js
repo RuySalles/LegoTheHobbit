@@ -4,9 +4,9 @@ import { $, store, read } from './util.js';
 
 // Links do menu principal. "page" é a página onde o link mora (rota = index.html).
 const NAV = [
-  { label: 'Rota', page: 'rota', hash: 'rota' },
-  { label: 'Custos', page: 'rota', hash: 'custos' },
-  { label: 'Fontes', page: 'rota', hash: 'fontes' },
+  { label: 'Jornada', page: 'rota', hash: 'jornada' },
+  { label: 'O Tesouro de Erebor', page: 'rota', hash: 'tesouro' },
+  { label: 'Referência', page: 'rota', hash: 'referencia' },
   { label: 'Conquistas', page: 'conquistas' },
 ];
 const FILES = { rota: 'index.html', conquistas: 'conquistas.html' };
@@ -23,8 +23,8 @@ function href(item, current) {
   return `${item.page === current ? '' : FILES[item.page]}#${item.hash}`;
 }
 
-export function renderLayout(current, nav = NAV) {
-  const links = nav.map(item => {
+export function renderLayout(current) {
+  const links = NAV.map(item => {
     const here = item.page === current && !item.hash ? ' aria-current="page"' : '';
     return `<a href="${href(item, current)}"${here}>${item.label}</a>`;
   }).join('');

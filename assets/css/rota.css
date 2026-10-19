@@ -70,7 +70,6 @@
 .progressline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px}
 #progressText{font-size:.95rem;color:var(--muted)}
 #progressText strong{color:var(--text)}
-.btn-gold{background:color-mix(in srgb,var(--gold) 14%,var(--panel2));border-color:color-mix(in srgb,var(--gold) 55%,transparent);color:var(--gold2);font-weight:700}
 
 /* Mapa da jornada: uma bolinha por etapa, preenchida conforme o progresso */
 .journeymap{display:flex;flex-wrap:wrap;gap:10px 22px}

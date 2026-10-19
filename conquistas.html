@@ -39,14 +39,14 @@
  <section class="hero">
   <div>
    <div class="eyebrow">Extra · Conquistas da Steam</div>
-   <h1>39 conquistas.<br><em>Rumo ao 100%.</em></h1>
+   <h1><span id="achCount">39</span> conquistas.<br><em>Rumo ao 100%.</em></h1>
    <p class="lede" id="intro"></p>
-   <a class="backlink" href="index.html#rota">← Voltar para a rota de multiplicadores</a>
+   <a class="backlink" href="index.html#jornada">← Voltar para a rota dos Red Bricks</a>
   </div>
   <aside class="panel" aria-label="Seu progresso">
    <div class="ring">
     <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" x2="1"><stop offset="0" stop-color="var(--violet)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" id="ringFill" cx="60" cy="60" r="52"/></svg>
-    <div class="ring-label"><strong id="ringPct">0%</strong><span id="ringSub">0/39</span></div>
+    <div class="ring-label"><strong id="ringPct">0%</strong><span id="ringSub">0/0</span></div>
    </div>
    <ul class="rlist">
     <li><span><i class="dot epic"></i>Épicas <small>(&lt;8%)</small></span><b id="r-epic">0/0</b></li>
@@ -68,6 +68,7 @@
    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
    <input type="search" id="searchInput" placeholder="Buscar conquista ou dica… (ex.: Beorn, mithril, épica)" aria-label="Buscar conquista">
   </label>
+  <button class="btn btn-gold" id="continueBtn" type="button">Próxima pendente →</button>
  </div>
 
 <!-- capítulos são montados por assets/js/conquistas.js a partir de data/conquistas.json -->

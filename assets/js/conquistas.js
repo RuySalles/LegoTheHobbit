@@ -1,12 +1,13 @@
 // Página de conquistas: monta os cards a partir de data/conquistas.json e cuida do checklist.
 // Para mudar dicas, capítulos ou textos, edite data/conquistas.json — não este arquivo.
-import { $, esc, lines, loadJSON, loadError, store, read } from './lib/util.js';
+import { $, esc, lines, loadJSON, loadError, flash, store, read, readJSON } from './lib/util.js';
 import { renderLayout } from './lib/layout.js';
-import { createChecklist, storeAsMap } from './lib/checklist.js';
+import { createChecklist, storeAsMap, collapsible } from './lib/checklist.js';
 
 // Chaves de armazenamento — NÃO alterar, para manter o progresso já salvo.
 const KEY = 'hobbit-achievements-v1';
 const FILTER_KEY = 'hobbit-achievements-filter-v1';
+const VIEW_KEY = 'hobbit-achievements-view-v1';   // capítulos abertos/fechados na mão: { "capitulo-id": "open" | "closed" }
 
 // Faixas de raridade pela % global da Steam
 const RARITY = [[8, 'epic', 'Épica'], [15, 'rare', 'Rara'], [30, 'uncommon', 'Incomum'], [Infinity, 'common', 'Comum']];
@@ -44,6 +45,7 @@ const tpl = {
 };
 
 $('chapters').innerHTML = lines(data.chapters.map(tpl.chapter));
+$('achCount').textContent = Object.keys(data.achievements).length;
 const all = data.achievements.WATCH_100_PERCENT_ENDING;
 $('intro').innerHTML = data.intro.replace('{pct100}', all ? pct(all.pct) : '?');
 const [y, m, d] = data.updated.split('-');
@@ -54,16 +56,18 @@ $('sourceList').innerHTML = lines((data.sources || []).map(x => `<li>${x}</li>`)
 // COMPORTAMENTO
 // =====================================================================
 const boxes = [...document.querySelectorAll('.ach input[data-id]')];
+const chapters = [...document.querySelectorAll('.chapter')];
 const ring = $('ringFill'), C = 2 * Math.PI * 52;
 ring.style.strokeDasharray = C;
 let filter = 'all';
 
 const list = createChecklist({
-  boxes, groups: [...document.querySelectorAll('.chapter')], countSelector: '.chapter-count',
+  boxes, groups: chapters, countSelector: '.chapter-count',
   itemOf: b => b.closest('.ach'),
   ...storeAsMap(KEY),
   keep: b => filter === 'all' || (filter === 'done') === b.checked,
   emptyState: $('emptyState'),
+  afterFilter: q => { if (q) chapters.forEach(c => { if (!c.hidden) collapse.show(c, false); }); else collapse.refresh(); },
   onUpdate: () => {
     const { done, total } = list.stats();
     $('ringPct').textContent = Math.round(done / total * 100) + '%';
@@ -74,6 +78,26 @@ const list = createChecklist({
       $('r-' + r).textContent = `${s.done}/${s.total}`;
     });
   },
+});
+
+// Capítulos: os concluídos se fecham sozinhos, salvo escolha do usuário
+const view = readJSON(VIEW_KEY, {});
+const collapse = collapsible({
+  groups: chapters, headSelector: '.chapter-head',
+  isCollapsed: c => view[c.id] ? view[c.id] === 'closed' : c.classList.contains('complete'),
+  onToggle: (c, closed) => { view[c.id] = closed ? 'closed' : 'open'; store(VIEW_KEY, JSON.stringify(view)); },
+});
+boxes.forEach(b => b.addEventListener('change', () => { if (!list.query) collapse.refresh(); }));
+
+// Próxima pendente: leva à primeira conquista ainda não marcada
+$('continueBtn').addEventListener('click', () => {
+  const next = boxes.find(b => !b.checked);
+  if (!next) return;
+  const card = next.closest('.ach');
+  if (card.hidden) { $('searchInput').value = ''; list.clearQuery(); setFilter('all', true); }
+  collapse.show(card.closest('.chapter'), false);
+  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  flash(card);
 });
 
 function setFilter(f, persist) {
@@ -87,3 +111,4 @@ $('searchInput').addEventListener('input', e => list.setQuery(e.target.value));
 const savedFilter = read(FILTER_KEY);
 setFilter(savedFilter === 'pending' || savedFilter === 'done' ? savedFilter : 'all', false);
 list.update();
+collapse.refresh();
