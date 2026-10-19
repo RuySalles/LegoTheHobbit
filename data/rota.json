@@ -1188,12 +1188,12 @@
       ]
     },
     {
-      "title": "Fim da campanha",
-      "subtitle": "Os níveis restantes da história · Sauron e o primeiro esquema",
+      "title": "A Montanha Solitária",
+      "subtitle": "Termine a história, recrute Sauron e pegue o primeiro esquema",
       "tag": "Campanha",
       "part": {
         "title": "O Tesouro de Erebor",
-        "text": "A rota acima é o caminho mais curto até o x10. Daqui em diante vêm os outros 26 Red Bricks: 23 com tarefas novas e 3 (Super Slap, Attract Loot e Double Loot) que você já ganha nas etapas 05 e 06. Com o x10 ligado, os studs deixam de ser problema; o gargalo passa a ser Mithril Bricks e materiais."
+        "text": "A companhia chegou ao x10 pelo caminho mais curto. Agora é hora de reclamar o resto do tesouro: 26 Red Bricks, 23 deles ainda escondidos e 3 (Super Slap, Attract Loot e Double Loot) já guardados desde as etapas 05 e 06. Studs sobram como no salão de Smaug; o que pesa na mochila são Mithril Bricks e materiais."
       },
       "optional": "O Tesouro de Erebor",
       "tasks": [
@@ -1244,10 +1244,10 @@
       ]
     },
     {
-      "title": "Atalhos do ferreiro",
+      "title": "A forja dos anões",
       "subtitle": "Perfect Forging, Regenerate Hearts e Fast Build",
       "tag": "Prioridade",
-      "note": "Perfect Forging vem primeiro: com ele ligado, toda forja daqui em diante sai perfeita sozinha, o que também ajuda na conquista de forjar tudo perfeito. A cadeia que libera <em>Manic Mining</em> passa por Hobbiton de dia e de noite; o esquema do Stud Spade fica no caminho.",
+      "note": "Todo ferreiro anão começa pelas ferramentas: com Perfect Forging ligado, cada forja daqui em diante sai perfeita sozinha, e isso já adianta a conquista de forjar tudo perfeito. A cadeia até <em>Manic Mining</em> cruza Hobbiton de dia e de noite, e o esquema do Stud Spade fica no caminho.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -1452,10 +1452,10 @@
       ]
     },
     {
-      "title": "Os três detectores",
-      "subtitle": "Minikits, tesouros e Mithril Bricks antes do Free Play",
+      "title": "Olhos de ladrão",
+      "subtitle": "Detectores de minikits, tesouros e Mithril Bricks antes do Free Play",
       "tag": "100%",
-      "note": "Os 23 itens desta parte pedem 189 Mithril Bricks; somados aos 61 da rota principal, são <strong>todos os 250</strong> do jogo. Por isso o Mithril Brick Detector entra cedo, junto com os detectores de minikits e tesouros, que deixam a varredura do Free Play bem mais rápida.",
+      "note": "Um bom ladrão sabe onde procurar. Os 23 itens desta parte pedem 189 Mithril Bricks; somados aos 61 da rota principal, são <strong>todos os 250</strong> do jogo. Por isso os detectores vêm primeiro: eles transformam a varredura do Free Play numa caça ao tesouro guiada.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -1643,10 +1643,10 @@
       ]
     },
     {
-      "title": "Varredura do Free Play",
+      "title": "Lá e de volta outra vez",
       "subtitle": "Os esquemas restantes das fases, na ordem da história",
       "tag": "Free Play",
-      "note": "Com os detectores ligados, aproveite cada fase para pegar também minikits e tesouros. Quatro tesouros abrem cadeias de missões mais adiante: <em>Yodelling Shield</em>, <em>Stone-giant Gloves</em>, <em>Crystal Goblin Crown</em> e o <em>Firefly Jar</em>, que já veio junto com o Pickaxe.",
+      "note": "Hora de refazer a jornada, agora conhecendo o caminho. Com os detectores ligados, pegue também minikits e tesouros em cada fase. Quatro tesouros abrem missões mais adiante: <em>Yodelling Shield</em>, <em>Stone-giant Gloves</em>, <em>Crystal Goblin Crown</em> e o <em>Firefly Jar</em>, que já veio junto com o Pickaxe.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -1829,7 +1829,7 @@
       ]
     },
     {
-      "title": "Esquemas pela Terra-média",
+      "title": "Andanças pela Terra-média",
       "subtitle": "Os seis esquemas restantes do mapa, de Rivendell a Erebor",
       "tag": "Exploração",
       "optional": "O Tesouro de Erebor",
@@ -1939,10 +1939,10 @@
       ]
     },
     {
-      "title": "Noites no Oeste",
-      "subtitle": "The High Fells, High Pass, Bree e Rivendell",
+      "title": "Sob a lua das Montanhas Sombrias",
+      "subtitle": "The High Fells, High Pass, Bree e Rivendell · tudo à noite",
       "tag": "Noite",
-      "note": "Etapa toda noturna: acampe uma vez e faça tudo em sequência. Antes de sair de Bree, forje os itens das três etapas noturnas de uma vez.",
+      "note": "Monte acampamento uma vez e siga até o amanhecer: tudo aqui é noturno. Antes de sair de Bree, forje de uma vez os itens das três etapas noturnas.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -2137,9 +2137,10 @@
       ]
     },
     {
-      "title": "Noites nas florestas",
-      "subtitle": "Pine Forest, Dol Guldur, a casa de Radagast e a Floresta Élfica",
+      "title": "Onde a floresta escurece",
+      "subtitle": "Pine Forest, Dol Guldur, a casa de Radagast e a Floresta Élfica · à noite",
       "tag": "Noite",
+      "note": "Leve a mochila cheia: duas missões daqui pedem cestos completos, 50 coxas em Dol Guldur e 99 peixes na Floresta Élfica.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -2365,9 +2366,10 @@
       ]
     },
     {
-      "title": "Noites em Lake-town e Erebor",
-      "subtitle": "Lake-town, Erebor e Dale",
+      "title": "À sombra do Dragão",
+      "subtitle": "Lake-town, Erebor e Dale · à noite",
       "tag": "Noite",
+      "note": "Lake-town guarda duas cadeias longas. Chegue com os tesouros do Free Play (<em>Yodelling Shield</em>, <em>Firefly Jar</em> e <em>Stone-giant Gloves</em>) e com os materiais da balista.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
@@ -2611,9 +2613,10 @@
       ]
     },
     {
-      "title": "Entregas à luz do dia",
+      "title": "Ao raiar do dia",
       "subtitle": "Bywater, Thranduil's Kingdom e Caradhras · os últimos Red Bricks",
       "tag": "Dia",
+      "note": "A jornada termina com o sol alto. Bywater vem primeiro porque suas três missões se encadeiam; o Snowapult fecha a coleção com o 32º Red Brick.",
       "optional": "O Tesouro de Erebor",
       "tasks": [
         {
