@@ -313,5 +313,10 @@
       "pct": 6.9,
       "tip": "Chegue a 100% de progresso do jogo. Se as outras conquistas de coleção estiverem feitas, ela vem junto."
     }
-  }
+  },
+  "sources": [
+    "<a href=\"https://steamcommunity.com/stats/285160/achievements/?l=brazilian\" target=\"_blank\" rel=\"noopener noreferrer\">Steam — Estatísticas de conquistas de LEGO The Hobbit</a>: nomes, descrições oficiais, ícones e porcentagens globais.",
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=372668674\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — 100% Achievement Guide</a>: dicas práticas por conquista.",
+    "<a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2718455007\" target=\"_blank\" rel=\"noopener noreferrer\">Steam Community — BLVGH: LEGO The Hobbit</a>: totais de coleção (250 Mithril Bricks, 32 esquemas, 137 missões, 96 personagens) e detalhes de forja."
+  ]
 }

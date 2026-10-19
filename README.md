@@ -14,14 +14,16 @@ index.html              página da rota (só a "casca": topo, títulos fixos e r
 conquistas.html         página de conquistas (idem)
 data/
   rota.json             ← conteúdo da rota: etapas, tarefas, materiais, Red Bricks, fontes
-  conquistas.json       ← conteúdo das conquistas: capítulos, dicas, % da Steam
+  conquistas.json       ← conteúdo das conquistas: capítulos, dicas, % da Steam, fontes
   ids.lock.json         IDs já publicados (proteção do progresso salvo; veja abaixo)
 assets/
   css/base.css          cores (tokens dos temas claro/escuro), topo, menu, rodapé — comum às páginas
   css/rota.css          estilos só da rota
   css/conquistas.css    estilos só das conquistas
   js/theme-init.js      aplica o tema antes de pintar a tela (evita "piscar")
-  js/common.js          tema, menu, salvamento, formatação de números
+  js/lib/util.js        salvamento, texto, formatação de números, carregar JSON
+  js/lib/layout.js      cabeçalho, menu, tema e rodapé de todas as páginas (um lugar só)
+  js/lib/checklist.js   checklist compartilhado: marcar, salvar, contar, buscar, recolher
   js/rota.js            monta a rota a partir de data/rota.json + checklist
   js/conquistas.js      monta as conquistas a partir de data/conquistas.json + checklist
   achievements/*.jpg    ícones das conquistas (nome = id da Steam em minúsculas)

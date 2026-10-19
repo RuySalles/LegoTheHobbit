@@ -57,6 +57,9 @@ def check_rota(d):
         for f in ('title', 'subtitle', 'tag'):
             if not st.get(f): err(f'{w}: campo "{f}" obrigatório')
         if st.get('note'): check_html(f'{w} note', st['note'])
+        if 'part' in st:
+            if not (isinstance(st['part'], dict) and st['part'].get('title') and st['part'].get('text')): err(f'{w}: "part" precisa de "title" e "text"')
+            else: check_html(f'{w} part', st['part']['text'])
         if not st.get('tasks'): err(f'{w}: etapa sem tarefas')
         for t in st.get('tasks', []):
             tid = t.get('id', '?'); tw = f'{w} tarefa {tid}'
@@ -79,6 +82,7 @@ def check_rota(d):
         if not isinstance(b.get('cost'), int) or b['cost'] <= 0: err(f'{w}: "cost" deve ser um número inteiro de studs')
         if b.get('unlock') not in idset: err(f'{w}: "unlock" aponta para "{b.get("unlock")}", que não existe')
         if not isinstance(b.get('multiplier'), bool): err(f'{w}: "multiplier" deve ser true ou false')
+        if 'group' in b and not b['group']: err(f'{w}: "group" não pode ficar vazio (remova o campo para a rota principal)')
     for i, s in enumerate(d.get('sources', [])): check_html(f'rota.json sources[{i}]', s)
     for i, s in enumerate(d.get('confirm', [])): check_html(f'rota.json confirm[{i}]', s)
     return ids
@@ -91,6 +95,7 @@ def check_conquistas(d):
         try: date.fromisoformat(d['updated'])
         except ValueError: err('conquistas.json: "updated" não é uma data válida')
     if '{pct100}' not in d.get('intro', ''): warn('conquistas.json: "intro" não usa {pct100}')
+    for i, x in enumerate(d.get('sources', [])): check_html(f'conquistas.json sources[{i}]', x)
     seen = []
     for c in d.get('chapters', []):
         for f in ('id', 'title', 'subtitle'):
@@ -114,7 +119,7 @@ def check_conquistas(d):
 def main():
     rota, conq = load('rota.json'), load('conquistas.json')
     ids = {'rota': check_rota(rota) if rota else [], 'conquistas': check_conquistas(conq) if conq else []}
-    for f in ['index.html', 'conquistas.html', 'favicon.svg', 'assets/css/base.css', 'assets/js/common.js', 'assets/js/theme-init.js']:
+    for f in ['index.html', 'conquistas.html', 'favicon.svg', 'assets/css/base.css', 'assets/js/lib/util.js', 'assets/js/lib/layout.js', 'assets/js/lib/checklist.js', 'assets/js/theme-init.js']:
         if not (ROOT / f).is_file(): err(f'arquivo obrigatório ausente: {f}')
 
     # Trava de IDs: um id publicado nunca pode sumir (apagaria o progresso salvo de quem usa o site).

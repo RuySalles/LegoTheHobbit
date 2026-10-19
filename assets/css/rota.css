@@ -3,13 +3,6 @@
 /* =========================================================
    HERO
    ========================================================= */
-.hero{padding:70px 0 48px;position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.9fr);gap:48px;align-items:center}
-.hero:after{content:"ᚠ";position:absolute;left:46%;top:-10px;font-family:Georgia,serif;font-size:clamp(10rem,26vw,24rem);line-height:1;color:var(--rune);pointer-events:none;z-index:-1}
-
-h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.4rem,6.4vw,5.4rem);line-height:1.02;letter-spacing:-.01em;margin:18px 0 22px;overflow-wrap:break-word}
-h1 em{font-style:normal;color:var(--gold);display:inline-block}
-.lede{max-width:640px;color:var(--soft);font-size:clamp(1.05rem,1.8vw,1.22rem)}
-.lede strong{color:var(--text)}
 .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .pill{border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:6px 13px;color:var(--muted);font-size:.86rem}
 .pill strong{color:var(--text)}
@@ -61,7 +54,7 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 /* =========================================================
    TOOLBAR: studs + busca + ações
    ========================================================= */
-.toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 20px;align-items:center;margin:20px 0 26px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 20px;align-items:center}
 .progressbox{min-width:0}
 #progressText{font-size:.92rem;color:var(--muted);margin-bottom:8px}
 #progressText strong{color:var(--text)}
@@ -70,13 +63,7 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 .stud:hover{transform:translateY(-2px) scale(1.08)}
 .stud.done{background:var(--gold);border-color:var(--gold2);box-shadow:inset 0 0 0 3px var(--gold),inset 0 0 0 4.5px color-mix(in srgb,var(--gold2) 60%,#fff 40%)}
 .tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
-.search{grid-column:1 / -1;position:relative}
-.search svg{position:absolute;left:13px;top:50%;width:17px;height:17px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
-.search input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 14px 10px 40px;font-size:1rem;min-height:44px}
-.search input::placeholder{color:var(--muted);opacity:.85}
-.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:9px 14px;min-height:44px;font-size:.92rem;text-align:center;transition:border-color .2s,background-color .2s}
-.btn:hover{border-color:var(--gold)}
-.btn[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--gold-ink);font-weight:700}
+.search{grid-column:1 / -1}
 
 /* =========================================================
    ETAPAS — trilha da rota
@@ -123,7 +110,6 @@ h1 em{font-style:normal;color:var(--gold);display:inline-block}
 .taskcopy{min-width:0}
 .tasktitle{font-weight:700;margin-bottom:3px;line-height:1.35}
 .taskdesc{color:var(--soft);font-size:.96rem}
-.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
 .tag.gold{color:var(--gold2);border-color:color-mix(in srgb,var(--gold) 45%,transparent);background:color-mix(in srgb,var(--gold) 8%,transparent)}
 .tag.k-schem{color:var(--mithril);border-color:color-mix(in srgb,var(--mithril) 45%,transparent)}
 .tag.k-forge{color:var(--ember);border-color:color-mix(in srgb,var(--ember) 45%,transparent)}
@@ -163,8 +149,6 @@ tr.grouprow th{background:var(--panel3);color:var(--gold2);font-size:.82rem;text
 
 /* Tablet e notebooks pequenos */
 @media(max-width:960px){
- .hero{grid-template-columns:1fr;gap:32px}
- .hero:after{left:auto;right:2%}
  .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .toolbar{grid-template-columns:1fr}
  .tools{justify-content:flex-start}
@@ -172,10 +156,8 @@ tr.grouprow th{background:var(--panel3);color:var(--gold2);font-size:.82rem;text
 
 /* Tablet em pé e celular */
 @media(max-width:760px){
- .hero{padding:36px 0 32px}
  .hero-meta{margin-top:20px}
  .sectionhead{margin:40px 0 16px}
- .toolbar{padding:16px}
  .tools .btn{flex:1 1 140px}
  /* Cabeçalho da etapa: etiqueta e contagem descem para baixo do título */
  .stages:before{left:36px}
