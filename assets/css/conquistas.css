@@ -29,10 +29,6 @@
 
 /* Toolbar */
 .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:10px 0 6px}
-.segmented{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel2)}
-.segmented button{border:0;background:transparent;color:var(--muted);padding:9px 14px;min-height:42px;font-size:.92rem}
-.segmented button+button{border-left:1px solid var(--line)}
-.segmented button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink);font-weight:700}
 .search{flex:1 1 260px;max-width:420px}
 
 /* Capítulos */

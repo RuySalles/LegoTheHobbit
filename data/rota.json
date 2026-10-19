@@ -147,7 +147,7 @@
       "cost": 50000,
       "unlock": "t28",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "AL",
@@ -159,7 +159,7 @@
       "cost": 100000,
       "unlock": "t31",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "DL",
@@ -171,7 +171,7 @@
       "cost": 750000,
       "unlock": "t35",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "PF",
@@ -183,7 +183,7 @@
       "cost": 5000000,
       "unlock": "t46",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "RH",
@@ -195,7 +195,7 @@
       "cost": 100000,
       "unlock": "t47",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "FB",
@@ -207,7 +207,7 @@
       "cost": 100000,
       "unlock": "t48",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "MK",
@@ -219,7 +219,7 @@
       "cost": 150000,
       "unlock": "t53",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "TR",
@@ -231,7 +231,7 @@
       "cost": 250000,
       "unlock": "t54",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "MB",
@@ -243,7 +243,7 @@
       "cost": 175000,
       "unlock": "t55",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "FR",
@@ -255,7 +255,7 @@
       "cost": 25000,
       "unlock": "t75",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "OUR",
@@ -267,7 +267,7 @@
       "cost": 1000000,
       "unlock": "t77",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "POO",
@@ -279,7 +279,7 @@
       "cost": 25000,
       "unlock": "t78",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "INV",
@@ -291,7 +291,7 @@
       "cost": 500000,
       "unlock": "t79",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "MH",
@@ -303,7 +303,7 @@
       "cost": 75000,
       "unlock": "t82",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "RUB",
@@ -315,7 +315,7 @@
       "cost": 250000,
       "unlock": "t84",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "CAR",
@@ -327,7 +327,7 @@
       "cost": 50000,
       "unlock": "t85",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "ESM",
@@ -339,7 +339,7 @@
       "cost": 500000,
       "unlock": "t87",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "BOS",
@@ -351,7 +351,7 @@
       "cost": 100000,
       "unlock": "t89",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "DIA",
@@ -363,7 +363,7 @@
       "cost": 1000000,
       "unlock": "t91",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "DSF",
@@ -375,7 +375,7 @@
       "cost": 50000,
       "unlock": "t92",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "PRA",
@@ -387,7 +387,7 @@
       "cost": 750000,
       "unlock": "t93",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "8B",
@@ -399,7 +399,7 @@
       "cost": 200000,
       "unlock": "t94",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "CS",
@@ -411,7 +411,7 @@
       "cost": 85000,
       "unlock": "t96",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "SAF",
@@ -423,7 +423,7 @@
       "cost": 600000,
       "unlock": "t97",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "SNK",
@@ -435,7 +435,7 @@
       "cost": 25000,
       "unlock": "t98",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     },
     {
       "label": "MIN",
@@ -447,7 +447,7 @@
       "cost": 300000,
       "unlock": "t99",
       "multiplier": false,
-      "group": "erebor"
+      "group": "tesouro"
     }
   ],
   "stages": [
@@ -1196,7 +1196,6 @@
         "title": "O Tesouro de Erebor",
         "text": "A companhia chegou ao x10 pelo caminho mais curto. Agora é hora de reclamar o resto do tesouro: 26 Red Bricks, 23 deles ainda escondidos e 3 (Super Slap, Attract Loot e Double Loot) já guardados desde as etapas 05 e 06. Studs sobram como no salão de Smaug; o que pesa na mochila são Mithril Bricks e materiais."
       },
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t38",
@@ -1249,7 +1248,6 @@
       "subtitle": "Perfect Forging, Regenerate Hearts e Fast Build",
       "tag": "Prioridade",
       "note": "Todo ferreiro anão começa pelas ferramentas: com Perfect Forging ligado, cada forja daqui em diante sai perfeita sozinha, e isso já adianta a conquista de forjar tudo perfeito. A cadeia até <em>Manic Mining</em> cruza Hobbiton de dia e de noite, e o esquema do Stud Spade fica no caminho.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t41",
@@ -1457,7 +1455,6 @@
       "subtitle": "Detectores de minikits, tesouros e Mithril Bricks antes do Free Play",
       "tag": "100%",
       "note": "Um bom ladrão sabe onde procurar. Os 23 itens desta parte pedem 189 Mithril Bricks; somados aos 61 da rota principal, são <strong>todos os 250</strong> do jogo. Por isso os detectores vêm primeiro: eles transformam a varredura do Free Play numa caça ao tesouro guiada.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t49",
@@ -1648,7 +1645,6 @@
       "subtitle": "Os esquemas restantes das fases, na ordem da história",
       "tag": "Free Play",
       "note": "Hora de refazer a jornada, agora conhecendo o caminho. Com os detectores ligados, pegue também minikits e tesouros em cada fase. Quatro tesouros abrem missões mais adiante: <em>Yodelling Shield</em>, <em>Stone-giant Gloves</em>, <em>Crystal Goblin Crown</em> e o <em>Firefly Jar</em>, que já veio junto com o Pickaxe.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t56",
@@ -1833,7 +1829,6 @@
       "title": "Andanças pela Terra-média",
       "subtitle": "Os seis esquemas restantes do mapa, de Rivendell a Erebor",
       "tag": "Exploração",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t67",
@@ -1944,7 +1939,6 @@
       "subtitle": "The High Fells, High Pass, Bree e Rivendell · tudo à noite",
       "tag": "Noite",
       "note": "Monte acampamento uma vez e siga até o amanhecer: tudo aqui é noturno. Antes de sair de Bree, forje de uma vez os itens das três etapas noturnas.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t73",
@@ -2142,7 +2136,6 @@
       "subtitle": "Pine Forest, Dol Guldur, a casa de Radagast e a Floresta Élfica · à noite",
       "tag": "Noite",
       "note": "Leve a mochila cheia: duas missões daqui pedem cestos completos, 50 coxas em Dol Guldur e 99 peixes na Floresta Élfica.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t80",
@@ -2371,7 +2364,6 @@
       "subtitle": "Lake-town, Erebor e Dale · à noite",
       "tag": "Noite",
       "note": "Lake-town guarda duas cadeias longas. Chegue com os tesouros do Free Play (<em>Yodelling Shield</em>, <em>Firefly Jar</em> e <em>Stone-giant Gloves</em>) e com os materiais da balista.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t88",
@@ -2618,7 +2610,6 @@
       "subtitle": "Bywater, Thranduil's Kingdom e Caradhras · os últimos Red Bricks",
       "tag": "Dia",
       "note": "A jornada termina com o sol alto. Bywater vem primeiro porque suas três missões se encadeiam; o Snowapult fecha a coleção com o 32º Red Brick.",
-      "optional": "O Tesouro de Erebor",
       "tasks": [
         {
           "id": "t95",

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0c100d">
 <title>LEGO The Hobbit — Rota de Progressão</title>
-<meta name="description" content="Checklist para desbloquear os multiplicadores de studs (x2 a x10) em LEGO The Hobbit: onde achar cada esquema, forjar em Bree e entregar na missão certa.">
+<meta name="description" content="Checklist para conquistar os 32 Red Bricks de LEGO The Hobbit, começando pelos multiplicadores de studs (x2 a x10): onde achar cada esquema, forjar em Bree e entregar na missão certa.">
 <link rel="canonical" href="https://ruysalles.github.io/LegoTheHobbit/">
 
 <!-- Ícones da aba e da tela inicial -->
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Middle-earth Field Guide">
 <meta property="og:title" content="LEGO The Hobbit — Rota de Progressão">
-<meta property="og:description" content="Checklist para desbloquear os multiplicadores de studs (x2 a x10): esquema, forja em Bree e missão de entrega.">
+<meta property="og:description" content="Checklist para os 32 Red Bricks, começando pelos multiplicadores x2 a x10: esquema, forja em Bree e missão de entrega.">
 <meta property="og:url" content="https://ruysalles.github.io/LegoTheHobbit/">
 <meta property="og:image" content="https://ruysalles.github.io/LegoTheHobbit/og-image.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -27,7 +27,7 @@
 <meta property="og:image:alt" content="Uma jornada. Menos desvios. — Guia de progressão de LEGO The Hobbit">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="LEGO The Hobbit — Rota de Progressão">
-<meta name="twitter:description" content="Checklist para desbloquear os multiplicadores de studs (x2 a x10) em LEGO The Hobbit.">
+<meta name="twitter:description" content="Checklist para os 32 Red Bricks de LEGO The Hobbit, começando pelos multiplicadores x2 a x10.">
 <meta name="twitter:image" content="https://ruysalles.github.io/LegoTheHobbit/og-image.jpg">
 
 <script src="assets/js/theme-init.js"></script>
@@ -46,37 +46,27 @@
   <div>
    <div class="eyebrow">Guia tático · Progressão eficiente</div>
    <h1>Uma jornada.<br><em>Menos desvios.</em></h1>
-   <p class="lede">Rota revisada de <strong>LEGO The Hobbit</strong> para desbloquear os cinco multiplicadores de studs sem confundir três etapas diferentes: encontrar o esquema, forjar o item em Bree e entregá-lo na missão correta.</p>
+   <p class="lede">Rota de <strong>LEGO The Hobbit</strong> para conquistar os <strong id="heroBrickCount">32</strong> Red Bricks com o mínimo de viagens: primeiro o caminho mais curto até o x10, depois o resto do tesouro de Erebor.</p>
    <div class="hero-meta" id="heroMeta"></div>
    <div class="moonletters" aria-hidden="true">ᚦ ᚱ ᛟ ᚱ · ᛞ ᚢ ᚱ ᛁ ᚾ · ᛖ ᚱ ᛖ ᛒ ᛟ ᚱ</div>
   </div>
 
-  <aside class="vault" aria-label="Red Bricks desbloqueados">
-   <div class="vault-head"><h2>Red Bricks</h2><span class="vault-count" id="vaultCount">0/6</span></div>
-   <p class="vault-sub">Acendem quando a entrega correspondente é marcada.</p>
-   <ul class="bricks" id="bricks"></ul>
-   <details class="vault-more" id="vaultMore" hidden>
-    <summary><span id="vaultMoreTitle">Extras</span><span class="vault-count" id="vaultMoreCount">0/0</span></summary>
-    <ul class="bricks" id="bricksMore"></ul>
-   </details>
+  <aside class="vault" aria-label="Red Bricks conquistados">
+   <div class="vault-head"><h2>Red Bricks</h2><span class="vault-count" id="vaultCount">0/0</span></div>
+   <div id="vaultGroups"></div>
+   <p class="vault-detail" id="vaultDetail" aria-live="polite">Toque numa peça para ver qual é. Elas acendem quando a entrega é marcada.</p>
   </aside>
  </section>
 
- <section class="warning" aria-label="Correção importante">
-  <div class="warning-icon">⚑</div>
-  <div><h2>Regra de ouro: esquema ≠ recompensa</h2>
-   <p>O esquema libera a fabricação; o item fabricado precisa ser entregue em uma missão específica; só então o Red Brick pode ser comprado. Os locais e horários abaixo se referem à <strong>missão de entrega</strong>, não à localização do esquema.</p>
-  </div>
- </section>
-
- <div class="sectionhead">
-  <div><h2>Visão geral da rota</h2><p>Ordem recomendada para reduzir viagens repetidas.</p></div>
- </div>
- <section class="summary-grid" aria-label="Resumo dos multiplicadores">
-  <div class="stat"><small>Primeiro retorno</small><strong>Attract</strong><span>175 mil · coleta studs à distância</span></div>
-  <div class="stat"><small>Multiplicador inicial</small><strong>x2</strong><span>500 mil · Hobbiton, de dia</span></div>
-  <div class="stat"><small>Meta intermediária</small><strong>x4 / x6</strong><span>1,5M + 4,5M studs</span></div>
-  <div class="stat"><small>Meta final</small><strong>x8 / x10</strong><span>10M + 20M studs</span></div>
+ <section class="howtoread" aria-label="Como ler a rota">
+  <h2>Como ler a rota</h2>
+  <ol class="flow">
+   <li><span class="tag k-schem">Esquema</span><span>Ache o desenho do item, numa fase ou no mapa.</span></li>
+   <li><span class="tag k-forge">Forja</span><span>Fabrique o item de Mithril na ferraria de Bree.</span></li>
+   <li><span class="tag k-deliv">Entrega</span><span>Leve à missão de "?" vermelho e compre o Red Brick.</span></li>
+  </ol>
+  <p class="legend"><span><span class="tag k-req">Pré-requisito</span> missão ou compra que destrava a próxima</span><span><span class="tag gold">Custo</span> studs do Red Brick</span></p>
+  <p class="legend-note">Locais e horários nas etiquetas são os da <strong>entrega</strong>, não do esquema.</p>
  </section>
 
  <nav class="tabs" id="tabs" role="tablist" aria-label="Partes do guia"></nav>
@@ -113,32 +103,29 @@
  <section class="tabpanel" id="panelRef" aria-label="Referência" hidden>
   <section id="custos">
    <div class="sectionhead"><div><h2>Custos e destinos de entrega</h2><p>Consulte antes de gastar studs ou viajar para outra região.</p></div></div>
-   <div class="tablewrap">
-    <table>
-     <thead><tr><th>Desbloqueio</th><th>Item exigido</th><th>Missão de entrega</th><th>Local / horário</th><th>Custo</th></tr></thead>
-     <tbody id="costRows"></tbody>
-    </table>
-   </div>
+   <div id="costTables"></div>
    <div class="callout" id="budget"></div>
   </section>
 
   <section id="materiais">
-   <h3 class="subhead">Lista de materiais da rota</h3>
-   <p>Soma de todas as forjas obrigatórias, para farmar tudo de uma vez. Os valores menores indicam o adicional se você também fizer <em>Express Delivery</em> (etapa 06) e <em>O Tesouro de Erebor</em> (etapas 09 em diante).</p>
+   <div class="sectionhead"><div><h2>Materiais para forjar</h2><p>Soma de todas as forjas de cada parte, para farmar tudo de uma vez.</p></div>
+    <div class="segmented" id="matFilter" role="group" aria-label="Mostrar materiais de"></div>
+   </div>
    <div class="matgrid" id="matGrid"></div>
    <div class="callout"><strong>Dica de farm:</strong> em Erebor, quebre em dupla o grande bloco rachado ao lado da porta principal para revelar o <em>Loot Dispenser</em>, que vende materiais em pacotes de 5 por studs. Vale a pena depois de ter alguns multiplicadores ativos.</div>
   </section>
 
   <section id="fontes">
-   <div class="sectionhead"><div><h2>Fontes de verificação</h2><p>Guias consultados para validar esquemas, missões, horários e custos.</p></div></div>
-   <div class="sources">
+   <div class="sectionhead"><div><h2>Fontes e pontos a confirmar</h2><p>Guias consultados para validar esquemas, missões, horários e custos.</p></div></div>
+   <details class="fold">
+    <summary>Fontes de verificação <span class="tabcount" id="sourceCount"></span></summary>
     <ul id="sourceList"></ul>
-    <div class="confirm">
-     <strong>Pontos a confirmar no jogo</strong>
-     <ul id="confirmList"></ul>
-    </div>
-    <p class="sources-note">Nota: os guias podem usar nomes ligeiramente diferentes para alguns itens, como Construction Hat/Helmet. As instruções de puzzle foram resumidas para caber no formato de checklist.</p>
-   </div>
+    <p class="sources-note">Os guias podem usar nomes ligeiramente diferentes para alguns itens, como Construction Hat/Helmet. As instruções de puzzle foram resumidas para caber no formato de checklist.</p>
+   </details>
+   <details class="fold fold-warn">
+    <summary>Pontos a confirmar no jogo <span class="tabcount" id="confirmCount"></span></summary>
+    <ul id="confirmList"></ul>
+   </details>
   </section>
  </section>
  <footer id="footer"></footer>

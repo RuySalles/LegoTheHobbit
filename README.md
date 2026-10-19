@@ -72,7 +72,7 @@ Campos de texto aceitam HTML simples: `<em>`, `<strong>`, `<b>`, `<a href="...">
 
 > Textos que citam "etapa 05" etc. são escritos à mão: se você inserir uma etapa no meio, revise essas referências.
 
-**Red Bricks** (`redBricks`): cada um aparece no painel do topo e na tabela de custos. `unlock` é o id da tarefa de entrega que acende o brick. `multiplier: true` conta no "custo dos multiplicadores". `group` (opcional) tira o brick da rota principal: ele vai para a lista recolhível do painel e para um bloco separado da tabela, com o nome da parte.
+**Red Bricks** (`redBricks`): cada um aparece no painel do topo e na tabela de custos. `unlock` é o id da tarefa de entrega que acende o brick. `multiplier: true` conta no "custo dos multiplicadores". `group` (opcional) é o `id` da parte a que o brick pertence (ex.: `"tesouro"`); sem `group`, ele é da Jornada. Cada parte tem seu grupo no painel de peças do topo e sua própria tabela de custos na aba Referência.
 
 **Fontes** (`sources`) e **pontos a confirmar** (`confirm`): uma linha HTML por item.
 

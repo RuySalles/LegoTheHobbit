@@ -76,6 +76,7 @@ def check_rota(d):
     dup = sorted({x for x in ids if ids.count(x) > 1})
     if dup: err(f'rota.json: ids de tarefa repetidos: {", ".join(dup)}')
     idset = set(ids)
+    part_ids = {st['part'].get('id') for st in d.get('stages', []) if isinstance(st.get('part'), dict)}
     for b in d.get('redBricks', []):
         w = f'rota.json redBricks "{b.get("name", "?")}"'
         for f in ('label', 'name', 'tableName', 'item', 'quest', 'where', 'unlock'):
@@ -83,7 +84,7 @@ def check_rota(d):
         if not isinstance(b.get('cost'), int) or b['cost'] <= 0: err(f'{w}: "cost" deve ser um número inteiro de studs')
         if b.get('unlock') not in idset: err(f'{w}: "unlock" aponta para "{b.get("unlock")}", que não existe')
         if not isinstance(b.get('multiplier'), bool): err(f'{w}: "multiplier" deve ser true ou false')
-        if 'group' in b and not b['group']: err(f'{w}: "group" não pode ficar vazio (remova o campo para a rota principal)')
+        if 'group' in b and b['group'] not in part_ids: err(f'{w}: "group" deve ser o id de uma parte ({", ".join(sorted(part_ids)) or "nenhuma"}); sem group = Jornada')
     for i, s in enumerate(d.get('sources', [])): check_html(f'rota.json sources[{i}]', s)
     for i, s in enumerate(d.get('confirm', [])): check_html(f'rota.json confirm[{i}]', s)
     return ids

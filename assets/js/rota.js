@@ -9,6 +9,7 @@ const STORAGE_KEY = 'hobbit-route-checklist-v1';
 const HIDE_KEY = 'hobbit-route-hide-done-v1';
 const VIEW_KEY = 'hobbit-route-stage-view-v1';   // etapas que o usuário abriu/fechou na mão: { "3": "open" | "closed" }
 const TAB_KEY = 'hobbit-route-tab-v1';
+const MAT_KEY = 'hobbit-route-materials-v1';
 
 // Tipo de etiqueta (data/rota.json) → classe CSS
 const TAG_CLASS = { custo: 'gold', esquema: 'k-schem', forja: 'k-forge', entrega: 'k-deliv', prereq: 'k-req' };
@@ -29,8 +30,6 @@ catch (err) { loadError($('stages'), err); throw err; }
 const matName = Object.fromEntries(data.materials.map(m => [m.key, m.name]));
 const sum = arr => arr.reduce((a, b) => a + b.cost, 0);
 const bricks = data.redBricks;
-// "group" separa os Red Bricks de uma parte extra; sem group = rota principal
-const mainBricks = bricks.filter(b => !b.group), moreBricks = bricks.filter(b => b.group);
 const multipliers = bricks.filter(b => b.multiplier);
 
 // Partes da rota: tudo antes do primeiro "part" é a Jornada; cada "part" abre uma nova aba
@@ -40,6 +39,8 @@ data.stages.forEach((st, i) => {
   parts[parts.length - 1].stages.push(i);
 });
 const partOfStage = data.stages.map((_, i) => parts.find(p => p.stages.includes(i)).id);
+// Red Brick sem "group" pertence à Jornada; "group" é o id da parte
+parts.forEach(p => { p.bricks = bricks.filter(b => (b.group || 'jornada') === p.id); });
 const TABS = [...parts.map(p => p.id), 'referencia'];
 // Endereços antigos continuam funcionando
 const LEGACY = { rota: ['jornada'], custos: ['referencia', 'custos'], materiais: ['referencia', 'materiais'], fontes: ['referencia', 'fontes'] };
@@ -66,59 +67,70 @@ ${st.note ? `<div class="stage-note">${st.note}</div>\n` : ''}${st.tasks.map(tpl
     + p.stages.map(i => `<button type="button" class="mapdot" data-stage="${i}" title="${pad2(i + 1)} · ${esc(data.stages[i].title)}" aria-label="Ir para a etapa ${pad2(i + 1)}: ${esc(data.stages[i].title)}">${i + 1}</button>`).join('')
     + '</span></div>',
   tab: p => `<a class="tab" role="tab" href="#${p.id}" data-tab="${p.id}">${p.title}${p.count ? ` <span class="tabcount" data-count="${p.id}"></span>` : ''}</a>`,
-  brickRow: b => `<li class="brickrow" data-unlock="${esc(b.unlock)}"><span class="brick">${b.label}</span><span class="brickinfo"><strong>${b.name}</strong><span>${b.where}</span></span><span class="brickcost">${fmtShort(b.cost)}</span></li>`,
+  chip: b => `<button type="button" class="chip" data-unlock="${esc(b.unlock)}" data-brick="${bricks.indexOf(b)}" aria-label="${esc(b.name)}"><span class="brick">${b.label}</span></button>`,
+  vaultGroup: p => `<div class="vault-group" data-part="${p.id}"><div class="vault-grouphead"><span>${p.title}</span><span class="vault-groupcount"></span></div><div class="chips-grid">${p.bricks.map(tpl.chip).join('')}</div></div>`,
+  costTable: p => `<details class="fold costfold" open><summary>${p.title} <span class="tabcount">${p.bricks.length} Red Bricks · ${fmtShort(sum(p.bricks))}</span></summary>
+<div class="tablewrap"><table>
+<thead><tr><th>Desbloqueio</th><th>Item exigido</th><th>Missão de entrega</th><th>Local / horário</th><th>Custo</th></tr></thead>
+<tbody>${lines(p.bricks.map(tpl.costRow))}</tbody>
+</table></div></details>`,
+  mat: (k, n, extras) => `<div class="mat${k === 'mithril' ? ' key' : ''}"><strong>${n || '—'}</strong><span>${cap(matName[k])}</span>${extras.map(([g, x]) => `<small>+${x} com ${g}</small>`).join('')}</div>`,
+  segBtn: (id, label) => `<button type="button" data-mat="${id}" aria-pressed="false">${label}</button>`,
   costRow: b => `<tr data-unlock="${esc(b.unlock)}"><td data-label="Desbloqueio"><strong>${b.tableName}</strong></td><td data-label="Item exigido">${b.item}</td>`
     + `<td data-label="Missão de entrega">${b.quest}</td><td data-label="Local / horário">${b.where}</td><td data-label="Custo">${fmtInt(b.cost)}</td></tr>`,
   pill: (strong, text) => `<span class="pill">${strong ? `<strong>${strong}</strong> ` : ''}${text}</span>`,
 };
 
-// Soma dos materiais: obrigatórios x cada grupo de etapas opcionais (ex.: Express Delivery, O Tesouro de Erebor)
-function materialTotals() {
+// Soma dos materiais das partes escolhidas: obrigatórios x etapas opcionais (ex.: Express Delivery)
+function materialTotals(partIds) {
   const req = {}, extra = {};
-  data.stages.forEach(st => st.tasks.forEach(t => (t.materials || []).forEach(([k, n]) => {
-    const bucket = st.optional ? (extra[st.optional] = extra[st.optional] || {}) : req;
-    bucket[k] = (bucket[k] || 0) + n;
-  })));
+  data.stages.forEach((st, i) => {
+    if (!partIds.includes(partOfStage[i])) return;
+    st.tasks.forEach(t => (t.materials || []).forEach(([k, n]) => {
+      const bucket = st.optional ? (extra[st.optional] = extra[st.optional] || {}) : req;
+      bucket[k] = (bucket[k] || 0) + n;
+    }));
+  });
   const groups = Object.keys(extra);
   const order = data.materials.map(m => m.key).filter(k => req[k] || groups.some(g => extra[g][k]));
   // Mithril Bricks primeiro; depois do mais necessário ao menos (empate: ordem do catálogo)
   order.sort((a, b) => (b === 'mithril') - (a === 'mithril') || (req[b] || 0) - (req[a] || 0) || order.indexOf(a) - order.indexOf(b));
-  return { req, extra, groups, order };
+  return order.map(k => tpl.mat(k, req[k], groups.filter(g => extra[g][k]).map(g => [g, extra[g][k]])));
+}
+function renderMaterials(choice) {
+  $('matGrid').innerHTML = lines(materialTotals(choice === 'tudo' ? parts.map(p => p.id) : [choice]));
+  document.querySelectorAll('#matFilter button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mat === choice)));
+  store(MAT_KEY, choice);
 }
 
 function render() {
+  $('heroBrickCount').textContent = bricks.length;
   $('heroMeta').innerHTML = lines([
+    tpl.pill(bricks.length, 'Red Bricks'),
     tpl.pill(multipliers.length, 'multiplicadores'),
-    tpl.pill(fmtShort(sum(multipliers)), 'studs para comprar todos'),
     tpl.pill('', 'Checklist com progresso local')]);
-
-  $('bricks').innerHTML = lines(mainBricks.map(tpl.brickRow));
-  $('bricksMore').innerHTML = lines(moreBricks.map(tpl.brickRow));
-  $('vaultMore').hidden = !moreBricks.length;
-  $('vaultMoreTitle').textContent = parts[1] ? parts[1].title : 'Extras';
+  $('vaultGroups').innerHTML = parts.map(tpl.vaultGroup).join('');
 
   $('tabs').innerHTML = [...parts.map(p => tpl.tab({ ...p, count: true })), tpl.tab({ id: 'referencia', title: 'Referência' })].join('');
   $('journeyMap').innerHTML = parts.map(tpl.mapGroup).join('');
   $('stages').innerHTML = lines(data.stages.map(tpl.stage));
 
-  const partTitle = parts[1] ? parts[1].title : 'Extras';
-  $('costRows').innerHTML = lines(mainBricks.map(tpl.costRow)) + (moreBricks.length
-    ? `<tr class="grouprow"><th colspan="5" scope="rowgroup">${partTitle} · ${moreBricks.length} Red Bricks</th></tr>` + lines(moreBricks.map(tpl.costRow)) : '');
-
-  const others = mainBricks.filter(b => !b.multiplier);
+  $('costTables').innerHTML = lines(parts.map(tpl.costTable));
+  const [main, ...more] = parts, others = main.bricks.filter(b => !b.multiplier);
   $('budget').innerHTML = `<strong>Orçamento de referência:</strong> os ${numWord(multipliers.length)} multiplicadores custam ${fmtInt(sum(multipliers))} studs no total. `
-    + `Incluindo ${others.map(b => b.name).join(' e ')}, a rota principal soma ${fmtInt(sum(mainBricks))} studs.`
-    + (moreBricks.length ? ` Os ${moreBricks.length} Red Bricks de <em>${partTitle}</em> custam mais ${fmtInt(sum(moreBricks))} studs, ${fmtInt(sum(bricks))} no total, o que é pouco com o x10 ligado.` : '')
+    + `Incluindo ${others.map(b => b.name).join(' e ')}, a Jornada soma ${fmtInt(sum(main.bricks))} studs.`
+    + more.map(p => ` Os ${p.bricks.length} Red Bricks de <em>${p.title}</em> custam mais ${fmtInt(sum(p.bricks))} studs.`).join('')
+    + (more.length ? ` No total, ${fmtInt(sum(bricks))} studs, o que é pouco com o x10 ligado.` : '')
     + ' Sem contar personagens, materiais ou outras compras.';
 
-  const mt = materialTotals();
-  $('matGrid').innerHTML = lines(mt.order.map(k => {
-    const small = mt.groups.filter(g => mt.extra[g][k]).map(g => `<small>+${mt.extra[g][k]} com ${g}</small>`).join('');
-    return `<div class="mat${k === 'mithril' ? ' key' : ''}"><strong>${mt.req[k] || '—'}</strong><span>${cap(matName[k])}</span>${small}</div>`;
-  }));
+  $('matFilter').innerHTML = [...parts.map(p => tpl.segBtn(p.id, p.title)), tpl.segBtn('tudo', 'Tudo')].join('');
+  const savedMat = read(MAT_KEY);
+  renderMaterials([...parts.map(p => p.id), 'tudo'].includes(savedMat) ? savedMat : 'jornada');
 
-  $('sourceList').innerHTML = lines(data.sources.map(s => `<li>${s}</li>`));
-  $('confirmList').innerHTML = lines(data.confirm.map(s => `<li>${s}</li>`));
+  $('sourceList').innerHTML = lines(data.sources.map(x => `<li>${x}</li>`));
+  $('confirmList').innerHTML = lines(data.confirm.map(x => `<li>${x}</li>`));
+  $('sourceCount').textContent = data.sources.length;
+  $('confirmCount').textContent = data.confirm.length;
 }
 
 render();
@@ -204,10 +216,21 @@ function updateProgress() {
     dot.classList.toggle('current', current.has(st));
   });
   unlockEls.forEach(el => el.classList.toggle(el.tagName === 'TR' ? 'unlocked' : 'on', !!(byId[el.dataset.unlock] && byId[el.dataset.unlock].checked)));
-  const lit = sel => document.querySelectorAll(`${sel} .brickrow.on`).length;
-  $('vaultCount').textContent = `${lit('.vault')}/${bricks.length}`;
-  $('vaultMoreCount').textContent = `${lit('#bricksMore')}/${moreBricks.length}`;
+  $('vaultCount').textContent = `${document.querySelectorAll('.vault .chip.on').length}/${bricks.length}`;
+  document.querySelectorAll('.vault-group').forEach(g => {
+    g.querySelector('.vault-groupcount').textContent = `${g.querySelectorAll('.chip.on').length}/${g.querySelectorAll('.chip').length}`;
+  });
 }
+
+// Painel de Red Bricks: tocar ou passar o mouse numa peça mostra qual é
+function showBrick(chip) {
+  const b = bricks[+chip.dataset.brick];
+  document.querySelectorAll('.chip.sel').forEach(c => c.classList.remove('sel'));
+  chip.classList.add('sel');
+  $('vaultDetail').innerHTML = `<strong>${b.name}</strong> · ${b.where} · ${fmtShort(b.cost)}${chip.classList.contains('on') ? ' <span class="ok">✓ conquistado</span>' : ''}`;
+}
+['click', 'mouseover', 'focusin'].forEach(ev => $('vaultGroups').addEventListener(ev, e => { const c = e.target.closest('.chip'); if (c) showBrick(c); }));
+$('matFilter').addEventListener('click', e => { const b = e.target.closest('[data-mat]'); if (b) renderMaterials(b.dataset.mat); });
 
 // Etapa concluída se recolhe sozinha (se o usuário não tiver escolhido deixá-la aberta) e a próxima abre
 boxes.forEach(b => b.addEventListener('change', () => { if (!list.query) collapse.refresh(); }));
