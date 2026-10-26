@@ -1,7 +1,7 @@
 {
   "_leia-me": "Conteúdo da página de conquistas. Nomes, descrições e porcentagens vêm da Steam e são atualizados por tools/update_steam.py (as dicas e capítulos não são tocados). Nunca mude a chave de uma conquista (ex.: COMPLETE_STORYEVENT1): ela é o id oficial da Steam e guarda o progresso.",
   "steamAppId": 285160,
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "intro": "Todas as conquistas de <strong>LEGO The Hobbit</strong> na Steam, com uma dica direta de como conseguir cada uma e a raridade entre os jogadores. Só {pct100} dos jogadores chegaram a 100%.",
   "chapters": [
     {
@@ -81,7 +81,7 @@
     "COMPLETE_STORYEVENT3": {
       "name": "De volta para onde veio",
       "desc": "Conclua ‘Azog, o Profano’",
-      "pct": 44.4,
+      "pct": 44.3,
       "tip": "Desbloqueia ao concluir a fase 3 no Modo História; acontece naturalmente seguindo a campanha."
     },
     "COMPLETE_STORYEVENT4": {
@@ -99,7 +99,7 @@
     "COMPLETE_STORYEVENT6": {
       "name": "Mais do que uma tempestade!",
       "desc": "Conclua ‘Sobre e Sob a Colina’",
-      "pct": 31.1,
+      "pct": 31.0,
       "tip": "Desbloqueia ao concluir a fase 6 no Modo História; acontece naturalmente seguindo a campanha."
     },
     "COMPLETE_STORYEVENT7": {
@@ -310,7 +310,7 @@
     "WATCH_100_PERCENT_ENDING": {
       "name": "Continua...",
       "desc": "Consiga 100% de progresso",
-      "pct": 6.9,
+      "pct": 6.8,
       "tip": "Chegue a 100% de progresso do jogo. Se as outras conquistas de coleção estiverem feitas, ela vem junto."
     }
   },
